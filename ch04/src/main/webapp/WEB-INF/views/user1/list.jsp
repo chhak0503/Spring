@@ -3,9 +3,10 @@
 <html>
 <head>
     <title>user1::list</title>
+    <link rel="stylesheet" href="/ch04/css/style.css">
 </head>
 <body>
-    <h3>user1 목록1112</h3>
+    <h3>user1 목록</h3>
 
     <a href="/ch04">메인</a>
     <a href="/ch04/user1/register">등록</a>

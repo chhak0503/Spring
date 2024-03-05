@@ -14,7 +14,6 @@ public class User1RowMapper implements RowMapper<User1DTO> {
         - SELECT 결과가 1개 이상이면 리스트로 생성
         - SELECT 결과가 1개이면 DTO 생성
     */
-
     @Override
     public User1DTO mapRow(ResultSet rs, int rowNum) throws SQLException {
 

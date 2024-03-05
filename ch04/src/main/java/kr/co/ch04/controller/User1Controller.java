@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -66,5 +67,12 @@ public class User1Controller {
         return "/user1/modify";
     }
 
+    @PostMapping("/user1/modify")
+    public String modify(@ModelAttribute User1DTO user1DTO){
+        System.out.println(user1DTO);
 
+        service.updateUser1(user1DTO);
+
+        return "redirect:/user1/list";
+    }
 }

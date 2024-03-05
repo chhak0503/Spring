@@ -41,6 +41,17 @@ public class User1Dao {
 
     public void updateUser1(User1DTO user1DTO){
 
+        String sql = "UPDATE `user1` SET `name`=?, `birth`=?, `hp`=?, `age`=? where `uid`=?";
+
+        Object[] params = {
+                user1DTO.getName(),
+                user1DTO.getBirth(),
+                user1DTO.getHp(),
+                user1DTO.getAge(),
+                user1DTO.getUid()
+        };
+
+        jdbcTemplate.update(sql, params);
     }
 
     public void deleteUser1(String uid){
