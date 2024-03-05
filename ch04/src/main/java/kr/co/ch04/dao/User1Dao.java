@@ -3,11 +3,12 @@ package kr.co.ch04.dao;
 import kr.co.ch04.dto.User1DTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
+@Component
 public class User1Dao {
 
     @Autowired
@@ -43,7 +44,8 @@ public class User1Dao {
     }
 
     public void deleteUser1(String uid){
-
+        String sql = "DELETE FROM `user1` where `uid`=?";
+        jdbcTemplate.update(sql, uid);
     }
 
 }

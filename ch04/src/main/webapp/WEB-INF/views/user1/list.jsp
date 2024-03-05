@@ -28,8 +28,8 @@
                 <td>${user.hp}</td>
                 <td>${user.age}</td>
                 <td>
-                    <a href="#">수정</a>
-                    <a href="#">삭제</a>
+                    <a href="/ch04/user1/modify?uid=${user.uid}">수정</a>
+                    <a href="/ch04/user1/delete?uid=${user.uid}">삭제</a>
                 </td>
             </tr>
         </c:forEach>

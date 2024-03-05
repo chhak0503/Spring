@@ -3,11 +3,12 @@ package kr.co.ch04.service;
 import kr.co.ch04.dao.User1Dao;
 import kr.co.ch04.dto.User1DTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Component
 public class User1Service {
 
     @Autowired
