@@ -20,7 +20,6 @@ public class User1Service {
     public User1DTO selectUser1(String uid){
         return dao.selectUser1(uid);
     }
-
     public List<User1DTO> selectUser1s(){
         return dao.selectUser1s();
     }

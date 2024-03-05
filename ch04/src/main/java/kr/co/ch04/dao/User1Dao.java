@@ -29,11 +29,13 @@ public class User1Dao {
     }
 
     public User1DTO selectUser1(String uid){
-        return null;
+        String sql = "SELECT * FROM `user1` where `uid`=?";
+        return jdbcTemplate.queryForObject(sql, new User1RowMapper(), uid);
     }
 
     public List<User1DTO> selectUser1s(){
-        return null;
+        String sql = "SELECT * FROM `user1`";
+        return jdbcTemplate.query(sql, new User1RowMapper());
     }
 
     public void updateUser1(User1DTO user1DTO){
