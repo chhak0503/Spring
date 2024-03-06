@@ -5,6 +5,8 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public class User1DAO {
 
@@ -18,11 +20,11 @@ public class User1DAO {
     public void insertUser1(User1DTO user1DTO){
         mybatis.insert("user1.insertUser1", user1DTO);
     }
-    public void selectUser1(){
-
+    public User1DTO selectUser1(String uid){
+        return mybatis.selectOne("user1.selectUser1", uid);
     }
-    public void selectUser1s(){
-
+    public List<User1DTO> selectUser1s(){
+        return mybatis.selectList("user1.selectUser1s");
     }
     public void updateUser1(){
 

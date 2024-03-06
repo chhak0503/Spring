@@ -22,7 +22,7 @@ public class MyBatisConfig {
         return sessionFactory.getObject();
     }
 
-    @Bean(name = "mybatis")
+    @Bean
     public SqlSessionTemplate sqlSessionTemplate(SqlSessionFactory sqlSessionFactory){
         return new SqlSessionTemplate(sqlSessionFactory);
     }

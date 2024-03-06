@@ -5,9 +5,9 @@
 </head>
 <body>
     <h3>user1 수정</h3>
-    <a href="/ch04">메인</a>
-    <a href="/ch04/user1/list">목록</a>
-    <form action="/ch04/user1/modify" method="post">
+    <a href="/ch05">메인</a>
+    <a href="/ch05/user1/list">목록</a>
+    <form action="/ch05/user1/modify" method="post">
         <table border="1">
             <tr>
                 <td>아이디</td>
@@ -33,7 +33,6 @@
                 <td colspan="2" align="right"><input type="submit" value="수정"></td>
             </tr>
         </table>
-
     </form>
 </body>
 </html>

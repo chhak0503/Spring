@@ -8,4 +8,12 @@
         INSERT INTO `user1` VALUES (#{uid}, #{name}, #{birth}, #{hp}, #{age});
     </insert>
 
+    <select id="selectUser1s" resultType="kr.co.ch05.dto.User1DTO">
+        SELECT * FROM `user1`;
+    </select>
+
+    <select id="selectUser1" resultType="kr.co.ch05.dto.User1DTO">
+        SELECT * FROM `user1` WHERE `uid`=#{uid};
+    </select>
+
 </mapper>
