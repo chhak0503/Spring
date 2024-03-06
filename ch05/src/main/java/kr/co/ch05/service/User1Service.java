@@ -28,7 +28,7 @@ public class User1Service {
     public void updateUser1(User1DTO user1DTO){
         dao.updateUser1(user1DTO);
     }
-    public void deleteUser1(){
-        dao.deleteUser1();
+    public void deleteUser1(String uid){
+        dao.deleteUser1(uid);
     }
 }

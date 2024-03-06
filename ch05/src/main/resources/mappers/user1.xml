@@ -26,4 +26,8 @@
                             `uid`=#{uid};
     </update>
 
+    <delete id="deleteUser1">
+        DELETE FROM `user1` WHERE `uid`=#{uid};
+    </delete>
+
 </mapper>

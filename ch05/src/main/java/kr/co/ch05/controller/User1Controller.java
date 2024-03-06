@@ -61,4 +61,10 @@ public class User1Controller {
         return "redirect:/user1/list";
     }
 
+    @GetMapping("/user1/delete")
+    public String delete(@RequestParam("uid") String uid){
+        service.deleteUser1(uid);
+        return "redirect:/user1/list";
+    }
+
 }

@@ -29,7 +29,7 @@ public class User1DAO {
     public void updateUser1(User1DTO user1DTO){
         mybatis.update("user1.updateUser1", user1DTO);
     }
-    public void deleteUser1(){
-
+    public void deleteUser1(String uid){
+        mybatis.delete("user1.deleteUser1", uid);
     }
 }
