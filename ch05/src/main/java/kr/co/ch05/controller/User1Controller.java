@@ -41,7 +41,7 @@ public class User1Controller {
         service.insertUser1(user1DTO);
 
         // 리다이렉트
-        return "redirect:/user1/list";
+        return "/user1/list";
     }
 
 
