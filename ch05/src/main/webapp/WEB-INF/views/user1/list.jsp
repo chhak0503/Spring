@@ -19,7 +19,6 @@
             <th>나이</th>
             <th>관리</th>
         </tr>
-
         <c:forEach var="user" items="${users}">
             <tr>
                 <td>${user.uid}</td>
@@ -33,8 +32,6 @@
                 </td>
             </tr>
         </c:forEach>
-
-
     </table>
 </body>
 </html>
