@@ -2,6 +2,10 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    - MyBatis @Mapper interface일 경우 namespace값은 패키지포함 해당 Mapper 파일 설정
+    - 각 SQL id값은 Mapper 파일의 메서드명 설정
+-->
 <mapper namespace="kr.co.ch05.mapper.User2Mapper">
 
     <insert id="insertUser2">
