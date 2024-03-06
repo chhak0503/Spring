@@ -25,8 +25,8 @@ public class User1Service {
     public List<User1DTO> selectUser1s(){
         return dao.selectUser1s();
     }
-    public void updateUser1(){
-        dao.updateUser1();
+    public void updateUser1(User1DTO user1DTO){
+        dao.updateUser1(user1DTO);
     }
     public void deleteUser1(){
         dao.deleteUser1();

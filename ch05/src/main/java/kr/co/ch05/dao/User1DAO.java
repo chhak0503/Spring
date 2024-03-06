@@ -26,8 +26,8 @@ public class User1DAO {
     public List<User1DTO> selectUser1s(){
         return mybatis.selectList("user1.selectUser1s");
     }
-    public void updateUser1(){
-
+    public void updateUser1(User1DTO user1DTO){
+        mybatis.update("user1.updateUser1", user1DTO);
     }
     public void deleteUser1(){
 

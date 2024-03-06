@@ -55,4 +55,10 @@ public class User1Controller {
         return "/user1/modify";
     }
 
+    @PostMapping("/user1/modify")
+    public String modify(User1DTO user1DTO){
+        service.updateUser1(user1DTO);
+        return "redirect:/user1/list";
+    }
+
 }

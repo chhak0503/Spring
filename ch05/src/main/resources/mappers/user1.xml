@@ -16,4 +16,14 @@
         SELECT * FROM `user1` WHERE `uid`=#{uid};
     </select>
 
+    <update id="updateUser1">
+        UPDATE `user1` SET
+                            `name`=#{name},
+                            `birth`=#{birth},
+                            `hp`=#{hp},
+                            `age`=#{age}
+                        WHERE
+                            `uid`=#{uid};
+    </update>
+
 </mapper>
