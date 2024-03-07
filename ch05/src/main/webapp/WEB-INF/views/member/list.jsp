@@ -17,6 +17,13 @@
             <option value="hp">휴대폰</option>
         </select>
         <input type="text" name="value">
+        <p>
+            <label><input type="checkbox" name="pos" value="사원">사원</label>
+            <label><input type="checkbox" name="pos" value="대리">대리</label>
+            <label><input type="checkbox" name="pos" value="과장">과장</label>
+            <label><input type="checkbox" name="pos" value="차장">차장</label>
+            <label><input type="checkbox" name="pos" value="부장">부장</label>
+        </p>
         <input type="submit" value="검색">
     </form>
 

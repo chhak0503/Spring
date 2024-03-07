@@ -24,8 +24,8 @@ public class MemberService {
     public List<MemberDTO> selectMembers(){
         return memberMapper.selectMembers();
     }
-    public List<MemberDTO> selectMembersForSearch(String type, String value){
-        return memberMapper.selectMembersForSearch(type, value);
+    public List<MemberDTO> selectMembersForSearch(String type, String value, String[] pos){
+        return memberMapper.selectMembersForSearch(type, value, pos);
     }
     public void updateMember(MemberDTO memberDTO){
         memberMapper.updateMember(memberDTO);

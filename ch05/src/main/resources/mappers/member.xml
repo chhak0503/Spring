@@ -23,14 +23,21 @@
     <select id="selectMembersForSearch" resultType="kr.co.ch05.dto.MemberDTO">
         SELECT * FROM `member`
         <where>
-            <if test="type == 'uid'">
+            <if test="type == 'uid' and value != ''">
                 `uid`=#{value}
             </if>
-            <if test="type == 'name'">
+            <if test="type == 'name' and value != ''">
                 `name`=#{value}
             </if>
-            <if test="type == 'hp'">
+            <if test="type == 'hp' and value != ''">
                 `hp`=#{value}
+            </if>
+
+            <if test="pos != null">
+                AND `pos` IN
+                <foreach item="item" collection="pos" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
             </if>
         </where>
     </select>

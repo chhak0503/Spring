@@ -21,13 +21,14 @@ public class MemberController {
     }
 
     @GetMapping("/member/search")
-    public String search(@RequestParam("type") String type, @RequestParam("value") String value, Model model){
+    public String search(@RequestParam("type") String type,
+                         @RequestParam("value") String value,
+                         @RequestParam(value = "pos", required = false) String[] pos,
+                         Model model){
 
-        System.out.println("type : " + type);
-        System.out.println("value : " + value);
+        System.out.println("search...");
 
-        List<MemberDTO> members = memberService.selectMembersForSearch(type, value);
-        System.out.println(members);
+        List<MemberDTO> members = memberService.selectMembersForSearch(type, value, pos);
 
         model.addAttribute("members", members);
 
