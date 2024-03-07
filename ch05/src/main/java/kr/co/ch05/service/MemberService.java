@@ -1,6 +1,7 @@
 package kr.co.ch05.service;
 
 import kr.co.ch05.dto.MemberDTO;
+import kr.co.ch05.dto.ParentDTO;
 import kr.co.ch05.mapper.MemberMapper;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +27,10 @@ public class MemberService {
     }
     public List<MemberDTO> selectMembersForSearch(String type, String value, String[] pos){
         return memberMapper.selectMembersForSearch(type, value, pos);
+    }
+
+    public List<ParentDTO> selectParentWithChild() {
+        return memberMapper.selectParentWithChild();
     }
     public void updateMember(MemberDTO memberDTO){
         memberMapper.updateMember(memberDTO);

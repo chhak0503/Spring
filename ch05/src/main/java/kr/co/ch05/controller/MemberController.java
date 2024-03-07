@@ -1,6 +1,7 @@
 package kr.co.ch05.controller;
 
 import kr.co.ch05.dto.MemberDTO;
+import kr.co.ch05.dto.ParentDTO;
 import kr.co.ch05.mapper.MemberMapper;
 import kr.co.ch05.service.MemberService;
 import org.springframework.stereotype.Controller;
@@ -18,6 +19,16 @@ public class MemberController {
 
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+    }
+
+    @GetMapping("/member/parents")
+    public void parent(){
+        List<ParentDTO> parents = memberService.selectParentWithChild();
+        System.out.println(parents);
+
+        for(ParentDTO parent : parents){
+            System.out.println(parent.getChilds());
+        }
     }
 
     @GetMapping("/member/search")

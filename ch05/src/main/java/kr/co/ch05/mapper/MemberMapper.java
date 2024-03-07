@@ -1,6 +1,7 @@
 package kr.co.ch05.mapper;
 
 import kr.co.ch05.dto.MemberDTO;
+import kr.co.ch05.dto.ParentDTO;
 import kr.co.ch05.dto.User2DTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -15,6 +16,9 @@ public interface MemberMapper {
     public List<MemberDTO> selectMembersForSearch(@Param("type") String type,
                                                   @Param("value") String value,
                                                   @Param("pos") String[] pos);
+
+    public List<ParentDTO> selectParentWithChild();
+
     public void updateMember(MemberDTO memberDTO);
     public void deleteMember(String uid);
 }
