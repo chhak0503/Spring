@@ -2,6 +2,8 @@ package kr.co.ch05.controller;
 
 import kr.co.ch05.dto.User1DTO;
 import kr.co.ch05.service.User1Service;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,6 +15,7 @@ import java.util.List;
 public class User1Controller {
 
     private final User1Service service;
+    private final Logger logger = LoggerFactory.getLogger(User1Controller.class);
 
     @Autowired
     public User1Controller(User1Service service) {
@@ -23,6 +26,8 @@ public class User1Controller {
     public String list(Model model){
 
         List<User1DTO> users = service.selectUser1s();
+        logger.debug(""+users);
+
         model.addAttribute("users", users);
 
         return "/user1/list";
@@ -35,7 +40,7 @@ public class User1Controller {
 
     @PostMapping("/user1/register")
     public String register(User1DTO user1DTO){
-        System.out.println(user1DTO);
+        logger.debug(""+user1DTO);
 
         // 등록
         service.insertUser1(user1DTO);
@@ -44,12 +49,13 @@ public class User1Controller {
         return "/user1/list";
     }
 
-
     @GetMapping("/user1/modify")
     public String modify(@RequestParam("uid") String uid, Model model){
-        System.out.println("uid : " + uid);
+
 
         User1DTO user1DTO = service.selectUser1(uid);
+        logger.debug(""+user1DTO);
+
         model.addAttribute(user1DTO);
 
         return "/user1/modify";
