@@ -3470,3 +3470,158 @@ Unconditional classes:
 2024-03-11T15:46:30.710+09:00  WARN 12488 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 68, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
 2024-03-11T15:46:30.711+09:00  WARN 12488 --- [main] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][main][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
 2024-03-11T15:46:30.717+09:00  WARN 12488 --- [main] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][main][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-11T16:21:54.396+09:00  INFO 992 --- [main] k.co.ch06.controller.MainControllerTest  : Starting MainControllerTest using Java 17.0.9 with PID 992 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T16:21:54.398+09:00  INFO 992 --- [main] k.co.ch06.controller.MainControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T16:21:55.180+09:00  INFO 992 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T16:21:55.724+09:00  INFO 992 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-11T16:21:55.724+09:00  INFO 992 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-11T16:21:55.724+09:00  INFO 992 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-03-11T16:21:55.752+09:00  INFO 992 --- [main] k.co.ch06.controller.MainControllerTest  : Started MainControllerTest in 1.529 seconds (process running for 2.101)
+2024-03-11T16:22:41.944+09:00  INFO 20708 --- [main] k.co.ch06.controller.MainControllerTest  : Starting MainControllerTest using Java 17.0.9 with PID 20708 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T16:22:41.945+09:00  INFO 20708 --- [main] k.co.ch06.controller.MainControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T16:22:42.706+09:00  INFO 20708 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T16:22:43.358+09:00  INFO 20708 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-11T16:22:43.358+09:00  INFO 20708 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-11T16:22:43.359+09:00  INFO 20708 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-11T16:22:43.395+09:00  INFO 20708 --- [main] k.co.ch06.controller.MainControllerTest  : Started MainControllerTest in 1.62 seconds (process running for 2.182)
+2024-03-11T16:22:43.973+09:00  INFO 20708 --- [main] kr.co.ch06.controller.MainController     : uid : p101
+2024-03-11T16:22:43.973+09:00  INFO 20708 --- [main] kr.co.ch06.controller.MainController     : name : 김유신
+2024-03-11T16:23:15.716+09:00  INFO 1868 --- [main] k.co.ch06.controller.MainControllerTest  : Starting MainControllerTest using Java 17.0.9 with PID 1868 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T16:23:15.718+09:00  INFO 1868 --- [main] k.co.ch06.controller.MainControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T16:23:16.475+09:00  INFO 1868 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T16:23:17.014+09:00  INFO 1868 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-11T16:23:17.014+09:00  INFO 1868 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-11T16:23:17.015+09:00  INFO 1868 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-11T16:23:17.045+09:00  INFO 1868 --- [main] k.co.ch06.controller.MainControllerTest  : Started MainControllerTest in 1.499 seconds (process running for 2.065)
+2024-03-11T16:23:17.617+09:00  INFO 1868 --- [main] kr.co.ch06.controller.MainController     : name : 홍길동
+2024-03-11T16:23:17.617+09:00  INFO 1868 --- [main] kr.co.ch06.controller.MainController     : age : 23
+2024-03-11T16:23:57.494+09:00  INFO 11764 --- [main] k.co.ch06.controller.MainControllerTest  : Starting MainControllerTest using Java 17.0.9 with PID 11764 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T16:23:57.495+09:00  INFO 11764 --- [main] k.co.ch06.controller.MainControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T16:23:58.279+09:00  INFO 11764 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T16:23:58.850+09:00  INFO 11764 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-11T16:23:58.850+09:00  INFO 11764 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-11T16:23:58.851+09:00  INFO 11764 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-11T16:23:58.886+09:00  INFO 11764 --- [main] k.co.ch06.controller.MainControllerTest  : Started MainControllerTest in 1.561 seconds (process running for 2.153)
+2024-03-11T16:23:59.489+09:00  INFO 11764 --- [main] kr.co.ch06.controller.MainController     : name : 홍길동
+2024-03-11T16:23:59.490+09:00  INFO 11764 --- [main] kr.co.ch06.controller.MainController     : age : 23
+2024-03-11T16:37:24.999+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.9 with PID 18628 (C:\Users\java\Desktop\Workspace\Spring\ch06\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T16:37:25.000+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T16:37:25.121+09:00  INFO 18628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-11T16:37:25.122+09:00  INFO 18628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-11T16:37:25.686+09:00  INFO 18628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-11T16:37:25.692+09:00  INFO 18628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-11T16:37:25.692+09:00  INFO 18628 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-11T16:37:25.718+09:00  INFO 18628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-11T16:37:25.718+09:00  INFO 18628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 596 ms
+2024-03-11T16:37:25.872+09:00  INFO 18628 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T16:37:26.055+09:00  INFO 18628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-11T16:37:26.072+09:00  INFO 18628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-11T16:37:26.077+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 1.278 seconds (process running for 1.612)
+2024-03-11T16:37:30.900+09:00  INFO 18628 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-11T16:37:30.901+09:00  INFO 18628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-11T16:37:30.902+09:00  INFO 18628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-11T16:37:30.927+09:00  INFO 18628 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-11T16:37:31.074+09:00  INFO 18628 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13ed2519
+2024-03-11T16:37:31.076+09:00  INFO 18628 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-11T16:37:31.099+09:00  INFO 18628 --- [http-nio-8080-exec-1] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=A101, name=홍길동, birth=null, hp=010-1234-1001, age=33), User1DTO(uid=A102, name=홍길동, birth=2021-03-11, hp=010-1234-1002, age=33), User1DTO(uid=A103, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A104, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)]
+2024-03-11T16:37:33.457+09:00  INFO 18628 --- [http-nio-8080-exec-2] kr.co.ch06.controller.User1Controller    : delete : A101
+2024-03-11T16:37:33.470+09:00  INFO 18628 --- [http-nio-8080-exec-3] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=A102, name=홍길동, birth=2021-03-11, hp=010-1234-1002, age=33), User1DTO(uid=A103, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A104, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)]
+2024-03-11T16:37:34.082+09:00  INFO 18628 --- [http-nio-8080-exec-5] kr.co.ch06.controller.User1Controller    : delete : A102
+2024-03-11T16:37:34.092+09:00  INFO 18628 --- [http-nio-8080-exec-4] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=A103, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A104, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)]
+2024-03-11T16:37:34.281+09:00  INFO 18628 --- [http-nio-8080-exec-6] kr.co.ch06.controller.User1Controller    : delete : A103
+2024-03-11T16:37:34.290+09:00  INFO 18628 --- [http-nio-8080-exec-7] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=A104, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)]
+2024-03-11T16:37:34.967+09:00  INFO 18628 --- [http-nio-8080-exec-8] kr.co.ch06.controller.User1Controller    : delete : A104
+2024-03-11T16:37:34.978+09:00  INFO 18628 --- [http-nio-8080-exec-9] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)]
+2024-03-11T16:37:37.458+09:00  INFO 18628 --- [http-nio-8080-exec-10] kr.co.ch06.controller.User1Controller    : delete : A105
+2024-03-11T16:37:37.469+09:00  INFO 18628 --- [http-nio-8080-exec-1] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33), User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)]
+2024-03-11T16:37:38.840+09:00  INFO 18628 --- [http-nio-8080-exec-2] kr.co.ch06.controller.User1Controller    : delete : A106
+2024-03-11T16:37:38.846+09:00  INFO 18628 --- [http-nio-8080-exec-3] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12)]
+2024-03-11T16:37:57.474+09:00  INFO 18628 --- [http-nio-8080-exec-4] kr.co.ch06.controller.User1Controller    : User1DTO(uid=a101, name=김유신, birth=2024-03-11, hp=010-1234-1001, age=23)
+2024-03-11T16:37:57.484+09:00  INFO 18628 --- [http-nio-8080-exec-6] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12), User1DTO(uid=a101, name=김유신, birth=2024-03-11, hp=010-1234-1001, age=23)]
+2024-03-11T16:37:58.855+09:00  INFO 18628 --- [http-nio-8080-exec-7] kr.co.ch06.controller.User1Controller    : delete : asfaef
+2024-03-11T16:37:58.865+09:00  INFO 18628 --- [http-nio-8080-exec-8] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=a101, name=김유신, birth=2024-03-11, hp=010-1234-1001, age=23)]
+2024-03-11T16:38:14.054+09:00  INFO 18628 --- [http-nio-8080-exec-10] kr.co.ch06.controller.User1Controller    : User1DTO(uid=a102, name=김춘추, birth=2024-03-12, hp=010-1234-1002, age=21)
+2024-03-11T16:38:14.066+09:00  INFO 18628 --- [http-nio-8080-exec-1] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=a101, name=김유신, birth=2024-03-11, hp=010-1234-1001, age=23), User1DTO(uid=a102, name=김춘추, birth=2024-03-12, hp=010-1234-1002, age=21)]
+2024-03-11T16:38:17.557+09:00  INFO 18628 --- [http-nio-8080-exec-2] kr.co.ch06.controller.User1Controller    : modify : a102
+2024-03-11T16:38:17.559+09:00  INFO 18628 --- [http-nio-8080-exec-2] kr.co.ch06.controller.User1Controller    : User1DTO(uid=a102, name=김춘추, birth=2024-03-12, hp=010-1234-1002, age=21)
+2024-03-11T16:38:29.782+09:00  INFO 18628 --- [http-nio-8080-exec-3] kr.co.ch06.controller.User1Controller    : User1DTO(uid=a102, name=김춘수, birth=2024-03-12, hp=010-1234-1003, age=22)
+2024-03-11T16:38:29.793+09:00  INFO 18628 --- [http-nio-8080-exec-5] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=a101, name=김유신, birth=2024-03-11, hp=010-1234-1001, age=23), User1DTO(uid=a102, name=김춘수, birth=2024-03-12, hp=010-1234-1003, age=22)]
+2024-03-11T16:39:05.933+09:00  INFO 18628 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-11T16:39:05.946+09:00  INFO 18628 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-11T16:39:05.950+09:00  INFO 18628 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-11T16:39:05.992+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.9 with PID 18628 (C:\Users\java\Desktop\Workspace\Spring\ch06\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T16:39:05.992+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T16:39:06.115+09:00  INFO 18628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-11T16:39:06.115+09:00  INFO 18628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-11T16:39:06.115+09:00  INFO 18628 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-11T16:39:06.123+09:00  INFO 18628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-11T16:39:06.123+09:00  INFO 18628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 130 ms
+2024-03-11T16:39:06.156+09:00  INFO 18628 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T16:39:06.189+09:00  INFO 18628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-11T16:39:06.193+09:00  INFO 18628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-11T16:39:06.196+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.218 seconds (process running for 101.731)
+2024-03-11T16:39:06.197+09:00  INFO 18628 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-11T16:40:03.779+09:00  INFO 18628 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-11T16:40:03.836+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.9 with PID 18628 (C:\Users\java\Desktop\Workspace\Spring\ch06\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T16:40:03.837+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T16:40:03.945+09:00  INFO 18628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-11T16:40:03.946+09:00  INFO 18628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-11T16:40:03.946+09:00  INFO 18628 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-11T16:40:03.952+09:00  INFO 18628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-11T16:40:03.953+09:00  INFO 18628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
+2024-03-11T16:40:03.978+09:00  INFO 18628 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T16:40:04.007+09:00  INFO 18628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-11T16:40:04.012+09:00  INFO 18628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-11T16:40:04.014+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.189 seconds (process running for 159.549)
+2024-03-11T16:40:04.014+09:00  INFO 18628 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-11T16:40:44.306+09:00  INFO 18628 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-11T16:40:44.361+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.9 with PID 18628 (C:\Users\java\Desktop\Workspace\Spring\ch06\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T16:40:44.361+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T16:40:44.465+09:00  INFO 18628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-11T16:40:44.466+09:00  INFO 18628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-11T16:40:44.466+09:00  INFO 18628 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-11T16:40:44.474+09:00  INFO 18628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-11T16:40:44.475+09:00  INFO 18628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 112 ms
+2024-03-11T16:40:44.499+09:00  INFO 18628 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T16:40:44.527+09:00  INFO 18628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-11T16:40:44.531+09:00  INFO 18628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-11T16:40:44.533+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.183 seconds (process running for 200.069)
+2024-03-11T16:40:44.534+09:00  INFO 18628 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-11T16:41:18.543+09:00  INFO 18628 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-11T16:41:18.544+09:00  INFO 18628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-11T16:41:18.544+09:00  INFO 18628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-11T16:41:18.546+09:00  INFO 18628 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-03-11T16:41:18.560+09:00  INFO 18628 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@22f15c8f
+2024-03-11T16:41:18.561+09:00  INFO 18628 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-03-11T16:41:18.563+09:00  INFO 18628 --- [http-nio-8080-exec-1] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=a101, name=김유신, birth=2024-03-11, hp=010-1234-1001, age=23), User1DTO(uid=a102, name=김춘수, birth=2024-03-12, hp=010-1234-1003, age=22)]
+2024-03-11T16:41:18.734+09:00  INFO 18628 --- [http-nio-8080-exec-2] kr.co.ch06.controller.User1Controller    : [User1DTO(uid=a101, name=김유신, birth=2024-03-11, hp=010-1234-1001, age=23), User1DTO(uid=a102, name=김춘수, birth=2024-03-12, hp=010-1234-1003, age=22)]
+2024-03-11T16:41:21.523+09:00  INFO 18628 --- [http-nio-8080-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/ch06/user1/delete?uid=${user.uid} ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-03-11T16:41:50.350+09:00  INFO 18628 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-11T16:41:50.362+09:00  INFO 18628 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-03-11T16:41:50.364+09:00  INFO 18628 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-03-11T16:41:50.398+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.9 with PID 18628 (C:\Users\java\Desktop\Workspace\Spring\ch06\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T16:41:50.398+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T16:41:50.501+09:00  INFO 18628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-11T16:41:50.502+09:00  INFO 18628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-11T16:41:50.502+09:00  INFO 18628 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-11T16:41:50.508+09:00  INFO 18628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
+2024-03-11T16:41:50.508+09:00  INFO 18628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 109 ms
+2024-03-11T16:41:50.532+09:00  INFO 18628 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T16:41:50.560+09:00  INFO 18628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-11T16:41:50.565+09:00  INFO 18628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
+2024-03-11T16:41:50.567+09:00  INFO 18628 --- [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.18 seconds (process running for 266.102)
+2024-03-11T16:41:50.567+09:00  INFO 18628 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
