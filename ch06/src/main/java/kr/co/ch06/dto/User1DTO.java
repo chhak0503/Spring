@@ -11,6 +11,8 @@ import lombok.*;
 public class User1DTO {
     private String uid;
     private String name;
+    private String birth;
+    private String hp;
     private int age;
-    private String addr;
+
 }
