@@ -17,10 +17,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-
-
 @SpringBootTest
 @AutoConfigureMockMvc
+//@WebMvcTest(controllers = MainController.class) // <-- 이거말고 위에걸로 하기
 class MainControllerTest {
 
     /*
@@ -50,7 +49,6 @@ class MainControllerTest {
     public void AfterEach() {
         System.out.println("AfterEach ...");
     }
-
 
     public void index() throws Exception {
         mockMvc
@@ -83,9 +81,6 @@ class MainControllerTest {
         }
         */
     }
-
-
-
 
     // MainController에 postParam() 요청 메서드 정의
     public void postParam() throws Exception {

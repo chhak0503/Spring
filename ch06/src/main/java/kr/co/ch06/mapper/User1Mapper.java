@@ -6,9 +6,9 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 /*
-    @Mapper
-     - MapperScan을 통한 해당 Mapper 등록
-     - Mapper xml 파일과 연결 및 데이터베이스와 상호작용
+    Mapper 테스트 코드 작성하기
+     - 마우스 오른버튼 > Go To > Test 클릭
+     - 단축키 : Ctrl + Shift + T
  */
 @Mapper
 public interface User1Mapper {

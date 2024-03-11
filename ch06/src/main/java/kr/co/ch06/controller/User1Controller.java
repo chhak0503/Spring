@@ -19,9 +19,6 @@ public class User1Controller {
     // @AllArgsConstructor 선언으로 생성자 주입 -> 따로 생성자 정의 필요 없음
     private final User1Service service;
 
-
-
-
     @GetMapping("/user1/list")
     public String list(Model model){
         List<User1DTO> users = service.selectUser1s();

@@ -69,15 +69,7 @@ public class MainController {
         return "/index";
     }
 
-    @GetMapping("/sub2/content1")
-    public String content1(){
-        return "/sub2/content1";
-    }
 
-    @GetMapping("/sub2/content2")
-    public String content2(){
-        return "/sub2/content2";
-    }
 
     // 테스트용 요청 메서드
     @GetMapping("/getParam")
