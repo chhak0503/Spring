@@ -3308,3 +3308,165 @@ Unconditional classes:
 2024-03-11T14:44:53.685+09:00  INFO 18348 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2024-03-11T14:44:53.722+09:00  INFO 18348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-03-11T14:44:53.725+09:00  INFO 18348 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-11T15:06:16.241+09:00  INFO 16388 --- [main] kr.co.ch06.mapper.User1MapperTest        : Starting User1MapperTest using Java 17.0.9 with PID 16388 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T15:06:16.242+09:00  INFO 16388 --- [main] kr.co.ch06.mapper.User1MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T15:06:17.023+09:00  INFO 16388 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T15:06:17.699+09:00  INFO 16388 --- [main] kr.co.ch06.mapper.User1MapperTest        : Started User1MapperTest in 1.633 seconds (process running for 2.214)
+2024-03-11T15:06:18.322+09:00  INFO 16388 --- [main] kr.co.ch06.mapper.User1MapperTest        : insertUser1...
+2024-03-11T15:06:18.341+09:00  INFO 16388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-11T15:06:18.540+09:00  INFO 16388 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50e8ed74
+2024-03-11T15:06:18.541+09:00  INFO 16388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-11T15:06:18.587+09:00  INFO 16388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-11T15:06:18.589+09:00  INFO 16388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-11T15:10:47.840+09:00  INFO 11848 --- [main] kr.co.ch06.mapper.User1MapperTest        : Starting User1MapperTest using Java 17.0.9 with PID 11848 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T15:10:47.841+09:00  INFO 11848 --- [main] kr.co.ch06.mapper.User1MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T15:10:48.605+09:00  INFO 11848 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T15:10:49.272+09:00  INFO 11848 --- [main] kr.co.ch06.mapper.User1MapperTest        : Started User1MapperTest in 1.622 seconds (process running for 2.226)
+2024-03-11T15:10:49.849+09:00  INFO 11848 --- [main] kr.co.ch06.mapper.User1MapperTest        : selectUser1...
+2024-03-11T15:10:49.859+09:00  INFO 11848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-11T15:10:50.056+09:00  INFO 11848 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c6919ff
+2024-03-11T15:10:50.058+09:00  INFO 11848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-11T15:10:50.092+09:00  INFO 11848 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=j102, name=홍길동, birth=1990-03-11, hp=010-1234-1111, age=22)
+2024-03-11T15:10:50.108+09:00  INFO 11848 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-11T15:10:50.110+09:00  INFO 11848 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-11T15:12:00.604+09:00  INFO 20800 --- [main] kr.co.ch06.mapper.User1MapperTest        : Starting User1MapperTest using Java 17.0.9 with PID 20800 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T15:12:00.605+09:00  INFO 20800 --- [main] kr.co.ch06.mapper.User1MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T15:12:01.388+09:00  INFO 20800 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T15:12:02.091+09:00  INFO 20800 --- [main] kr.co.ch06.mapper.User1MapperTest        : Started User1MapperTest in 1.668 seconds (process running for 2.258)
+2024-03-11T15:12:02.607+09:00  INFO 20800 --- [main] kr.co.ch06.mapper.User1MapperTest        : selectUser1...
+2024-03-11T15:12:02.619+09:00  INFO 20800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-11T15:12:02.802+09:00  INFO 20800 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bea5941
+2024-03-11T15:12:02.804+09:00  INFO 20800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-11T15:12:02.842+09:00  INFO 20800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-11T15:12:02.845+09:00  INFO 20800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-11T15:12:13.647+09:00  INFO 15292 --- [main] kr.co.ch06.mapper.User1MapperTest        : Starting User1MapperTest using Java 17.0.9 with PID 15292 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T15:12:13.648+09:00  INFO 15292 --- [main] kr.co.ch06.mapper.User1MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T15:12:14.514+09:00  INFO 15292 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T15:12:15.142+09:00  INFO 15292 --- [main] kr.co.ch06.mapper.User1MapperTest        : Started User1MapperTest in 1.684 seconds (process running for 2.231)
+2024-03-11T15:12:15.682+09:00  INFO 15292 --- [main] kr.co.ch06.mapper.User1MapperTest        : selectUser1...
+2024-03-11T15:12:15.695+09:00  INFO 15292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-11T15:12:15.886+09:00  INFO 15292 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39f68aec
+2024-03-11T15:12:15.887+09:00  INFO 15292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-11T15:12:15.926+09:00  INFO 15292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-11T15:12:15.928+09:00  INFO 15292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-11T15:18:43.190+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : Starting User1MapperTest using Java 17.0.9 with PID 15904 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T15:18:43.191+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T15:18:43.949+09:00  INFO 15904 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T15:18:44.653+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : Started User1MapperTest in 1.64 seconds (process running for 2.194)
+2024-03-11T15:18:45.234+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : selectUser1s...
+2024-03-11T15:18:45.244+09:00  INFO 15904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-11T15:18:45.440+09:00  INFO 15904 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70421a08
+2024-03-11T15:18:45.441+09:00  INFO 15904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-11T15:18:45.473+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12)
+2024-03-11T15:18:45.474+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12)
+2024-03-11T15:18:45.474+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A101, name=홍길동, birth=null, hp=010-1234-1001, age=33)
+2024-03-11T15:18:45.474+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A102, name=홍길동, birth=2021-03-11, hp=010-1234-1002, age=33)
+2024-03-11T15:18:45.474+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A103, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:18:45.474+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A104, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:18:45.474+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:18:45.474+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:18:45.474+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:18:45.474+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:18:45.475+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:18:45.475+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=j101, name=홍길동, birth=1990-03-11, hp=010-1234-1111, age=22)
+2024-03-11T15:18:45.475+09:00  INFO 15904 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=j102, name=홍길동, birth=1990-03-11, hp=010-1234-1111, age=22)
+2024-03-11T15:18:45.488+09:00  INFO 15904 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-11T15:18:45.491+09:00  INFO 15904 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-11T15:19:23.904+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : Starting User1MapperTest using Java 17.0.9 with PID 11240 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T15:19:23.905+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T15:19:24.661+09:00  INFO 11240 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T15:19:25.281+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : Started User1MapperTest in 1.557 seconds (process running for 2.103)
+2024-03-11T15:19:25.809+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : selectUser1s...
+2024-03-11T15:19:25.826+09:00  INFO 11240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-11T15:19:26.003+09:00  INFO 11240 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56b704ea
+2024-03-11T15:19:26.004+09:00  INFO 11240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-11T15:19:26.038+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12)
+2024-03-11T15:19:26.038+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=asfaef, name=dsaf, birth=2024-03-07, hp=010-1234-1110, age=12)
+2024-03-11T15:19:26.038+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A101, name=홍길동, birth=null, hp=010-1234-1001, age=33)
+2024-03-11T15:19:26.038+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A102, name=홍길동, birth=2021-03-11, hp=010-1234-1002, age=33)
+2024-03-11T15:19:26.038+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A103, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:19:26.039+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A104, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:19:26.039+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:19:26.039+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A105, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:19:26.039+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:19:26.039+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:19:26.039+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=A106, name=홍길동, birth=2021-03-11, hp=010-1234-1003, age=33)
+2024-03-11T15:19:26.040+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=j101, name=홍길동, birth=1990-03-11, hp=010-1234-1111, age=22)
+2024-03-11T15:19:26.040+09:00  INFO 11240 --- [main] kr.co.ch06.mapper.User1MapperTest        : User1DTO(uid=j102, name=홍길동, birth=1990-03-11, hp=010-1234-1111, age=22)
+2024-03-11T15:19:26.060+09:00  INFO 11240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-11T15:19:26.063+09:00  INFO 11240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-11T15:25:47.091+09:00  INFO 2224 --- [main] kr.co.ch06.mapper.User1MapperTest        : Starting User1MapperTest using Java 17.0.9 with PID 2224 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T15:25:47.092+09:00  INFO 2224 --- [main] kr.co.ch06.mapper.User1MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T15:25:47.877+09:00  INFO 2224 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T15:25:48.491+09:00  INFO 2224 --- [main] kr.co.ch06.mapper.User1MapperTest        : Started User1MapperTest in 1.594 seconds (process running for 2.196)
+2024-03-11T15:25:49.093+09:00  INFO 2224 --- [main] kr.co.ch06.mapper.User1MapperTest        : deleteUser1...
+2024-03-11T15:25:49.104+09:00  INFO 2224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-11T15:25:49.297+09:00  INFO 2224 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56b704ea
+2024-03-11T15:25:49.298+09:00  INFO 2224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-11T15:25:49.333+09:00  INFO 2224 --- [main] kr.co.ch06.mapper.User1MapperTest        : insertUser1...
+2024-03-11T15:25:49.350+09:00  INFO 2224 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-11T15:25:49.353+09:00  INFO 2224 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-11T15:27:56.100+09:00  INFO 15664 --- [main] kr.co.ch06.mapper.User1MapperTest        : Starting User1MapperTest using Java 17.0.9 with PID 15664 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T15:27:56.101+09:00  INFO 15664 --- [main] kr.co.ch06.mapper.User1MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T15:27:56.932+09:00  INFO 15664 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T15:27:57.541+09:00  INFO 15664 --- [main] kr.co.ch06.mapper.User1MapperTest        : Started User1MapperTest in 1.614 seconds (process running for 2.175)
+2024-03-11T15:27:58.098+09:00  INFO 15664 --- [main] kr.co.ch06.mapper.User1MapperTest        : deleteUser1...
+2024-03-11T15:27:58.108+09:00  INFO 15664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-11T15:27:58.317+09:00  INFO 15664 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@270f7b4d
+2024-03-11T15:27:58.318+09:00  INFO 15664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-11T15:27:58.357+09:00  INFO 15664 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-11T15:27:58.359+09:00  INFO 15664 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-11T15:28:10.884+09:00  INFO 13000 --- [main] kr.co.ch06.mapper.User1MapperTest        : Starting User1MapperTest using Java 17.0.9 with PID 13000 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T15:28:10.885+09:00  INFO 13000 --- [main] kr.co.ch06.mapper.User1MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T15:28:11.641+09:00  INFO 13000 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T15:28:12.326+09:00  INFO 13000 --- [main] kr.co.ch06.mapper.User1MapperTest        : Started User1MapperTest in 1.618 seconds (process running for 2.16)
+2024-03-11T15:28:12.952+09:00  INFO 13000 --- [main] kr.co.ch06.mapper.User1MapperTest        : deleteUser1...
+2024-03-11T15:28:12.966+09:00  INFO 13000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-11T15:28:13.155+09:00  INFO 13000 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e029a04
+2024-03-11T15:28:13.156+09:00  INFO 13000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-11T15:28:13.197+09:00  INFO 13000 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-11T15:28:13.200+09:00  INFO 13000 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-11T15:44:05.908+09:00  INFO 3308 --- [main] kr.co.ch06.mapper.User1MapperTest        : Starting User1MapperTest using Java 17.0.9 with PID 3308 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T15:44:05.909+09:00  INFO 3308 --- [main] kr.co.ch06.mapper.User1MapperTest        : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T15:44:06.733+09:00  INFO 3308 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T15:44:07.352+09:00  INFO 3308 --- [main] kr.co.ch06.mapper.User1MapperTest        : Started User1MapperTest in 1.643 seconds (process running for 2.213)
+2024-03-11T15:44:07.895+09:00  INFO 3308 --- [main] kr.co.ch06.mapper.User1MapperTest        : deleteUser1...
+2024-03-11T15:44:07.910+09:00  INFO 3308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-11T15:44:08.090+09:00  INFO 3308 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4af0c50
+2024-03-11T15:44:08.092+09:00  INFO 3308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-11T15:44:08.129+09:00  INFO 3308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-11T15:44:08.131+09:00  INFO 3308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-11T15:46:05.455+09:00  INFO 7932 --- [main] k.co.ch06.controller.MainControllerTest  : Starting MainControllerTest using Java 17.0.9 with PID 7932 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T15:46:05.456+09:00  INFO 7932 --- [main] k.co.ch06.controller.MainControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T15:46:05.948+09:00  INFO 7932 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T15:46:06.124+09:00  INFO 7932 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-11T15:46:06.125+09:00  INFO 7932 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-11T15:46:06.126+09:00  INFO 7932 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-11T15:46:06.146+09:00  INFO 7932 --- [main] k.co.ch06.controller.MainControllerTest  : Started MainControllerTest in 0.933 seconds (process running for 1.454)
+2024-03-11T15:46:06.887+09:00  WARN 7932 --- [main] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][main][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 61, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:06.890+09:00  WARN 7932 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 61, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:06.891+09:00  WARN 7932 --- [main] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][main][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 62, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:06.891+09:00  WARN 7932 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 62, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:06.892+09:00  WARN 7932 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 64, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:06.892+09:00  WARN 7932 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 65, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:06.892+09:00  WARN 7932 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 67, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:06.892+09:00  WARN 7932 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 68, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:06.892+09:00  WARN 7932 --- [main] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][main][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:06.898+09:00  WARN 7932 --- [main] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][main][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:29.118+09:00  INFO 12488 --- [main] k.co.ch06.controller.MainControllerTest  : Starting MainControllerTest using Java 17.0.9 with PID 12488 (started by java in C:\Users\java\Desktop\Workspace\Spring\ch06)
+2024-03-11T15:46:29.119+09:00  INFO 12488 --- [main] k.co.ch06.controller.MainControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T15:46:29.685+09:00  INFO 12488 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-11T15:46:29.869+09:00  INFO 12488 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-11T15:46:29.869+09:00  INFO 12488 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-11T15:46:29.870+09:00  INFO 12488 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-11T15:46:29.899+09:00  INFO 12488 --- [main] k.co.ch06.controller.MainControllerTest  : Started MainControllerTest in 1.016 seconds (process running for 1.552)
+2024-03-11T15:46:30.707+09:00  WARN 12488 --- [main] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][main][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 61, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:30.709+09:00  WARN 12488 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 61, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:30.709+09:00  WARN 12488 --- [main] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][main][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 62, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:30.710+09:00  WARN 12488 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 62, col 15. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:30.710+09:00  WARN 12488 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 64, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:30.710+09:00  WARN 12488 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 65, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:30.710+09:00  WARN 12488 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_header.html" found in template /index, line 67, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:30.710+09:00  WARN 12488 --- [main] actStandardFragmentInsertionTagProcessor : [THYMELEAF][main][/index] Deprecated unwrapped fragment expression "/include/_footer.html" found in template /index, line 68, col 10. Please use the complete syntax of fragment expressions instead ("~{/include/_footer.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:30.711+09:00  WARN 12488 --- [main] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][main][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 70, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-03-11T15:46:30.717+09:00  WARN 12488 --- [main] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][main][/index] Deprecated attribute {th:include,data-th-include} found in template /index, line 71, col 15. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
