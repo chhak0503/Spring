@@ -11,6 +11,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -192,7 +193,13 @@ class User1RepositoryTest {
     }
     @Test
     public void selectUser1ByUid(){
-        List<User1> user1s = repository.selectUser1ByUid("a101");
-        log.warn(user1s.toString());
+        List<Object[]> user1s = repository.selectUser1ByUid("a101");
+
+        for(Object[] user1 : user1s){
+            log.warn(user1[0].toString());
+            log.warn(user1[1].toString());
+            log.warn(user1[2].toString());
+        }
+
     }
 }
