@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Slf4j
 @AllArgsConstructor
@@ -50,11 +51,23 @@ public class User1Service {
         List<User1> user1s = repository.findAll();
 
         // Entity 리스트를 DTO 리스트로 변환
+        /*
+        // 일반적인 방식
         List<User1DTO> user1DTOs = new ArrayList<>();
 
         for(User1 user1 : user1s){
             user1DTOs.add(user1.toDTO());
         }
+        */
+        List<User1DTO> user1DTOs = user1s.stream()
+                                         .map(entity -> User1DTO.builder()
+                                                .uid(entity.getUid())
+                                                .name(entity.getName())
+                                                .birth(entity.getBirth())
+                                                .hp(entity.getHp())
+                                                .age(entity.getAge())
+                                                .build())
+                                         .collect(Collectors.toList());
 
         return user1DTOs;
     }
