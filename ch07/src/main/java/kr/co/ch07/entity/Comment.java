@@ -2,13 +2,18 @@ package kr.co.ch07.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
+/*
+    양방향 연관관계 설정에서 toString()가 무한 순환 참조 되는
+    실행을 막기위해 해당 엔티티의 참조되는 연관 엔티티를 exclude 속성으로 제외
+*/
+@ToString(exclude = "article")
 @Builder
 @Entity
 @Table(name="board_comment")
@@ -18,13 +23,15 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int cno;
     private String content;
+
+    @CreationTimestamp
     private LocalDateTime rdate;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "writer")
     private User user;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "parent")
     private Article article;
 

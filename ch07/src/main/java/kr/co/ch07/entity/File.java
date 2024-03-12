@@ -6,7 +6,7 @@ import lombok.*;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
+@ToString(exclude = "article")
 @Builder
 @Entity
 @Table(name="board_file")
@@ -18,7 +18,7 @@ public class File {
     private String oName;
     private String sName;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ano")
     private Article article;
 
