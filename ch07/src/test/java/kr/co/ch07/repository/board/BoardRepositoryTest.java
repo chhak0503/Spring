@@ -1,18 +1,16 @@
 package kr.co.ch07.repository.board;
 
 import jakarta.transaction.Transactional;
-import kr.co.ch07.entity.Article;
-import kr.co.ch07.entity.Comment;
-import kr.co.ch07.entity.File;
-import kr.co.ch07.entity.User;
+import kr.co.ch07.entity.board.Article;
+import kr.co.ch07.entity.board.Comment;
+import kr.co.ch07.entity.board.File;
+import kr.co.ch07.entity.board.User;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @Slf4j
 @SpringBootTest
@@ -23,7 +21,7 @@ class BoardRepositoryTest {
     @Autowired private FileRepository fileRepository;
     @Autowired private UserRepository userRepository;
 
-
+    @Test
     public void insertUser(){
         // 작업1 - 사용자 등록
         User user = User.builder()
@@ -87,7 +85,11 @@ class BoardRepositoryTest {
         fileRepository.save(file);
     }
 
-    @Test
+    /*
+        연관관계로 설정된 엔티티를 조회할 때 하나 이상의 SELECT가 실행되기 때문에
+        @Transactional 선언으로 한번의 실행으로 처리해야 no session 에러 방지
+    */
+
     @Transactional
     public void selectArticles(){
 
