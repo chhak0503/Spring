@@ -31,10 +31,11 @@ public class UserService {
 
     public UserDTO selectUser(UserDTO userDTO) {
 
-
         Optional<User> result = repository.findById(userDTO.getUid());
 
         if (!result.isEmpty()) {
+            // 사용자가 존재하면
+
             User user = result.get();
 
             // 비밀번호 검증

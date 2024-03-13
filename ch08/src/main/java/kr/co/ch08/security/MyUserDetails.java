@@ -22,7 +22,6 @@ public class MyUserDetails implements UserDetails {
     // User 엔티티
     private User user;
 
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         // 계정이 갖는 권한 목록

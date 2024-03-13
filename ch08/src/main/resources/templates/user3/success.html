@@ -2,10 +2,10 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>user2::success</title>
+    <title>user3::success</title>
 </head>
 <body>
-    <h3>User2 로그인 성공</h3>
+    <h3>User3 로그인 성공</h3>
     <a th:href="@{/}">메인</a>
 
     <p th:if="${session.sessUser != null}">
@@ -14,11 +14,8 @@
         나이 : <span>[[${session.sessUser.age}]]</span><br>
         휴대폰 : <span>[[${session.sessUser.hp}]]</span><br>
         가입일 : <span>[[${session.sessUser.regDate}]]</span><br>
-        <a th:href="@{/user2/logout}">로그아웃</a>
+        <a th:href="@{/user3/logout}">로그아웃</a>
     </p>
-
-    <a th:href="@{/user2/result}">쿠키확인</a>
-
 
 </body>
 </html>

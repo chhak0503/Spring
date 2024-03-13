@@ -17,7 +17,7 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
 
-        // 인증 설정(로그인)
+        // 로그인 설정
         httpSecurity.formLogin(login -> login
                                         .loginPage("/user1/login")
                                         .defaultSuccessUrl("/user1/success")
@@ -31,15 +31,16 @@ public class SecurityConfig {
                                         .logoutRequestMatcher(new AntPathRequestMatcher("/user1/logout"))
                                         .logoutSuccessUrl("/user1/login?success=200"));
 
-
-
-        // 인가 설정
+        /*
+            인가 설정
+             - Spring Security는 존재하지 않는 요청 주소에 대해 기본적으로 login 페이지로 redirect를 수행
+             - 자원 요청의 추가 인가 처리 확장과 redirect 기본 해제를 위해 마지막에 .anyRequest().permitAll() 설정
+         */
         httpSecurity.authorizeHttpRequests(authorize -> authorize
                                                         .requestMatchers("/").permitAll()
                                                         .requestMatchers("/admin/**").hasAuthority("ADMIN")
                                                         .requestMatchers("/manager/**").hasAnyAuthority("ADMIN", "MANAGER")
-                                                        .requestMatchers("/user1/**").permitAll()
-                                                        .requestMatchers("/user2/**").permitAll());
+                                                        .anyRequest().permitAll());
 
         // 사이트 위변조 방지 설정
         httpSecurity.csrf(CsrfConfigurer::disable);
