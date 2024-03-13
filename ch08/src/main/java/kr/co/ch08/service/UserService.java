@@ -4,11 +4,14 @@ import kr.co.ch08.dto.UserDTO;
 import kr.co.ch08.entity.User;
 import kr.co.ch08.repository.UserRepository;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
+@Slf4j
 @AllArgsConstructor
 @Service
 public class UserService {
@@ -26,7 +29,19 @@ public class UserService {
         repository.save(user);
     }
 
-    public UserDTO selectUser(String uid){
+    public UserDTO selectUser(UserDTO userDTO) {
+
+
+        Optional<User> result = repository.findById(userDTO.getUid());
+
+        if (!result.isEmpty()) {
+            User user = result.get();
+
+            // 비밀번호 검증
+            if (passwordEncoder.matches(userDTO.getPass(), user.getPass())) {
+                return user.toDTO();
+            }
+        }
         return null;
     }
 

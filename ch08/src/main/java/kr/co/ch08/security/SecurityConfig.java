@@ -19,17 +19,17 @@ public class SecurityConfig {
 
         // 인증 설정(로그인)
         httpSecurity.formLogin(login -> login
-                                        .loginPage("/user/login")
-                                        .defaultSuccessUrl("/user/success")
-                                        .failureUrl("/user/login?success=100")
+                                        .loginPage("/user1/login")
+                                        .defaultSuccessUrl("/user1/success")
+                                        .failureUrl("/user1/login?success=100")
                                         .usernameParameter("uid")
                                         .passwordParameter("pass"));
 
         // 로그아웃 설정
         httpSecurity.logout(logout -> logout
                                         .invalidateHttpSession(true)
-                                        .logoutRequestMatcher(new AntPathRequestMatcher("/user/logout"))
-                                        .logoutSuccessUrl("/user/login?success=200"));
+                                        .logoutRequestMatcher(new AntPathRequestMatcher("/user1/logout"))
+                                        .logoutSuccessUrl("/user1/login?success=200"));
 
 
 
@@ -38,7 +38,8 @@ public class SecurityConfig {
                                                         .requestMatchers("/").permitAll()
                                                         .requestMatchers("/admin/**").hasAuthority("ADMIN")
                                                         .requestMatchers("/manager/**").hasAnyAuthority("ADMIN", "MANAGER")
-                                                        .requestMatchers("/user/**").permitAll());
+                                                        .requestMatchers("/user1/**").permitAll()
+                                                        .requestMatchers("/user2/**").permitAll());
 
         // 사이트 위변조 방지 설정
         httpSecurity.csrf(CsrfConfigurer::disable);

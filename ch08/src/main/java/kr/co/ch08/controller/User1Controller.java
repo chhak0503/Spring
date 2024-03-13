@@ -11,30 +11,30 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Slf4j
 @AllArgsConstructor
 @Controller
-public class UserController {
+public class User1Controller {
 
     private final UserService service;
 
 
-    @GetMapping("/user/login")
+    @GetMapping("/user1/login")
     public String login(){
-        return "/user/login";
+        return "/user1/login";
     }
 
-    @GetMapping("/user/register")
+    @GetMapping("/user1/register")
     public String register(){
-        return "/user/register";
+        return "/user1/register";
     }
 
-    @PostMapping("/user/register")
+    @PostMapping("/user1/register")
     public String register(UserDTO userDTO){
         service.insertUser(userDTO);
-        return "redirect:/user/login";
+        return "redirect:/user1/login";
     }
 
-    @GetMapping("/user/success")
+    @GetMapping("/user1/success")
     public String success(){
-        return "/user/success";
+        return "/user1/success";
     }
 
 }
