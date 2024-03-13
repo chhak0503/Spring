@@ -1,4 +1,4 @@
-package kr.co.ch08.config;
+package kr.co.ch08.security;
 
 import kr.co.ch08.security.SecurityUserService;
 import org.springframework.beans.factory.annotation.Autowired;
