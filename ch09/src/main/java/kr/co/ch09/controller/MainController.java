@@ -14,4 +14,16 @@ public class MainController {
     public String index(){
         return "/index";
     }
+
+    @GetMapping("/user1/list")
+    public String user1List(){
+        return "/user1/list";
+    }
+
+    @GetMapping("/user1/register")
+    public String user1Register(){
+        return "/user1/register";
+    }
+
+
 }
