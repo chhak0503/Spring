@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
 @Slf4j
 @RequiredArgsConstructor
 @RestController
@@ -31,7 +32,7 @@ public class User2Controller {
     }
 
     @PostMapping("/user2")
-    public ResponseEntity<?> register(@RequestBody User2DTO user2DTO){
+    public ResponseEntity<?> register(@RequestBody @Validated User2DTO user2DTO){
         return user2Service.insertUser2(user2DTO);
     }
 

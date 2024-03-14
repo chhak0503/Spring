@@ -20,6 +20,8 @@ public class User2 {
     private String uid;
     private String name;
     private String birth;
+    private String email;
+    private int age;
     private String addr;
 
     public User2DTO toDTO(){
@@ -28,6 +30,8 @@ public class User2 {
                 .uid(uid)
                 .name(name)
                 .birth(birth)
+                .email(email)
+                .age(age)
                 .addr(addr)
                 .build();
     }
