@@ -21,6 +21,8 @@ public class User1Service {
     public void insertUser1(User1DTO user1DTO){
         User1 user1 = user1DTO.toEntity();
         user1Repository.save(user1);
+
+
     }
 
     public User1DTO selectUser1(String uid){
@@ -41,11 +43,25 @@ public class User1Service {
                 .collect(Collectors.toList());
     }
 
-    public void updateUser1(User1DTO user1DTO){
+    public User1DTO updateUser1(User1DTO user1DTO){
+
+        // 수정
         user1Repository.save(user1DTO.toEntity());
+        
+        // 수정한 사용자 조회/반환
+        Optional<User1> result = user1Repository.findById(user1DTO.getUid());
+        return result.get().toDTO();
+
     }
     public void deleteUser1(String uid){
         user1Repository.deleteById(uid);
+
+        /*
+        Optional<User1> result = user1Repository.findById(uid);
+        if(result.isPresent()){
+
+        }
+        */
     }
 
 }
