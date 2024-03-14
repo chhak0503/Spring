@@ -39,12 +39,15 @@
 
                 if(e.target.classList == 'modify'){
                     // 수정
+                    const uid = e.target.dataset.uid;
+
+                    // 수정화면 이동
+                    location.href = `/ch09/user1/modify?uid=${uid}`;
 
                 }else if(e.target.classList == 'delete') {
                     // 삭제
                     const tr = e.target.closest('tr');
                     const uid = e.target.dataset.uid;
-                    //alert(uid);
 
                     fetch(`/ch09/user1/${uid}`, {
                         method: 'DELETE'
@@ -61,19 +64,9 @@
                     .catch(err => {
                         console.log(err);
                     });
-
-
-
                 }
-
-
             });
-
-
-        };
-
-
-
+        }
     </script>
 
 </head>
