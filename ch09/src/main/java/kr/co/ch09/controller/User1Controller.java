@@ -72,8 +72,8 @@ public class User1Controller {
 
     @ResponseBody
     @DeleteMapping("/user1/{uid}")
-    public void delete(@PathVariable("uid") String uid){
-        user1Service.deleteUser1(uid);
+    public ResponseEntity delete(@PathVariable("uid") String uid){
+        return user1Service.deleteUser1(uid);
     }
 
 }
