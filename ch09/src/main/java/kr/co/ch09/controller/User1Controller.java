@@ -53,10 +53,12 @@ public class User1Controller {
 
     @ResponseBody
     @PostMapping("/user1")
-    public ResponseEntity<User1DTO> register(@RequestBody User1DTO user1DTO){
+    public ResponseEntity<?> register(@RequestBody User1DTO user1DTO){
 
-        user1Service.insertUser1(user1DTO);
-        return ResponseEntity.ok().body(user1DTO);
+        log.info(user1DTO.toString());
+
+        //user1Service.insertUser1(user1DTO);
+        return ResponseEntity.ok().body("");
     }
 
     @ResponseBody
