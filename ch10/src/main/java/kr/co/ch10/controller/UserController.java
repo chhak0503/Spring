@@ -4,17 +4,20 @@ import kr.co.ch10.dto.UserDTO;
 import kr.co.ch10.entity.User;
 import kr.co.ch10.jwt.JwtProvider;
 import kr.co.ch10.security.MyUserDetails;
+import kr.co.ch10.service.UserService;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Slf4j
@@ -24,6 +27,7 @@ public class UserController {
 
     private final AuthenticationManager authenticationManager;
     private final JwtProvider jwtProvider;
+    private final UserService userService;
 
     @PostMapping("/login")
     public ResponseEntity login(@RequestBody UserDTO userDTO){
@@ -63,12 +67,11 @@ public class UserController {
     }
 
 
-    @GetMapping("/user/{uid}")
-    public void user(@PathVariable("uid") String uid){
-
-        log.info("user...");
+    @GetMapping("/user")
+    public ResponseEntity<List<UserDTO>> list(){
 
 
+        return userService.selectUsers();
     }
 
 

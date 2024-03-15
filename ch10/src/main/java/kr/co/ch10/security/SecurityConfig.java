@@ -40,6 +40,7 @@ public class SecurityConfig {
                                                         .requestMatchers("/").permitAll()
                                                         .requestMatchers("/admin/**").hasAuthority("ADMIN")
                                                         .requestMatchers("/manager/**").hasAnyAuthority("ADMIN", "MANAGER")
+                                                        .requestMatchers("/user/**").authenticated()
                                                         .anyRequest().permitAll());
 
         return httpSecurity.build();

@@ -2,6 +2,7 @@ package kr.co.ch10.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -21,5 +22,9 @@ public class MainController {
     }
 
 
+    @GetMapping("/user/list")
+    public String list(){
+        return "/user/list";
+    }
 
 }
