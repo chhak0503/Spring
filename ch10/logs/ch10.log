@@ -10054,3 +10054,314 @@ io.jsonwebtoken.security.SignatureException: JWT signature does not match locall
 2024-03-15T16:22:00.027+09:00  INFO 20296 --- [ch10] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-03-15T16:22:00.028+09:00  INFO 20296 --- [ch10] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
 2024-03-15T16:22:00.030+09:00  INFO 20296 --- [ch10] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2024-03-15T16:22:01.773+09:00  INFO 22428 --- [ch10] [restartedMain] kr.co.ch10.Ch10Application               : Starting Ch10Application using Java 17.0.9 with PID 22428 (C:\Users\java\Desktop\Workspace\Spring\ch10\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\ch10)
+2024-03-15T16:22:01.775+09:00  INFO 22428 --- [ch10] [restartedMain] kr.co.ch10.Ch10Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T16:22:01.803+09:00  INFO 22428 --- [ch10] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-15T16:22:01.803+09:00  INFO 22428 --- [ch10] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-15T16:22:02.176+09:00  INFO 22428 --- [ch10] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T16:22:02.205+09:00  INFO 22428 --- [ch10] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2024-03-15T16:22:02.512+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T16:22:02.520+09:00  INFO 22428 --- [ch10] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T16:22:02.520+09:00  INFO 22428 --- [ch10] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T16:22:02.548+09:00  INFO 22428 --- [ch10] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch10]   : Initializing Spring embedded WebApplicationContext
+2024-03-15T16:22:02.548+09:00  INFO 22428 --- [ch10] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 744 ms
+2024-03-15T16:22:02.635+09:00  INFO 22428 --- [ch10] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-15T16:22:02.662+09:00  INFO 22428 --- [ch10] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-15T16:22:02.679+09:00  INFO 22428 --- [ch10] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-15T16:22:02.809+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T16:22:02.831+09:00  INFO 22428 --- [ch10] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15T16:22:02.972+09:00  INFO 22428 --- [ch10] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e7913e4
+2024-03-15T16:22:02.973+09:00  INFO 22428 --- [ch10] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15T16:22:03.003+09:00  WARN 22428 --- [ch10] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-15T16:22:03.459+09:00  INFO 22428 --- [ch10] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-15T16:22:03.486+09:00  INFO 22428 --- [ch10] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:22:03.626+09:00  WARN 22428 --- [ch10] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T16:22:03.684+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-15T16:22:03.777+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@414b4bad, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f4bca2d, org.springframework.security.web.context.SecurityContextHolderFilter@72fa8a10, org.springframework.security.web.header.HeaderWriterFilter@6346c030, org.springframework.web.filter.CorsFilter@43607326, org.springframework.security.web.authentication.logout.LogoutFilter@3bf36a12, kr.co.ch10.jwt.JwtAuthenticationFilter@110f0be4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a5edd86, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d581785, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a022c4b, org.springframework.security.web.session.SessionManagementFilter@34bbdab8, org.springframework.security.web.access.ExceptionTranslationFilter@431ee595, org.springframework.security.web.access.intercept.AuthorizationFilter@53e1a7fe]
+2024-03-15T16:22:03.904+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-15T16:22:03.924+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch10'
+2024-03-15T16:22:03.929+09:00  INFO 22428 --- [ch10] [restartedMain] kr.co.ch10.Ch10Application               : Started Ch10Application in 2.395 seconds (process running for 2.709)
+2024-03-15T16:22:55.926+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch10]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T16:22:55.926+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T16:22:55.927+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-15T16:22:55.939+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:22:55.939+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:22:55.939+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:22:55.939+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:23:00.140+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:23:00.140+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:23:00.140+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:23:00.140+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:23:00.544+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:23:00.544+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:23:00.544+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:23:00.544+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:23:00.790+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:23:00.790+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:23:00.790+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:23:00.790+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:23:05.795+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /login
+2024-03-15T16:23:05.795+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:23:05.795+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:23:05.795+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:24:45.340+09:00  INFO 22428 --- [ch10] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (0 additions, 1 deletion, 4 modifications)
+2024-03-15T16:24:45.352+09:00  INFO 22428 --- [ch10] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:24:45.353+09:00  INFO 22428 --- [ch10] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15T16:24:45.357+09:00  INFO 22428 --- [ch10] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15T16:24:45.399+09:00  INFO 22428 --- [ch10] [restartedMain] kr.co.ch10.Ch10Application               : Starting Ch10Application using Java 17.0.9 with PID 22428 (C:\Users\java\Desktop\Workspace\Spring\ch10\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\ch10)
+2024-03-15T16:24:45.399+09:00  INFO 22428 --- [ch10] [restartedMain] kr.co.ch10.Ch10Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T16:24:45.499+09:00  INFO 22428 --- [ch10] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T16:24:45.504+09:00  INFO 22428 --- [ch10] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-03-15T16:24:45.560+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T16:24:45.561+09:00  INFO 22428 --- [ch10] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T16:24:45.561+09:00  INFO 22428 --- [ch10] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T16:24:45.570+09:00  INFO 22428 --- [ch10] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch10]   : Initializing Spring embedded WebApplicationContext
+2024-03-15T16:24:45.570+09:00  INFO 22428 --- [ch10] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 170 ms
+2024-03-15T16:24:45.589+09:00  INFO 22428 --- [ch10] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-15T16:24:45.591+09:00  INFO 22428 --- [ch10] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-15T16:24:45.594+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T16:24:45.594+09:00  INFO 22428 --- [ch10] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-03-15T16:24:45.603+09:00  INFO 22428 --- [ch10] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64f40bc2
+2024-03-15T16:24:45.603+09:00  INFO 22428 --- [ch10] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-03-15T16:24:45.604+09:00  WARN 22428 --- [ch10] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-15T16:24:45.622+09:00  INFO 22428 --- [ch10] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-15T16:24:45.628+09:00  INFO 22428 --- [ch10] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:24:45.664+09:00  WARN 22428 --- [ch10] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T16:24:45.671+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-15T16:24:45.697+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a010a2d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ed64bbc, org.springframework.security.web.context.SecurityContextHolderFilter@3f37c0c8, org.springframework.security.web.header.HeaderWriterFilter@5db1f96d, org.springframework.web.filter.CorsFilter@5d1f7efe, org.springframework.security.web.authentication.logout.LogoutFilter@99a60be, kr.co.ch10.jwt.JwtAuthenticationFilter@5d53e01f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f58f5b7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2df011a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f71d9fa, org.springframework.security.web.session.SessionManagementFilter@1af0ff53, org.springframework.security.web.access.ExceptionTranslationFilter@79c72d14, org.springframework.security.web.access.intercept.AuthorizationFilter@2044110b]
+2024-03-15T16:24:45.728+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-15T16:24:45.734+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch10'
+2024-03-15T16:24:45.736+09:00  INFO 22428 --- [ch10] [restartedMain] kr.co.ch10.Ch10Application               : Started Ch10Application in 0.353 seconds (process running for 164.517)
+2024-03-15T16:24:45.737+09:00  INFO 22428 --- [ch10] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-15T16:24:48.618+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/ch10]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T16:24:48.618+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T16:24:48.619+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-15T16:24:48.621+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /
+2024-03-15T16:24:48.621+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:24:48.621+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:24:48.621+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:24:48.621+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /
+2024-03-15T16:24:48.621+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:24:48.621+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:24:48.621+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:24:53.334+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /login
+2024-03-15T16:24:53.334+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:24:53.334+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:24:53.334+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:24:53.335+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /login
+2024-03-15T16:24:53.335+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:24:53.335+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:24:53.335+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:24:53.387+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.controller.UserController     : login...1 : UserDTO(uid=a101, pass=1234, name=null, age=0, hp=null, role=null, regDate=null)
+2024-03-15T16:24:53.535+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.controller.UserController     : login...2
+2024-03-15T16:24:53.565+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:24:53.566+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:24:53.566+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:24:53.566+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:24:53.566+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:24:53.566+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:24:53.566+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:24:53.566+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:24:53.628+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /user
+2024-03-15T16:24:53.628+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzEwNDg3NDkzLCJleHAiOjE3MTA1NzM4OTMsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.dOEJDKZUwxxwjy2qSntaGLVNvsOMU1iLA5Fmu2k0d5Q
+2024-03-15T16:24:53.628+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 :  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzEwNDg3NDkzLCJleHAiOjE3MTA1NzM4OTMsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.dOEJDKZUwxxwjy2qSntaGLVNvsOMU1iLA5Fmu2k0d5Q
+2024-03-15T16:24:53.628+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...4
+2024-03-15T16:24:53.651+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...5
+2024-03-15T16:24:53.651+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...10
+2024-03-15T16:24:53.652+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:24:53.652+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /user
+2024-03-15T16:24:53.652+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzEwNDg3NDkzLCJleHAiOjE3MTA1NzM4OTMsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.dOEJDKZUwxxwjy2qSntaGLVNvsOMU1iLA5Fmu2k0d5Q
+2024-03-15T16:24:53.652+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 :  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzEwNDg3NDkzLCJleHAiOjE3MTA1NzM4OTMsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.dOEJDKZUwxxwjy2qSntaGLVNvsOMU1iLA5Fmu2k0d5Q
+2024-03-15T16:24:53.652+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...4
+2024-03-15T16:24:53.654+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...5
+2024-03-15T16:24:53.654+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...10
+2024-03-15T16:24:53.655+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:24:56.582+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /
+2024-03-15T16:24:56.582+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:24:56.582+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:24:56.582+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:24:56.583+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /
+2024-03-15T16:24:56.583+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:24:56.584+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:24:56.584+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:25:01.596+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-7] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:25:01.596+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-7] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:25:01.596+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-7] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:25:01.597+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-7] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:25:01.597+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-7] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:25:01.597+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-7] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:25:01.597+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-7] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:25:01.597+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-7] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:25:01.634+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-8] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /user
+2024-03-15T16:25:01.634+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-8] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : Bearer null
+2024-03-15T16:25:01.634+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-8] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 :  null
+2024-03-15T16:25:01.634+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-8] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...4
+2024-03-15T16:25:01.636+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-8] kr.co.ch10.jwt.JwtProvider               : MalformedJwtException...JWT strings must contain exactly 2 period characters. Found: 0
+2024-03-15T16:25:01.637+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-8] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...9
+2024-03-15T16:25:12.800+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-9] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:25:12.800+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-9] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:25:12.800+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-9] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:25:12.800+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-9] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:25:12.800+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-9] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:25:12.800+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-9] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:25:12.800+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-9] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:25:12.800+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-9] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:25:12.831+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-10] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /user
+2024-03-15T16:25:12.831+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-10] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : Bearer null
+2024-03-15T16:25:12.831+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-10] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 :  null
+2024-03-15T16:25:12.831+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-10] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...4
+2024-03-15T16:25:12.832+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-10] kr.co.ch10.jwt.JwtProvider               : MalformedJwtException...JWT strings must contain exactly 2 period characters. Found: 0
+2024-03-15T16:25:12.832+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-10] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...9
+2024-03-15T16:25:13.219+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:25:13.219+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:25:13.219+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:25:13.219+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:25:13.219+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:25:13.219+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:25:13.219+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:25:13.219+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:25:13.250+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /user
+2024-03-15T16:25:13.250+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : Bearer null
+2024-03-15T16:25:13.250+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 :  null
+2024-03-15T16:25:13.250+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...4
+2024-03-15T16:25:13.252+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtProvider               : MalformedJwtException...JWT strings must contain exactly 2 period characters. Found: 0
+2024-03-15T16:25:13.252+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...9
+2024-03-15T16:28:08.912+09:00  INFO 22428 --- [ch10] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2024-03-15T16:28:08.930+09:00  INFO 22428 --- [ch10] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:28:08.931+09:00  INFO 22428 --- [ch10] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-03-15T16:28:08.934+09:00  INFO 22428 --- [ch10] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-03-15T16:28:08.982+09:00  INFO 22428 --- [ch10] [restartedMain] kr.co.ch10.Ch10Application               : Starting Ch10Application using Java 17.0.9 with PID 22428 (C:\Users\java\Desktop\Workspace\Spring\ch10\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\ch10)
+2024-03-15T16:28:08.982+09:00  INFO 22428 --- [ch10] [restartedMain] kr.co.ch10.Ch10Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T16:28:09.073+09:00  INFO 22428 --- [ch10] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T16:28:09.078+09:00  INFO 22428 --- [ch10] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-03-15T16:28:09.120+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T16:28:09.120+09:00  INFO 22428 --- [ch10] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T16:28:09.120+09:00  INFO 22428 --- [ch10] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T16:28:09.128+09:00  INFO 22428 --- [ch10] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch10]   : Initializing Spring embedded WebApplicationContext
+2024-03-15T16:28:09.129+09:00  INFO 22428 --- [ch10] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 146 ms
+2024-03-15T16:28:09.144+09:00  INFO 22428 --- [ch10] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-15T16:28:09.146+09:00  INFO 22428 --- [ch10] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-15T16:28:09.149+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T16:28:09.149+09:00  INFO 22428 --- [ch10] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-03-15T16:28:09.155+09:00  INFO 22428 --- [ch10] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3aabb11c
+2024-03-15T16:28:09.156+09:00  INFO 22428 --- [ch10] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-03-15T16:28:09.156+09:00  WARN 22428 --- [ch10] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-15T16:28:09.173+09:00  INFO 22428 --- [ch10] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-15T16:28:09.178+09:00  INFO 22428 --- [ch10] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:28:09.210+09:00  WARN 22428 --- [ch10] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T16:28:09.215+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-15T16:28:09.235+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44926f6f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3dce65f7, org.springframework.security.web.context.SecurityContextHolderFilter@6ec031bf, org.springframework.security.web.header.HeaderWriterFilter@5e04bf61, org.springframework.web.filter.CorsFilter@1f49fb2a, org.springframework.security.web.authentication.logout.LogoutFilter@1fdcdf3d, kr.co.ch10.jwt.JwtAuthenticationFilter@7bd96a23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b0a5b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7834ed13, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c679b20, org.springframework.security.web.session.SessionManagementFilter@766fc5a4, org.springframework.security.web.access.ExceptionTranslationFilter@153f0450, org.springframework.security.web.access.intercept.AuthorizationFilter@46444616]
+2024-03-15T16:28:09.257+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-15T16:28:09.263+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch10'
+2024-03-15T16:28:09.266+09:00  INFO 22428 --- [ch10] [restartedMain] kr.co.ch10.Ch10Application               : Started Ch10Application in 0.298 seconds (process running for 368.046)
+2024-03-15T16:28:09.267+09:00  INFO 22428 --- [ch10] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-15T16:37:32.900+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch10]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T16:37:32.900+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T16:37:32.901+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-15T16:37:32.903+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:37:32.903+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:37:32.903+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:37:32.903+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:37:32.903+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:37:32.903+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:37:32.903+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:37:32.903+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:37:32.939+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /user
+2024-03-15T16:37:32.939+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : Bearer null
+2024-03-15T16:37:32.939+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 :  null
+2024-03-15T16:37:32.939+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...4
+2024-03-15T16:37:32.943+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtProvider               : MalformedJwtException...JWT strings must contain exactly 2 period characters. Found: 0
+2024-03-15T16:37:32.944+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...9
+2024-03-15T16:37:33.126+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:37:33.126+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:37:33.127+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:37:33.127+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:37:33.127+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:37:33.127+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:37:33.127+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:37:33.127+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:37:33.147+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /user
+2024-03-15T16:37:33.147+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : Bearer null
+2024-03-15T16:37:33.147+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 :  null
+2024-03-15T16:37:33.147+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...4
+2024-03-15T16:37:33.149+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtProvider               : MalformedJwtException...JWT strings must contain exactly 2 period characters. Found: 0
+2024-03-15T16:37:33.149+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...9
+2024-03-15T16:37:33.311+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:37:33.312+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:37:33.312+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:37:33.312+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:37:33.312+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /list
+2024-03-15T16:37:33.312+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:37:33.312+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:37:33.312+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:37:33.339+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /user
+2024-03-15T16:37:33.339+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : Bearer null
+2024-03-15T16:37:33.339+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 :  null
+2024-03-15T16:37:33.339+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...4
+2024-03-15T16:37:33.340+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtProvider               : MalformedJwtException...JWT strings must contain exactly 2 period characters. Found: 0
+2024-03-15T16:37:33.340+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-6] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...9
+2024-03-15T16:37:33.510+09:00  INFO 22428 --- [ch10] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-03-15T16:37:33.519+09:00  INFO 22428 --- [ch10] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:37:33.520+09:00  INFO 22428 --- [ch10] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-03-15T16:37:33.522+09:00  INFO 22428 --- [ch10] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-03-15T16:37:33.563+09:00  INFO 22428 --- [ch10] [restartedMain] kr.co.ch10.Ch10Application               : Starting Ch10Application using Java 17.0.9 with PID 22428 (C:\Users\java\Desktop\Workspace\Spring\ch10\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\ch10)
+2024-03-15T16:37:33.564+09:00  INFO 22428 --- [ch10] [restartedMain] kr.co.ch10.Ch10Application               : No active profile set, falling back to 1 default profile: "default"
+2024-03-15T16:37:33.661+09:00  INFO 22428 --- [ch10] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15T16:37:33.666+09:00  INFO 22428 --- [ch10] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-03-15T16:37:33.715+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-15T16:37:33.715+09:00  INFO 22428 --- [ch10] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15T16:37:33.715+09:00  INFO 22428 --- [ch10] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-15T16:37:33.724+09:00  INFO 22428 --- [ch10] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch10]   : Initializing Spring embedded WebApplicationContext
+2024-03-15T16:37:33.724+09:00  INFO 22428 --- [ch10] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 159 ms
+2024-03-15T16:37:33.741+09:00  INFO 22428 --- [ch10] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-15T16:37:33.743+09:00  INFO 22428 --- [ch10] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-15T16:37:33.746+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-15T16:37:33.746+09:00  INFO 22428 --- [ch10] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-03-15T16:37:33.753+09:00  INFO 22428 --- [ch10] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d234eba
+2024-03-15T16:37:33.753+09:00  INFO 22428 --- [ch10] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-03-15T16:37:33.754+09:00  WARN 22428 --- [ch10] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-15T16:37:33.770+09:00  INFO 22428 --- [ch10] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-15T16:37:33.776+09:00  INFO 22428 --- [ch10] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:37:33.809+09:00  WARN 22428 --- [ch10] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15T16:37:33.815+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-15T16:37:33.842+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76155e3b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12ba13c8, org.springframework.security.web.context.SecurityContextHolderFilter@51c40182, org.springframework.security.web.header.HeaderWriterFilter@653e6bdd, org.springframework.web.filter.CorsFilter@69264a9c, org.springframework.security.web.authentication.logout.LogoutFilter@689ebb13, kr.co.ch10.jwt.JwtAuthenticationFilter@73c10cec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@158df4f5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37b051a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f797029, org.springframework.security.web.session.SessionManagementFilter@3715ba63, org.springframework.security.web.access.ExceptionTranslationFilter@588aad, org.springframework.security.web.access.intercept.AuthorizationFilter@6b4e2662]
+2024-03-15T16:37:33.873+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-15T16:37:33.878+09:00  INFO 22428 --- [ch10] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch10'
+2024-03-15T16:37:33.881+09:00  INFO 22428 --- [ch10] [restartedMain] kr.co.ch10.Ch10Application               : Started Ch10Application in 0.333 seconds (process running for 932.661)
+2024-03-15T16:37:33.881+09:00  INFO 22428 --- [ch10] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-15T16:37:34.081+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch10]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15T16:37:34.081+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15T16:37:34.081+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-15T16:37:34.087+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /login
+2024-03-15T16:37:34.087+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : Bearer null
+2024-03-15T16:37:34.087+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 :  null
+2024-03-15T16:37:34.087+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...4
+2024-03-15T16:37:34.089+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtProvider               : MalformedJwtException...JWT strings must contain exactly 2 period characters. Found: 0
+2024-03-15T16:37:34.089+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-4] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...9
+2024-03-15T16:37:35.176+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /
+2024-03-15T16:37:35.177+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:37:35.177+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:37:35.177+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:37:35.177+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /
+2024-03-15T16:37:35.177+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:37:35.177+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:37:35.177+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-3] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:37:36.543+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /
+2024-03-15T16:37:36.543+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:37:36.543+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:37:36.543+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:37:36.543+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /
+2024-03-15T16:37:36.543+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:37:36.543+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:37:36.543+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-2] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:37:36.767+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /
+2024-03-15T16:37:36.767+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:37:36.767+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:37:36.767+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:37:36.767+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...1 : /
+2024-03-15T16:37:36.767+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...2 : null
+2024-03-15T16:37:36.767+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...3 : null
+2024-03-15T16:37:36.767+09:00  INFO 22428 --- [ch10] [http-nio-8080-exec-5] kr.co.ch10.jwt.JwtAuthenticationFilter   : doFilterInternal...11
+2024-03-15T16:38:24.246+09:00  INFO 22428 --- [ch10] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15T16:38:24.246+09:00  INFO 22428 --- [ch10] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-03-15T16:38:24.249+09:00  INFO 22428 --- [ch10] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.

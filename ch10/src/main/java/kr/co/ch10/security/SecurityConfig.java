@@ -25,7 +25,6 @@ public class SecurityConfig {
     @Autowired
     private JwtProvider jwtProvider;
 
-
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         // 토큰기반 인증 시큐리티 설정
@@ -40,7 +39,6 @@ public class SecurityConfig {
                                                         .requestMatchers("/").permitAll()
                                                         .requestMatchers("/admin/**").hasAuthority("ADMIN")
                                                         .requestMatchers("/manager/**").hasAnyAuthority("ADMIN", "MANAGER")
-                                                        .requestMatchers("/user/**").authenticated()
                                                         .anyRequest().permitAll());
 
         return httpSecurity.build();

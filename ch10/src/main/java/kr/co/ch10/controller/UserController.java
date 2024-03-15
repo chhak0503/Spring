@@ -66,11 +66,17 @@ public class UserController {
         }
     }
 
+    @PostMapping("/logout")
+    public ResponseEntity logout(@RequestBody UserDTO userDTO){
+
+        log.info("login...1 : " + userDTO.toString());
+
+        return null;
+    }
+
 
     @GetMapping("/user")
     public ResponseEntity<List<UserDTO>> list(){
-
-
         return userService.selectUsers();
     }
 
