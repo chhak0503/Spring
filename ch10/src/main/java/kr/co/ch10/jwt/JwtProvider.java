@@ -39,7 +39,9 @@ public class JwtProvider {
 
         // 발급일, 만료일 생성
         Date issuedDate = new Date();
-        Date expireDate = new Date(issuedDate.getTime() + Duration.ofMillis(days).toMillis());
+        Date expireDate = new Date(issuedDate.getTime() + Duration.ofDays(days).toMillis());
+        //Date expireDate = new Date();
+        //expireDate.setHours(expireDate.getHours() + 1);
 
         // 클레임 생성
         Claims claims = Jwts.claims();

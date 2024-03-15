@@ -4,15 +4,15 @@ import kr.co.ch10.dto.UserDTO;
 import kr.co.ch10.entity.User;
 import kr.co.ch10.jwt.JwtProvider;
 import kr.co.ch10.security.MyUserDetails;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -28,27 +28,49 @@ public class UserController {
     @PostMapping("/login")
     public ResponseEntity login(@RequestBody UserDTO userDTO){
 
-        // Security 인증 처리
-        UsernamePasswordAuthenticationToken authToken
-                = new UsernamePasswordAuthenticationToken(userDTO.getUid(), userDTO.getPass());
+        log.info("login...1 : " + userDTO.toString());
 
-        Authentication authentication = authenticationManager.authenticate(authToken);
+        try {
+            // Security 인증 처리
+            UsernamePasswordAuthenticationToken authToken
+                    = new UsernamePasswordAuthenticationToken(userDTO.getUid(), userDTO.getPass());
 
-        // 인증된 사용자 가져오기
-        MyUserDetails userDetails = (MyUserDetails) authentication.getPrincipal();
-        User user = userDetails.getUser();
+            // 사용자 DB 조회
+            Authentication authentication = authenticationManager.authenticate(authToken);
+            log.info("login...2");
 
-        // 토큰 발급(액세스, 리프레쉬)
-        String access  = jwtProvider.createToken(user, 1); // 1일
-        String refresh = jwtProvider.createToken(user, 7); // 7일
+            // 인증된 사용자 가져오기
+            MyUserDetails userDetails = (MyUserDetails) authentication.getPrincipal();
+            User user = userDetails.getUser();
 
-        // 리프레쉬 토큰 DB 저장
+            // 토큰 발급(액세스, 리프레쉬)
+            String access  = jwtProvider.createToken(user, 1); // 1일
+            String refresh = jwtProvider.createToken(user, 7); // 7일
 
-        // 액세스 토큰 클라이언트 전송
-        Map<String, Object> map = new HashMap<>();
-        map.put("grantType", "Bearer");
-        map.put("access", access);
+            // 리프레쉬 토큰 DB 저장
 
-        return ResponseEntity.ok().body(map);
+            // 액세스 토큰 클라이언트 전송
+            Map<String, Object> map = new HashMap<>();
+            map.put("grantType", "Bearer");
+            map.put("access", access);
+
+            return ResponseEntity.ok().body(map);
+
+        }catch (Exception e){
+            log.info("login...3 : " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("user not found");
+        }
     }
+
+
+    @GetMapping("/user/{uid}")
+    public void user(@PathVariable("uid") String uid){
+
+        log.info("user...");
+
+
+    }
+
+
+
 }

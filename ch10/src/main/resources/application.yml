@@ -37,6 +37,11 @@ logging:
         root: info
 
 
+# JWT 설정
+# - secret Key는 HS256 알고리즘으로 암호화/복호화를 하기 위해 256비트보다 커야됨
+# - 영문자 하나의 알파벳은 8비트(1바이트)이므로 32글자 이상이면 됨
+# - https://randomkeygen.com/
+# - https://acte.ltd/utils/randomkeygen
 jwt:
     issuer: chhak0503@gmail.com
     secret: 7xbsKpo5EwrZnDIRu9oIjBD3fnTE4o49
