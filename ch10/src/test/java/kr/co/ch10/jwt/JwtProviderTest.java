@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
-public class JwtProviderTests {
+public class JwtProviderTest {
 
     @Autowired
     private JwtProvider jwtProvider;

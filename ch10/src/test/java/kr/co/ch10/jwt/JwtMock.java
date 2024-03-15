@@ -5,6 +5,8 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Map;
 
+import lombok.Builder;
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -18,11 +20,9 @@ import kr.co.ch10.entity.User;
 
 /**
  * @author chhak
- * @since 
- * @ JWT를 테스트하기 위한 Mocking 객체
- * 
+ *  - JWT를 테스트하기 위한 Mocking 객체
+ *  - @Getter 선언 안되면 build.gradle파일 testCompileOnly, testAnnotationProcessor 알죠?
  */
-
 @Getter
 public class JwtMock {
 	
