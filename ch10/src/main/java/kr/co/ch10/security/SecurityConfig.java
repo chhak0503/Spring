@@ -1,5 +1,8 @@
 package kr.co.ch10.security;
 
+import kr.co.ch10.jwt.JwtAuthenticationFilter;
+import kr.co.ch10.jwt.JwtProvider;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -12,10 +15,16 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 public class SecurityConfig {
+
+
+    @Autowired
+    private JwtProvider jwtProvider;
+
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
@@ -25,6 +34,8 @@ public class SecurityConfig {
                 .httpBasic(HttpBasicConfigurer::disable)    // 기본 HTTP 인증 방식 비활성
                 .formLogin(FormLoginConfigurer::disable)    // 폼 로그인 비활성
                 .sessionManagement(config -> config.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // 세션 비활성
+                // 토큰 검사 필터 등록
+                .addFilterBefore(new JwtAuthenticationFilter(jwtProvider), UsernamePasswordAuthenticationFilter.class)
                 .authorizeHttpRequests(authorize -> authorize
                                                         .requestMatchers("/").permitAll()
                                                         .requestMatchers("/admin/**").hasAuthority("ADMIN")
