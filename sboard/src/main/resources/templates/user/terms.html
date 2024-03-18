@@ -9,6 +9,27 @@
         <title>Register - SB Admin</title>
         <link th:href="@{/css/styles.css}" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script>
+
+            window.onload = function (){
+
+                const agree1 = document.getElementsByName('agree1')[0];
+                const agree2 = document.getElementsByName('agree2')[0];
+                const agree3 = document.getElementsByName('agree3')[0];
+                const btnNext = document.getElementsByClassName('btnNext')[0];
+
+                btnNext.onclick = () => {
+
+                    if(agree1.checked && agree2.checked){
+                        return true;
+                    }else{
+                        alert('이용약관과 개인정보 취급방침은 필수 동의입니다.');
+                        return false;
+                    }
+                }
+            }
+        </script>
+
     </head>
     <body class="bg-primary">
         <div id="layoutAuthentication">
@@ -44,8 +65,8 @@
                                             </div>
 
                                             <div class="text-center mt-4 mb-0">
-                                                <a class="btn btn-secondary" href="">취소</a>
-                                                <a class="btn btn-primary" href="">다음</a>
+                                                <a class="btn btn-secondary btnCancel" th:href="@{/user/login}">취소</a>
+                                                <a class="btn btn-primary btnNext" th:href="@{/user/register}">다음</a>
                                             </div>
 
                                         </form>

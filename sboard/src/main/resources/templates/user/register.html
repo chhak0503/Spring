@@ -17,7 +17,7 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-7">
-                                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                <div class="card shadow-lg border-0 rounded-lg mt-5 mb-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">회원가입</h3></div>
                                     <div class="card-body">
                                         <form>
@@ -27,27 +27,109 @@
                                                         <input class="form-control" id="inputUid" type="text" placeholder="아이디 입력"/>
                                                         <label for="inputUid">아이디 입력</label>
                                                     </div>
+                                                    <div class="valid-feedback">
+                                                        Please choose a username.
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Please choose a username.
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6 ps-0">
-                                                    <button class="btn btn-success">중복확인</button>
-                                                    <div class="alert alert-primary" role="alert">
-                                                        A simple primary alert—check it out!
+                                                <div class="col-md-6">
+                                                    <button type="button" class="btn btn-outline-secondary">중복확인</button>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputPass1" type="password" placeholder="비밀번호 입력"/>
+                                                        <label for="inputPass1">비밀번호 입력</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputPass2" type="password" placeholder="비밀번호 입력 확인"/>
+                                                        <label for="inputPass2">비밀번호 입력 확인</label>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                                <label for="inputEmail">Email address</label>
+
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputName" name="name" type="text" placeholder="이름 입력"/>
+                                                        <label for="inputName">이름 입력</label>
+                                                    </div>
+                                                </div>
                                             </div>
 
-                                            <div class="mt-4 mb-0">
-                                                <div class="d-grid"><a class="btn btn-primary btn-block" href="login.html">Create Account</a></div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputNick" name="nick" type="text" placeholder="별명 입력"/>
+                                                        <label for="inputNick">별명 입력</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button type="button" class="btn btn-outline-secondary">중복확인</button>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputHp" name="hp" type="text" placeholder="휴대폰 입력"/>
+                                                        <label for="inputHp">휴대폰 입력</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button type="button" class="btn btn-outline-secondary">중복확인</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputEmail" name="email" type="text" placeholder="이메일 입력"/>
+                                                        <label for="inputEmail">이메일 입력</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button type="button" class="btn btn-outline-secondary">이메일 인증</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputZip" name="zip" type="text" placeholder="우편번호 검색"/>
+                                                        <label for="inputZip">우편번호 검색</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button type="button" class="btn btn-outline-secondary">우편번호 검색</button>
+                                                    <div class="invalid-feedback">
+                                                        Please choose a username.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="inputAddr1" type="addr1" placeholder="기본주소 입력" />
+                                                <label for="inputAddr1">기본주소</label>
+                                            </div>
+
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="inputAddr2" type="addr2" placeholder="상세주소 입력"/>
+                                                <label for="inputAddr2">상세주소 입력</label>
+                                            </div>
+
+
+                                            <div class="text-center mt-4 mb-0">
+                                                <a class="btn btn-secondary" th:href="@{/user/login}">취소</a>
+                                                <a class="btn btn-primary" th:href="@{/user/register}">회원가입</a>
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="login.html">Have an account? Go to login</a></div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -67,6 +149,24 @@
                         </div>
                     </div>
                 </footer>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
