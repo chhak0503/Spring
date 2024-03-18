@@ -9,7 +9,7 @@ public interface UserMapper {
 
     public TermsDTO selectTerms();
     public void insertUser(UserDTO userDTO);
-    public void selectUser();
+    public int selectCountUser(String uid);
     public void selectUsers();
     public void updateUser();
     public void deleteUser();

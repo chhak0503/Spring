@@ -20,6 +20,10 @@ public class UserService {
         return userMapper.selectTerms();
     }
 
+    public int selectCountUser(String uid) {
+        return userMapper.selectCountUser(uid);
+    }
+
     public void insertUser(UserDTO userDTO){
 
         String encoded = passwordEncoder.encode(userDTO.getPass());
@@ -27,5 +31,6 @@ public class UserService {
 
         userMapper.insertUser(userDTO);
     }
+
 
 }

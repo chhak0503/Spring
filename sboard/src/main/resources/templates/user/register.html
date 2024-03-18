@@ -12,18 +12,45 @@
             window.onload = function (){
 
                 const btnCheckUid = document.getElementById('btnCheckUid');
-                btnCheckUid.onclick = () => {
+                const spinner = btnCheckUid.getElementsByClassName('spinner')[0];
+                const resultUid = document.getElementsByClassName('resultUid')[0];
 
-                    const uid = document.registerForm.uid.value;
-                    const data = fetchData(`/sboard/user/checkUid?uid=${uid}`);
+                    btnCheckUid.onclick = () => {
 
-                    if(data.result > 0){
-                        alert('이미 사용중인 아이디 입니다.');
-                    }else{
-                        alert('사용 가능한 아이디 입니다.');
+                        spinner.classList.remove('d-none');
+
+                        setTimeout(async () => {
+
+                            const uid = document.registerForm.uid;
+                            const data = await fetchData(`/sboard/user/uid/${uid.value}`);
+
+                            if(data.result > 0){
+                                //alert('이미 사용중인 아이디 입니다.');
+                                spinner.classList.add('d-none');
+                                uid.classList.add('is-invalid');
+
+                                resultUid.classList.add('invalid-feedback');
+                                resultUid.innerText = '이미 사용중인 아이디 입니다.';
+
+                            }else{
+                                //alert('사용 가능한 아이디 입니다.');
+                                spinner.classList.add('d-none');
+                                uid.classList.add('is-valid');
+
+                                resultUid.classList.add('valid-feedback');
+                                resultUid.innerText = '사용 가능한 아이디 입니다.';
+
+                            }
+
+                        }, 1000);
+
+
+
+
+
+
+
                     }
-
-                }
 
 
             }
@@ -40,24 +67,15 @@
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <div class="form-floating mb-3 mb-md-0">
-                                        <!--
-                                            .is-valid : 성공
-                                            .is-invalid : 실패
-                                        -->
                                         <input class="form-control" id="inputUid" type="text" name="uid" placeholder="아이디 입력"/>
                                         <label for="inputUid">아이디 입력</label>
                                     </div>
-                                    <div class="valid-feedback">
-                                        Please choose a username.
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        Please choose a username.
-                                    </div>
+                                    <div class="resultUid d-block"></div>
 
                                 </div>
                                 <div class="col-md-6">
                                     <button type="button" class="btn btn-outline-secondary" id="btnCheckUid">
-                                        <span class="spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+                                        <span class="spinner spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
                                         <span class="" role="status">중복확인</span>
                                     </button>
                                 </div>

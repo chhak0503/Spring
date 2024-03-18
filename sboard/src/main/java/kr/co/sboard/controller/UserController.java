@@ -6,10 +6,17 @@ import kr.co.sboard.dto.UserDTO;
 import kr.co.sboard.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -48,5 +55,20 @@ public class UserController {
         userService.insertUser(userDTO);
 
         return "redirect:/user/register?success=200";
+    }
+
+
+    @ResponseBody
+    @GetMapping("/user/uid/{uid}")
+    public ResponseEntity<?> checkUid(@PathVariable("uid") String uid){
+
+        int count = userService.selectCountUser(uid);
+        log.info("count : " + count);
+
+        // Json 생성
+        Map<String, Object> resultMap = new HashMap<>();
+        resultMap.put("result", count);
+
+        return ResponseEntity.ok().body(resultMap);
     }
 }

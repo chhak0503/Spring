@@ -6,7 +6,11 @@
 <mapper namespace="kr.co.sboard.mapper.UserMapper">
 
     <select id="selectTerms" resultType="kr.co.sboard.dto.TermsDTO">
-        select * from `terms`
+        select * from terms
+    </select>
+
+    <select id="selectCountUser" resultType="int">
+        select count(*) from user where uid=#{uid}
     </select>
 
     <insert id="insertUser">
