@@ -20,8 +20,8 @@ public class UserService {
         return userMapper.selectTerms();
     }
 
-    public int selectCountUser(String uid) {
-        return userMapper.selectCountUser(uid);
+    public int selectCountUser(String type, String value) {
+        return userMapper.selectCountUser(type, value);
     }
 
     public void insertUser(UserDTO userDTO){

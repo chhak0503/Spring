@@ -57,12 +57,12 @@ public class UserController {
         return "redirect:/user/register?success=200";
     }
 
-
     @ResponseBody
-    @GetMapping("/user/uid/{uid}")
-    public ResponseEntity<?> checkUid(@PathVariable("uid") String uid){
+    @GetMapping("/user/{type}/{value}")
+    public ResponseEntity<?> checkUser(@PathVariable("type")  String type,
+                                       @PathVariable("value") String value){
 
-        int count = userService.selectCountUser(uid);
+        int count = userService.selectCountUser(type, value);
         log.info("count : " + count);
 
         // Json 생성
@@ -71,4 +71,5 @@ public class UserController {
 
         return ResponseEntity.ok().body(resultMap);
     }
+
 }

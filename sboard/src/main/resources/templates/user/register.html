@@ -2,55 +2,53 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="/layout/userLayout.html">
 
-
-
-
     <div class="container" layout:fragment="content">
 
         <script>
 
             window.onload = function (){
 
-                const btnCheckUid = document.getElementById('btnCheckUid');
-                const spinner = btnCheckUid.getElementsByClassName('spinner')[0];
-                const resultUid = document.getElementsByClassName('resultUid')[0];
+                const btnCheckUsers = document.querySelectorAll('.btnCheckUser');
+                const resultUsers = document.getElementsByClassName('resultUser');
 
-                    btnCheckUid.onclick = () => {
+                for(const [i, btnCheckUser] of btnCheckUsers.entries()){
 
+                    console.log('i : ' + i);
+
+                    // 화살표 함수 쓰면 이벤트 객체 target 또는 this 참조 안됨
+                    btnCheckUser.onclick = function() {
+
+                        const type       = this.dataset.type;
+                        const spinner    = this.getElementsByClassName('spinner')[0];
+                        const resultUser = resultUsers[i];
                         spinner.classList.remove('d-none');
+
+                        console.log('type : ' + type);
 
                         setTimeout(async () => {
 
-                            const uid = document.registerForm.uid;
-                            const data = await fetchData(`/sboard/user/uid/${uid.value}`);
+                            const input = document.registerForm[type];
+                            console.log('value : ' + input.value);
+
+                            const data = await fetchData(`/sboard/user/${type}/${input.value}`);
 
                             if(data.result > 0){
-                                //alert('이미 사용중인 아이디 입니다.');
                                 spinner.classList.add('d-none');
-                                uid.classList.add('is-invalid');
+                                input.classList.add('is-invalid');
 
-                                resultUid.classList.add('invalid-feedback');
-                                resultUid.innerText = '이미 사용중인 아이디 입니다.';
-
+                                resultUser.classList.add('invalid-feedback');
+                                resultUser.innerText = '이미 사용중인 아이디 입니다.';
                             }else{
-                                //alert('사용 가능한 아이디 입니다.');
                                 spinner.classList.add('d-none');
-                                uid.classList.add('is-valid');
+                                input.classList.add('is-valid');
 
-                                resultUid.classList.add('valid-feedback');
-                                resultUid.innerText = '사용 가능한 아이디 입니다.';
-
+                                resultUser.classList.add('valid-feedback');
+                                resultUser.innerText = '사용 가능한 아이디 입니다.';
                             }
-
                         }, 1000);
-
-
-
-
-
-
-
                     }
+                }
+
 
 
             }
@@ -70,11 +68,11 @@
                                         <input class="form-control" id="inputUid" type="text" name="uid" placeholder="아이디 입력"/>
                                         <label for="inputUid">아이디 입력</label>
                                     </div>
-                                    <div class="resultUid d-block"></div>
+                                    <div class="resultUser d-block"></div>
 
                                 </div>
                                 <div class="col-md-6">
-                                    <button type="button" class="btn btn-outline-secondary" id="btnCheckUid">
+                                    <button type="button" class="btn btn-outline-secondary btnCheckUser" data-type="uid">
                                         <span class="spinner spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
                                         <span class="" role="status">중복확인</span>
                                     </button>
@@ -110,9 +108,13 @@
                                         <input class="form-control" id="inputNick" name="nick" type="text" placeholder="별명 입력"/>
                                         <label for="inputNick">별명 입력</label>
                                     </div>
+                                    <div class="resultUser d-block"></div>
                                 </div>
                                 <div class="col-md-6">
-                                    <button type="button" class="btn btn-outline-secondary">중복확인</button>
+                                    <button type="button" class="btn btn-outline-secondary btnCheckUser" data-type="nick">
+                                        <span class="spinner spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+                                        <span class="" role="status">중복확인</span>
+                                    </button>
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -121,9 +123,13 @@
                                         <input class="form-control" id="inputHp" name="hp" type="text" placeholder="휴대폰 입력"/>
                                         <label for="inputHp">휴대폰 입력</label>
                                     </div>
+                                    <div class="resultUser d-block"></div>
                                 </div>
                                 <div class="col-md-6">
-                                    <button type="button" class="btn btn-outline-secondary">중복확인</button>
+                                    <button type="button" class="btn btn-outline-secondary btnCheckUser" data-type="hp">
+                                        <span class="spinner spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+                                        <span class="" role="status">중복확인</span>
+                                    </button>
                                 </div>
                             </div>
 
