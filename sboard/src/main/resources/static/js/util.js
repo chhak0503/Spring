@@ -1,4 +1,3 @@
-
 async function fetchData(url){
 
     try{
@@ -20,3 +19,9 @@ async function fetchData(url){
     }
 }
 
+function showModal(message){
+    const modal = document.getElementById('resultModal');
+    modal.getElementsByClassName('modal-body')[0].innerText = message;
+    const resultModal = new bootstrap.Modal(modal);
+    resultModal.show();
+}
