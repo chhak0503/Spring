@@ -34,7 +34,6 @@ public class MainController {
         User user = userDetails.getUser();
         log.info("user : " + user);
 
-
         // 상단 BuildProperties 주입
         String appName = buildProperties.getName();
         String appVersion = buildProperties.getVersion();
