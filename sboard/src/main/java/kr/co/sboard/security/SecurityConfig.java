@@ -35,7 +35,8 @@ public class SecurityConfig {
              - 자원 요청의 추가 인가 처리 확장과 redirect 기본 해제를 위해 마지막에 .anyRequest().permitAll() 설정
          */
         httpSecurity.authorizeHttpRequests(authorize -> authorize
-                                                        .requestMatchers("/").permitAll()
+                                                        .requestMatchers("/").authenticated()
+                                                        .requestMatchers("/article").authenticated()
                                                         .requestMatchers("/admin/**").hasAuthority("ADMIN")
                                                         .requestMatchers("/manager/**").hasAnyAuthority("ADMIN", "MANAGER")
                                                         .anyRequest().permitAll());
