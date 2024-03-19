@@ -47,22 +47,22 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">게시판</div>
-                            <a class="nav-link" th:href="@{/article/list}">
+                            <a class="nav-link" th:href="@{/article/list(cate=notice)}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 <span>공지사항</span>
                             </a>
 
-                            <a class="nav-link" th:href="@{/article/list}">
+                            <a class="nav-link" th:href="@{/article/list(cate=free)}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 <span>자유게시판</span>
                             </a>
 
-                            <a class="nav-link" th:href="@{/article/list}">
+                            <a class="nav-link" th:href="@{/article/list(cate=faq)}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 <span>자주묻는질문</span>
                             </a>
 
-                            <a class="nav-link" th:href="@{/article/list}">
+                            <a class="nav-link" th:href="@{/article/list(cate=qna)}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 <span>묻고답하기</span>
                             </a>

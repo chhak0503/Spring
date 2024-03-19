@@ -15,4 +15,8 @@ public class ArticleController {
         return "/article/list";
     }
 
+    @GetMapping("/article/write")
+    public String write(){
+        return "/article/write";
+    }
 }
