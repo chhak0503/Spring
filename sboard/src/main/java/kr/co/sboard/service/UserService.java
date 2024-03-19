@@ -65,7 +65,6 @@ public class UserService {
         String content = "<h1>인증코드는 " + code + "입니다.</h1>";
 
         try {
-            message.setSubject(title);
             message.setFrom(new InternetAddress(sender, "보내는 사람", "UTF-8"));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(receiver));
             message.setSubject(title);

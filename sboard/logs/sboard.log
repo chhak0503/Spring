@@ -2214,3 +2214,960 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.mail.javamail.J
 2024-03-19T10:16:17.687+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
 2024-03-19T10:16:17.689+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.29 seconds (process running for 1037.929)
 2024-03-19T10:16:17.690+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:21:26.965+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:21:26.965+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:21:26.967+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-19T10:21:35.753+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-4] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:24:16.440+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:24:16.458+09:00  INFO 19440 --- [sboard] [Thread-71] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:24:16.458+09:00  INFO 19440 --- [sboard] [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2024-03-19T10:24:16.461+09:00  INFO 19440 --- [sboard] [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2024-03-19T10:24:16.514+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:24:16.514+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:24:16.608+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:24:16.611+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:24:16.662+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:24:16.663+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:24:16.663+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:24:16.674+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:24:16.674+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 157 ms
+2024-03-19T10:24:16.691+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:24:16.693+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:24:16.696+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:24:16.697+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2024-03-19T10:24:16.703+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7749928b
+2024-03-19T10:24:16.703+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2024-03-19T10:24:16.703+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:24:16.724+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:24:16.728+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:24:16.784+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:24:16.794+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:24:16.819+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@74d21895, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cd0bb80, org.springframework.security.web.context.SecurityContextHolderFilter@4dac2d2f, org.springframework.security.web.header.HeaderWriterFilter@6e9bc0ac, org.springframework.web.filter.CorsFilter@6e4c63a8, org.springframework.security.web.authentication.logout.LogoutFilter@2dd8d7ce, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22fe1e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1aa79b33, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17c713ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19b1d4ef, org.springframework.security.web.access.ExceptionTranslationFilter@5dda06ec, org.springframework.security.web.access.intercept.AuthorizationFilter@98fc0be]
+2024-03-19T10:24:16.849+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:24:16.855+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:24:16.857+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.355 seconds (process running for 1517.097)
+2024-03-19T10:24:16.858+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:27:53.438+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:27:53.438+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:27:53.439+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:27:54.434+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:27:54.454+09:00  INFO 19440 --- [sboard] [Thread-75] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:27:54.454+09:00  INFO 19440 --- [sboard] [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2024-03-19T10:27:54.457+09:00  INFO 19440 --- [sboard] [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2024-03-19T10:27:54.509+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:27:54.509+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:27:54.602+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:27:54.605+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:27:54.653+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:27:54.653+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:27:54.653+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:27:54.661+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:27:54.661+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 149 ms
+2024-03-19T10:27:54.677+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:27:54.679+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:27:54.682+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:27:54.682+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2024-03-19T10:27:54.691+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-20 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fb51790
+2024-03-19T10:27:54.691+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2024-03-19T10:27:54.691+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:27:54.711+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:27:54.716+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:27:54.757+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:27:54.765+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:27:54.789+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7279a580, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67e7ebeb, org.springframework.security.web.context.SecurityContextHolderFilter@13746f39, org.springframework.security.web.header.HeaderWriterFilter@1ea0133e, org.springframework.web.filter.CorsFilter@431e30ad, org.springframework.security.web.authentication.logout.LogoutFilter@343ee936, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@395d89a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4014a769, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fee5009, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5269ec8, org.springframework.security.web.access.ExceptionTranslationFilter@2013eac8, org.springframework.security.web.access.intercept.AuthorizationFilter@273c384e]
+2024-03-19T10:27:54.818+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:27:54.823+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:27:54.826+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.33 seconds (process running for 1735.066)
+2024-03-19T10:27:54.826+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:27:58.926+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:27:58.926+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:27:58.927+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:27:58.932+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:28:02.277+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-2] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:28:08.996+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-7] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:28:16.896+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-3] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:28:29.944+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-7] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:28:45.441+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-4] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:28:54.861+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-5] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:29:02.767+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-6] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:29:02.767+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-6] kr.co.sboard.controller.UserController   : email : 1999millenni@naver.com
+2024-03-19T10:29:02.767+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-6] kr.co.sboard.service.UserService         : sender : chhak0503@gmail.com
+2024-03-19T10:29:37.973+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] kr.co.sboard.controller.UserController   : UserDTO(uid=a1001, pass=!q2w3e4r, name=김유신, nick=유신a1001, email=1999millenni@naver.com, hp=010-1234-1001, role=null, zip=47258, addr1=null, addr2=null, regip=0:0:0:0:0:0:0:1, sms=null, regDate=null, leaveDate=null)
+2024-03-19T10:30:38.249+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:30:38.260+09:00  INFO 19440 --- [sboard] [Thread-79] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:30:38.260+09:00  INFO 19440 --- [sboard] [Thread-79] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2024-03-19T10:30:38.262+09:00  INFO 19440 --- [sboard] [Thread-79] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2024-03-19T10:30:38.321+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:30:38.321+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:30:38.422+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:30:38.425+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:30:38.471+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:30:38.471+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:30:38.471+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:30:38.481+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:30:38.481+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 159 ms
+2024-03-19T10:30:38.497+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:30:38.499+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:30:38.502+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:30:38.503+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2024-03-19T10:30:38.508+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69b15fd
+2024-03-19T10:30:38.509+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2024-03-19T10:30:38.510+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:30:38.526+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:30:38.530+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:30:38.567+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:30:38.574+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:30:38.595+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@36694cb5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1da692c5, org.springframework.security.web.context.SecurityContextHolderFilter@2d4135dc, org.springframework.security.web.header.HeaderWriterFilter@716e9d72, org.springframework.web.filter.CorsFilter@6e11c780, org.springframework.security.web.authentication.logout.LogoutFilter@3cf4a375, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ec0a491, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3414c65c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1dbf11b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cb54187, org.springframework.security.web.access.ExceptionTranslationFilter@549fb3ae, org.springframework.security.web.access.intercept.AuthorizationFilter@2f1fad28]
+2024-03-19T10:30:38.616+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:30:38.622+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:30:38.624+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.318 seconds (process running for 1898.863)
+2024-03-19T10:30:38.624+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:36:42.550+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:36:42.550+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:36:42.551+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:36:43.282+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:36:43.298+09:00  INFO 19440 --- [sboard] [Thread-83] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:36:43.298+09:00  INFO 19440 --- [sboard] [Thread-83] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2024-03-19T10:36:43.301+09:00  INFO 19440 --- [sboard] [Thread-83] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2024-03-19T10:36:43.354+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:36:43.354+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:36:43.451+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:36:43.455+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:36:43.517+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:36:43.517+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:36:43.517+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:36:43.526+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:36:43.526+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 169 ms
+2024-03-19T10:36:43.544+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:36:43.546+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:36:43.549+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:36:43.550+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2024-03-19T10:36:43.558+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-22 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3adfa2e
+2024-03-19T10:36:43.558+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2024-03-19T10:36:43.559+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:36:43.573+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:36:43.577+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:36:43.617+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:36:43.625+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:36:43.648+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a59d274, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@326a0e97, org.springframework.security.web.context.SecurityContextHolderFilter@7fa2b4c0, org.springframework.security.web.header.HeaderWriterFilter@534dd8f0, org.springframework.web.filter.CorsFilter@35a2a537, org.springframework.security.web.authentication.logout.LogoutFilter@36e433e4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@402e465f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d3adbbe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ac18fa8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46ea29a9, org.springframework.security.web.access.ExceptionTranslationFilter@3b4181b0, org.springframework.security.web.access.intercept.AuthorizationFilter@4877699b]
+2024-03-19T10:36:43.676+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:36:43.682+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:36:43.684+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.343 seconds (process running for 2263.924)
+2024-03-19T10:36:43.685+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:37:06.532+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:37:06.532+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:37:06.533+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:38:05.926+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:38:05.937+09:00  INFO 19440 --- [sboard] [Thread-87] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:38:05.937+09:00  INFO 19440 --- [sboard] [Thread-87] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2024-03-19T10:38:05.939+09:00  INFO 19440 --- [sboard] [Thread-87] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
+2024-03-19T10:38:05.987+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:38:05.987+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:38:06.076+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:38:06.079+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:38:06.119+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:38:06.120+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:38:06.120+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:38:06.129+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:38:06.129+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 141 ms
+2024-03-19T10:38:06.144+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:38:06.146+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:38:06.149+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:38:06.149+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Starting...
+2024-03-19T10:38:06.155+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-23 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e891f7b
+2024-03-19T10:38:06.155+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Start completed.
+2024-03-19T10:38:06.155+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:38:06.170+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:38:06.173+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:38:06.211+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:38:06.218+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:38:06.238+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f03dcc8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34fb6418, org.springframework.security.web.context.SecurityContextHolderFilter@53784505, org.springframework.security.web.header.HeaderWriterFilter@5f5a4371, org.springframework.web.filter.CorsFilter@5ec9044a, org.springframework.security.web.authentication.logout.LogoutFilter@4b367fcd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e14aeee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ba9dfca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@573bd9a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@117a4ade, org.springframework.security.web.access.ExceptionTranslationFilter@6281cfe6, org.springframework.security.web.access.intercept.AuthorizationFilter@573319f4]
+2024-03-19T10:38:06.262+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:38:06.267+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:38:06.269+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.293 seconds (process running for 2346.509)
+2024-03-19T10:38:06.270+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:38:21.420+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:38:21.421+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:38:21.421+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-19T10:40:08.603+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:40:08.612+09:00  INFO 19440 --- [sboard] [Thread-91] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:40:08.612+09:00  INFO 19440 --- [sboard] [Thread-91] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
+2024-03-19T10:40:08.614+09:00  INFO 19440 --- [sboard] [Thread-91] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
+2024-03-19T10:40:08.667+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:40:08.667+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:40:08.754+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:40:08.758+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:40:08.798+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:40:08.798+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:40:08.798+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:40:08.806+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:40:08.807+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 138 ms
+2024-03-19T10:40:08.821+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:40:08.823+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:40:08.826+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:40:08.826+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Starting...
+2024-03-19T10:40:08.831+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-24 - Added connection com.mysql.cj.jdbc.ConnectionImpl@784e0cb0
+2024-03-19T10:40:08.831+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Start completed.
+2024-03-19T10:40:08.832+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:40:08.847+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:40:08.851+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:40:08.887+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:40:08.894+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:40:08.915+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73e2fd44, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18b88f7, org.springframework.security.web.context.SecurityContextHolderFilter@13ac140e, org.springframework.security.web.header.HeaderWriterFilter@1517380e, org.springframework.web.filter.CorsFilter@1f51c35c, org.springframework.security.web.authentication.logout.LogoutFilter@591b9aa2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65e88bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44c37b2d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69f7801, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24fe2bf0, org.springframework.security.web.access.ExceptionTranslationFilter@7e779d21, org.springframework.security.web.access.intercept.AuthorizationFilter@7629a7a9]
+2024-03-19T10:40:08.936+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:40:08.941+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:40:08.943+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.287 seconds (process running for 2469.183)
+2024-03-19T10:40:08.944+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:43:46.686+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:43:46.687+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:43:46.687+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-19T10:43:48.086+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:43:48.105+09:00  INFO 19440 --- [sboard] [Thread-95] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:43:48.105+09:00  INFO 19440 --- [sboard] [Thread-95] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown initiated...
+2024-03-19T10:43:48.108+09:00  INFO 19440 --- [sboard] [Thread-95] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown completed.
+2024-03-19T10:43:48.163+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:43:48.163+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:43:48.253+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:43:48.256+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-03-19T10:43:48.302+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:43:48.303+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:43:48.303+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:43:48.312+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:43:48.312+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 147 ms
+2024-03-19T10:43:48.327+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:43:48.329+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:43:48.332+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:43:48.332+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Starting...
+2024-03-19T10:43:48.338+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-25 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79307f63
+2024-03-19T10:43:48.338+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Start completed.
+2024-03-19T10:43:48.339+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:43:48.354+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:43:48.358+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:43:48.396+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:43:48.404+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:43:48.426+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@138a0f3a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60ab5c7, org.springframework.security.web.context.SecurityContextHolderFilter@4dc91ffc, org.springframework.security.web.header.HeaderWriterFilter@16c137cb, org.springframework.web.filter.CorsFilter@43c927f9, org.springframework.security.web.authentication.logout.LogoutFilter@4f808539, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@74d86c4d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50d8e46c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@423f3b87, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a783a4e, org.springframework.security.web.access.ExceptionTranslationFilter@2ff7b040, org.springframework.security.web.access.intercept.AuthorizationFilter@2407a5f3]
+2024-03-19T10:43:48.453+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:43:48.458+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:43:48.460+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.309 seconds (process running for 2688.7)
+2024-03-19T10:43:48.460+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:47:06.156+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:47:06.156+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:47:06.157+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:47:07.581+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:47:07.599+09:00  INFO 19440 --- [sboard] [Thread-99] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:47:07.600+09:00  INFO 19440 --- [sboard] [Thread-99] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown initiated...
+2024-03-19T10:47:07.602+09:00  INFO 19440 --- [sboard] [Thread-99] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown completed.
+2024-03-19T10:47:07.659+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:47:07.659+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:47:07.754+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:47:07.758+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:47:07.807+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:47:07.807+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:47:07.807+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:47:07.818+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:47:07.818+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 156 ms
+2024-03-19T10:47:07.834+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:47:07.837+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:47:07.839+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:47:07.840+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Starting...
+2024-03-19T10:47:07.848+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-26 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e4384ec
+2024-03-19T10:47:07.848+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Start completed.
+2024-03-19T10:47:07.849+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:47:07.862+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:47:07.865+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:47:07.904+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:47:07.912+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:47:07.935+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a64d9e2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71cc956b, org.springframework.security.web.context.SecurityContextHolderFilter@17ba032, org.springframework.security.web.header.HeaderWriterFilter@7a413d7c, org.springframework.web.filter.CorsFilter@4031851, org.springframework.security.web.authentication.logout.LogoutFilter@59c8ff45, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ed5788, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e7fa1d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7545872b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@85b6d96, org.springframework.security.web.access.ExceptionTranslationFilter@28f468bc, org.springframework.security.web.access.intercept.AuthorizationFilter@705f8176]
+2024-03-19T10:47:07.966+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:47:07.971+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:47:07.973+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.326 seconds (process running for 2888.214)
+2024-03-19T10:47:07.974+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:48:42.101+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:48:42.101+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:48:42.102+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:48:43.362+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:48:43.380+09:00  INFO 19440 --- [sboard] [Thread-103] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:48:43.380+09:00  INFO 19440 --- [sboard] [Thread-103] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown initiated...
+2024-03-19T10:48:43.385+09:00  INFO 19440 --- [sboard] [Thread-103] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown completed.
+2024-03-19T10:48:43.440+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:48:43.440+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:48:43.527+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:48:43.531+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-03-19T10:48:43.570+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:48:43.570+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:48:43.570+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:48:43.580+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:48:43.580+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 139 ms
+2024-03-19T10:48:43.595+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:48:43.597+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:48:43.600+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:48:43.600+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Starting...
+2024-03-19T10:48:43.605+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-27 - Added connection com.mysql.cj.jdbc.ConnectionImpl@622fdf32
+2024-03-19T10:48:43.605+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Start completed.
+2024-03-19T10:48:43.606+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:48:43.620+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:48:43.623+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:48:43.658+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:48:43.665+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:48:43.684+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46fcc857, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@daefe03, org.springframework.security.web.context.SecurityContextHolderFilter@42fbc552, org.springframework.security.web.header.HeaderWriterFilter@7de75d3e, org.springframework.web.filter.CorsFilter@150abc7f, org.springframework.security.web.authentication.logout.LogoutFilter@38a728cc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4da0c72c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ea56aee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63a317a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31fb1207, org.springframework.security.web.access.ExceptionTranslationFilter@16556dc6, org.springframework.security.web.access.intercept.AuthorizationFilter@471c6930]
+2024-03-19T10:48:43.706+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:48:43.711+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:48:43.713+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.284 seconds (process running for 2983.953)
+2024-03-19T10:48:43.713+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:48:56.069+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:48:56.069+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:48:56.070+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:48:56.075+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:49:15.828+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:49:15.844+09:00  INFO 19440 --- [sboard] [Thread-107] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:49:15.844+09:00  INFO 19440 --- [sboard] [Thread-107] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown initiated...
+2024-03-19T10:49:15.847+09:00  INFO 19440 --- [sboard] [Thread-107] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown completed.
+2024-03-19T10:49:15.899+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:49:15.899+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:49:15.995+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:49:15.999+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:49:16.042+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:49:16.042+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:49:16.042+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:49:16.051+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:49:16.051+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 151 ms
+2024-03-19T10:49:16.066+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:49:16.068+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:49:16.071+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:49:16.071+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Starting...
+2024-03-19T10:49:16.076+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-28 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20259dab
+2024-03-19T10:49:16.076+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Start completed.
+2024-03-19T10:49:16.077+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:49:16.094+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:49:16.097+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:49:16.134+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:49:16.140+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:49:16.162+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@62663517, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58952c, org.springframework.security.web.context.SecurityContextHolderFilter@665774c3, org.springframework.security.web.header.HeaderWriterFilter@2c264446, org.springframework.web.filter.CorsFilter@851376e, org.springframework.security.web.authentication.logout.LogoutFilter@595a4c72, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2418c887, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fb840ee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a6cb23c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47a64b32, org.springframework.security.web.access.ExceptionTranslationFilter@1148ca1, org.springframework.security.web.access.intercept.AuthorizationFilter@69d4cd83]
+2024-03-19T10:49:16.184+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:49:16.190+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:49:16.192+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.304 seconds (process running for 3016.432)
+2024-03-19T10:49:16.193+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:49:20.521+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:49:20.521+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:49:20.522+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:49:20.527+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:49:51.101+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-10] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:50:07.600+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:50:07.619+09:00  INFO 19440 --- [sboard] [Thread-111] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:50:07.619+09:00  INFO 19440 --- [sboard] [Thread-111] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown initiated...
+2024-03-19T10:50:07.624+09:00  INFO 19440 --- [sboard] [Thread-111] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Shutdown completed.
+2024-03-19T10:50:07.678+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:50:07.678+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:50:07.769+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:50:07.773+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:50:07.817+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:50:07.817+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:50:07.817+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:50:07.827+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:50:07.828+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 148 ms
+2024-03-19T10:50:07.842+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:50:07.844+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:50:07.847+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:50:07.847+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Starting...
+2024-03-19T10:50:07.852+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-29 - Added connection com.mysql.cj.jdbc.ConnectionImpl@181ee8
+2024-03-19T10:50:07.852+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Start completed.
+2024-03-19T10:50:07.853+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:50:07.873+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:50:07.877+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:50:07.913+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:50:07.920+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:50:07.941+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@345314ce, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fef2e25, org.springframework.security.web.context.SecurityContextHolderFilter@1853acb8, org.springframework.security.web.header.HeaderWriterFilter@2e92ce9a, org.springframework.web.filter.CorsFilter@46766eb0, org.springframework.security.web.authentication.logout.LogoutFilter@36d4047a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d6ccb7a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a343ae0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bb9b121, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75ee4edb, org.springframework.security.web.access.ExceptionTranslationFilter@dff906f, org.springframework.security.web.access.intercept.AuthorizationFilter@22b22336]
+2024-03-19T10:50:07.964+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:50:07.969+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:50:07.971+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.304 seconds (process running for 3068.211)
+2024-03-19T10:50:07.972+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:50:10.252+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:50:10.252+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:50:10.253+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:50:10.257+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:51:21.082+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:51:21.100+09:00  INFO 19440 --- [sboard] [Thread-115] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:51:21.101+09:00  INFO 19440 --- [sboard] [Thread-115] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown initiated...
+2024-03-19T10:51:21.103+09:00  INFO 19440 --- [sboard] [Thread-115] com.zaxxer.hikari.HikariDataSource       : HikariPool-29 - Shutdown completed.
+2024-03-19T10:51:21.164+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:51:21.164+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:51:21.258+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:51:21.261+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:51:21.312+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:51:21.312+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:51:21.312+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:51:21.322+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:51:21.322+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 157 ms
+2024-03-19T10:51:21.337+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:51:21.338+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:51:21.341+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:51:21.342+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Starting...
+2024-03-19T10:51:21.347+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-30 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3cd2edb0
+2024-03-19T10:51:21.347+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Start completed.
+2024-03-19T10:51:21.348+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:51:21.360+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:51:21.364+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:51:21.400+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:51:21.407+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:51:21.426+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@11f784bb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b27e26d, org.springframework.security.web.context.SecurityContextHolderFilter@3bd4cda4, org.springframework.security.web.header.HeaderWriterFilter@4d18c725, org.springframework.web.filter.CorsFilter@510fdcce, org.springframework.security.web.authentication.logout.LogoutFilter@4d6f7907, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7abc1ec6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a33bae6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b61e2e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@454d7e10, org.springframework.security.web.access.ExceptionTranslationFilter@6192162f, org.springframework.security.web.access.intercept.AuthorizationFilter@27666611]
+2024-03-19T10:51:21.447+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:51:21.452+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:51:21.454+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.302 seconds (process running for 3141.694)
+2024-03-19T10:51:21.455+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:51:24.866+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:51:24.866+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:51:24.867+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:51:24.872+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T10:53:54.566+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 18 class path changes (0 additions, 0 deletions, 18 modifications)
+2024-03-19T10:53:54.575+09:00  INFO 19440 --- [sboard] [Thread-119] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:53:54.576+09:00  INFO 19440 --- [sboard] [Thread-119] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown initiated...
+2024-03-19T10:53:54.578+09:00  INFO 19440 --- [sboard] [Thread-119] com.zaxxer.hikari.HikariDataSource       : HikariPool-30 - Shutdown completed.
+2024-03-19T10:53:54.631+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:53:54.631+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:53:54.717+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:53:54.720+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-03-19T10:53:54.759+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:53:54.760+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:53:54.760+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:53:54.769+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:53:54.769+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 138 ms
+2024-03-19T10:53:54.783+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:53:54.785+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:53:54.788+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:53:54.788+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Starting...
+2024-03-19T10:53:54.793+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-31 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b924ca9
+2024-03-19T10:53:54.794+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Start completed.
+2024-03-19T10:53:54.794+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:53:54.806+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:53:54.809+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:53:54.847+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:53:54.853+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:53:54.873+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ca6631a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60129a7, org.springframework.security.web.context.SecurityContextHolderFilter@655be693, org.springframework.security.web.header.HeaderWriterFilter@415ad989, org.springframework.web.filter.CorsFilter@3406bdd2, org.springframework.security.web.authentication.logout.LogoutFilter@69571372, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d90697, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c0cfd22, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44030777, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70833541, org.springframework.security.web.access.ExceptionTranslationFilter@6fa4fc68, org.springframework.security.web.access.intercept.AuthorizationFilter@1d3b3f4c]
+2024-03-19T10:53:54.895+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:53:54.900+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:53:54.902+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.282 seconds (process running for 3295.142)
+2024-03-19T10:53:54.903+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:56:10.507+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:56:10.507+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:56:10.508+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:56:11.359+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:56:11.377+09:00  INFO 19440 --- [sboard] [Thread-123] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:56:11.377+09:00  INFO 19440 --- [sboard] [Thread-123] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown initiated...
+2024-03-19T10:56:11.379+09:00  INFO 19440 --- [sboard] [Thread-123] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown completed.
+2024-03-19T10:56:11.435+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:56:11.435+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:56:11.524+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:56:11.527+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:56:11.570+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:56:11.571+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:56:11.571+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:56:11.582+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:56:11.582+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 146 ms
+2024-03-19T10:56:11.603+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:56:11.605+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:56:11.609+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:56:11.609+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Starting...
+2024-03-19T10:56:11.615+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-32 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78d7aaa1
+2024-03-19T10:56:11.615+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Start completed.
+2024-03-19T10:56:11.615+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:56:11.630+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:56:11.634+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:56:11.676+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:56:11.682+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:56:11.703+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@658bea5e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67f9df2c, org.springframework.security.web.context.SecurityContextHolderFilter@33d0b11b, org.springframework.security.web.header.HeaderWriterFilter@cd23ba1, org.springframework.web.filter.CorsFilter@68420b14, org.springframework.security.web.authentication.logout.LogoutFilter@ad026ec, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@62bc198a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cd49a16, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21ac28ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c40c6a2, org.springframework.security.web.access.ExceptionTranslationFilter@67e15e9c, org.springframework.security.web.access.intercept.AuthorizationFilter@6e674638]
+2024-03-19T10:56:11.726+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:56:11.731+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:56:11.733+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.31 seconds (process running for 3431.973)
+2024-03-19T10:56:11.734+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:59:12.582+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:59:12.582+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:59:12.583+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:59:13.158+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:59:13.169+09:00  INFO 19440 --- [sboard] [Thread-127] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:59:13.169+09:00  INFO 19440 --- [sboard] [Thread-127] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Shutdown initiated...
+2024-03-19T10:59:13.170+09:00  INFO 19440 --- [sboard] [Thread-127] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Shutdown completed.
+2024-03-19T10:59:13.223+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:59:13.223+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:59:13.315+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:59:13.318+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:59:13.363+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:59:13.363+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:59:13.363+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:59:13.374+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:59:13.374+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 151 ms
+2024-03-19T10:59:13.391+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:59:13.393+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:59:13.395+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:59:13.396+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Starting...
+2024-03-19T10:59:13.401+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-33 - Added connection com.mysql.cj.jdbc.ConnectionImpl@504f1108
+2024-03-19T10:59:13.401+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Start completed.
+2024-03-19T10:59:13.401+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:59:13.414+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:59:13.418+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:59:13.455+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:59:13.461+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:59:13.482+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@179b1d75, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@536b6e3e, org.springframework.security.web.context.SecurityContextHolderFilter@3964da60, org.springframework.security.web.header.HeaderWriterFilter@700370e1, org.springframework.web.filter.CorsFilter@7ffe8e8, org.springframework.security.web.authentication.logout.LogoutFilter@7e48947f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@395fbd6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b219e2d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a0f0821, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e322b2f, org.springframework.security.web.access.ExceptionTranslationFilter@38ef2008, org.springframework.security.web.access.intercept.AuthorizationFilter@2d4a8fcf]
+2024-03-19T10:59:13.507+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:59:13.512+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:59:13.514+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.303 seconds (process running for 3613.754)
+2024-03-19T10:59:13.514+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:59:34.779+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:59:34.779+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:59:34.780+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T10:59:35.392+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T10:59:35.410+09:00  INFO 19440 --- [sboard] [Thread-131] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:59:35.410+09:00  INFO 19440 --- [sboard] [Thread-131] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Shutdown initiated...
+2024-03-19T10:59:35.414+09:00  INFO 19440 --- [sboard] [Thread-131] com.zaxxer.hikari.HikariDataSource       : HikariPool-33 - Shutdown completed.
+2024-03-19T10:59:35.473+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T10:59:35.473+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T10:59:35.562+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T10:59:35.565+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T10:59:35.607+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T10:59:35.607+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T10:59:35.607+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T10:59:35.617+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T10:59:35.617+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 143 ms
+2024-03-19T10:59:35.632+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T10:59:35.634+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T10:59:35.638+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T10:59:35.639+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-34 - Starting...
+2024-03-19T10:59:35.644+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-34 - Added connection com.mysql.cj.jdbc.ConnectionImpl@513b2674
+2024-03-19T10:59:35.644+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-34 - Start completed.
+2024-03-19T10:59:35.645+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T10:59:35.658+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T10:59:35.661+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T10:59:35.699+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T10:59:35.706+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T10:59:35.727+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2af2a011, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@490075c2, org.springframework.security.web.context.SecurityContextHolderFilter@2b2bda95, org.springframework.security.web.header.HeaderWriterFilter@1c01a5a7, org.springframework.web.filter.CorsFilter@285f46f, org.springframework.security.web.authentication.logout.LogoutFilter@7b72e414, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a9b315c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@173ad254, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f45cafe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@211eb249, org.springframework.security.web.access.ExceptionTranslationFilter@7f9efd30, org.springframework.security.web.access.intercept.AuthorizationFilter@464cbe88]
+2024-03-19T10:59:35.749+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T10:59:35.755+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T10:59:35.758+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.296 seconds (process running for 3635.997)
+2024-03-19T10:59:35.758+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T10:59:35.911+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T10:59:35.911+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T10:59:35.912+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T11:02:38.121+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T11:02:38.141+09:00  INFO 19440 --- [sboard] [Thread-135] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:02:38.142+09:00  INFO 19440 --- [sboard] [Thread-135] com.zaxxer.hikari.HikariDataSource       : HikariPool-34 - Shutdown initiated...
+2024-03-19T11:02:38.144+09:00  INFO 19440 --- [sboard] [Thread-135] com.zaxxer.hikari.HikariDataSource       : HikariPool-34 - Shutdown completed.
+2024-03-19T11:02:38.200+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T11:02:38.200+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T11:02:38.293+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T11:02:38.297+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T11:02:38.352+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T11:02:38.352+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T11:02:38.352+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T11:02:38.364+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T11:02:38.364+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 163 ms
+2024-03-19T11:02:38.380+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T11:02:38.382+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T11:02:38.385+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T11:02:38.386+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-35 - Starting...
+2024-03-19T11:02:38.392+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-35 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19676aac
+2024-03-19T11:02:38.392+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-35 - Start completed.
+2024-03-19T11:02:38.392+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T11:02:38.405+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T11:02:38.409+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:02:38.448+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T11:02:38.455+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T11:02:38.475+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@416d3c03, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d10991a, org.springframework.security.web.context.SecurityContextHolderFilter@3cc716de, org.springframework.security.web.header.HeaderWriterFilter@36797cbe, org.springframework.web.filter.CorsFilter@35a5a9a7, org.springframework.security.web.authentication.logout.LogoutFilter@255dfef9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e444cb8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b62041e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cc9665f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53c3f667, org.springframework.security.web.access.ExceptionTranslationFilter@f8307fa, org.springframework.security.web.access.intercept.AuthorizationFilter@b0db1ad]
+2024-03-19T11:02:38.497+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T11:02:38.503+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T11:02:38.505+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.315 seconds (process running for 3818.745)
+2024-03-19T11:02:38.506+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T11:02:46.872+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T11:02:46.872+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T11:02:46.873+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T11:03:00.359+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T11:03:00.369+09:00  INFO 19440 --- [sboard] [Thread-139] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:03:00.369+09:00  INFO 19440 --- [sboard] [Thread-139] com.zaxxer.hikari.HikariDataSource       : HikariPool-35 - Shutdown initiated...
+2024-03-19T11:03:00.370+09:00  INFO 19440 --- [sboard] [Thread-139] com.zaxxer.hikari.HikariDataSource       : HikariPool-35 - Shutdown completed.
+2024-03-19T11:03:00.439+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T11:03:00.439+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T11:03:00.549+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T11:03:00.553+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T11:03:00.598+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T11:03:00.598+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T11:03:00.598+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T11:03:00.608+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T11:03:00.608+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 167 ms
+2024-03-19T11:03:00.625+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T11:03:00.627+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T11:03:00.631+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T11:03:00.631+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-36 - Starting...
+2024-03-19T11:03:00.637+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-36 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76d3f7fe
+2024-03-19T11:03:00.637+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-36 - Start completed.
+2024-03-19T11:03:00.637+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T11:03:00.652+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T11:03:00.656+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:03:00.696+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T11:03:00.703+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T11:03:00.725+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77483384, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7003c621, org.springframework.security.web.context.SecurityContextHolderFilter@516238a2, org.springframework.security.web.header.HeaderWriterFilter@51437c62, org.springframework.web.filter.CorsFilter@22a63db, org.springframework.security.web.authentication.logout.LogoutFilter@30c8fd19, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1c336ffb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c4e0338, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a45a7d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bf9274b, org.springframework.security.web.access.ExceptionTranslationFilter@24384ab3, org.springframework.security.web.access.intercept.AuthorizationFilter@1f26ab]
+2024-03-19T11:03:00.747+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T11:03:00.753+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T11:03:00.755+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.336 seconds (process running for 3840.995)
+2024-03-19T11:03:00.755+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T11:03:03.489+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T11:03:03.489+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T11:03:03.490+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T11:03:03.494+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T11:08:13.836+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T11:08:13.849+09:00  INFO 19440 --- [sboard] [Thread-143] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:08:13.849+09:00  INFO 19440 --- [sboard] [Thread-143] com.zaxxer.hikari.HikariDataSource       : HikariPool-36 - Shutdown initiated...
+2024-03-19T11:08:13.851+09:00  INFO 19440 --- [sboard] [Thread-143] com.zaxxer.hikari.HikariDataSource       : HikariPool-36 - Shutdown completed.
+2024-03-19T11:08:13.908+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T11:08:13.908+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T11:08:14.006+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T11:08:14.009+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T11:08:14.057+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T11:08:14.057+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T11:08:14.057+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T11:08:14.068+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T11:08:14.068+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 160 ms
+2024-03-19T11:08:14.084+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T11:08:14.086+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T11:08:14.089+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T11:08:14.089+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Starting...
+2024-03-19T11:08:14.096+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-37 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13501af1
+2024-03-19T11:08:14.096+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Start completed.
+2024-03-19T11:08:14.097+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T11:08:14.114+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T11:08:14.117+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:08:14.160+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T11:08:14.168+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T11:08:14.189+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d0e8b00, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23c4e908, org.springframework.security.web.context.SecurityContextHolderFilter@50c97576, org.springframework.security.web.header.HeaderWriterFilter@7f5b2157, org.springframework.web.filter.CorsFilter@64e50a93, org.springframework.security.web.authentication.logout.LogoutFilter@6e75534e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1dfed64, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64717682, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@537b28ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57519dca, org.springframework.security.web.access.ExceptionTranslationFilter@3b418f9e, org.springframework.security.web.access.intercept.AuthorizationFilter@19a55459]
+2024-03-19T11:08:14.214+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T11:08:14.219+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T11:08:14.221+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.326 seconds (process running for 4154.461)
+2024-03-19T11:08:14.222+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T11:09:50.370+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T11:09:50.392+09:00  INFO 19440 --- [sboard] [Thread-147] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:09:50.393+09:00  INFO 19440 --- [sboard] [Thread-147] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Shutdown initiated...
+2024-03-19T11:09:50.395+09:00  INFO 19440 --- [sboard] [Thread-147] com.zaxxer.hikari.HikariDataSource       : HikariPool-37 - Shutdown completed.
+2024-03-19T11:09:50.451+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T11:09:50.451+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T11:09:50.538+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T11:09:50.541+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-03-19T11:09:50.580+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T11:09:50.581+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T11:09:50.581+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T11:09:50.589+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T11:09:50.589+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 137 ms
+2024-03-19T11:09:50.604+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T11:09:50.605+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T11:09:50.608+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T11:09:50.609+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-38 - Starting...
+2024-03-19T11:09:50.614+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-38 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9666792
+2024-03-19T11:09:50.614+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-38 - Start completed.
+2024-03-19T11:09:50.614+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T11:09:50.626+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T11:09:50.630+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:09:50.667+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T11:09:50.674+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T11:09:50.693+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51f35c27, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52bee867, org.springframework.security.web.context.SecurityContextHolderFilter@72cb27bf, org.springframework.security.web.header.HeaderWriterFilter@7737d313, org.springframework.web.filter.CorsFilter@37b104b6, org.springframework.security.web.authentication.logout.LogoutFilter@2cbde0b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@73ce000e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d279a76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60700a1f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d8fb678, org.springframework.security.web.access.ExceptionTranslationFilter@3563033e, org.springframework.security.web.access.intercept.AuthorizationFilter@d94e018]
+2024-03-19T11:09:50.714+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T11:09:50.719+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T11:09:50.722+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.281 seconds (process running for 4250.961)
+2024-03-19T11:09:50.722+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T11:14:13.405+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T11:14:13.406+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T11:14:13.407+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-19T11:14:14.546+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T11:14:14.557+09:00  INFO 19440 --- [sboard] [Thread-151] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:14:14.557+09:00  INFO 19440 --- [sboard] [Thread-151] com.zaxxer.hikari.HikariDataSource       : HikariPool-38 - Shutdown initiated...
+2024-03-19T11:14:14.558+09:00  INFO 19440 --- [sboard] [Thread-151] com.zaxxer.hikari.HikariDataSource       : HikariPool-38 - Shutdown completed.
+2024-03-19T11:14:14.614+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T11:14:14.614+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T11:14:14.722+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T11:14:14.725+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T11:14:14.775+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T11:14:14.776+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T11:14:14.776+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T11:14:14.785+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T11:14:14.786+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 169 ms
+2024-03-19T11:14:14.803+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T11:14:14.806+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T11:14:14.809+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T11:14:14.809+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-39 - Starting...
+2024-03-19T11:14:14.818+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-39 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f258ab
+2024-03-19T11:14:14.818+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-39 - Start completed.
+2024-03-19T11:14:14.818+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T11:14:14.831+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T11:14:14.835+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:14:14.880+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T11:14:14.888+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T11:14:14.910+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5bfce0ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d79fe04, org.springframework.security.web.context.SecurityContextHolderFilter@498edfea, org.springframework.security.web.header.HeaderWriterFilter@25cd32cd, org.springframework.web.filter.CorsFilter@78208b7d, org.springframework.security.web.authentication.logout.LogoutFilter@6e7c42b8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38f3e4f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15851a64, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@204ed2f4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e166bc5, org.springframework.security.web.access.ExceptionTranslationFilter@415e9414, org.springframework.security.web.access.intercept.AuthorizationFilter@7c8f47e3]
+2024-03-19T11:14:14.938+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T11:14:14.944+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T11:14:14.946+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.346 seconds (process running for 4515.186)
+2024-03-19T11:14:14.946+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T11:14:19.593+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T11:14:19.593+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T11:14:19.594+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-19T11:14:19.599+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-2] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T11:14:38.213+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T11:14:38.213+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] kr.co.sboard.controller.UserController   : email : chhak0503@gmail.com
+2024-03-19T11:14:38.213+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] kr.co.sboard.service.UserService         : sender : chhak0503@gmail.com
+2024-03-19T11:16:24.676+09:00 ERROR 19440 --- [sboard] [http-nio-8080-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-5] Exception processing template "/user/register": Error resolving template [/user/register], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/user/register], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-03-19T11:16:24.685+09:00 ERROR 19440 --- [sboard] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/sboard] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/user/register], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/user/register], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.2.jar:6.2.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-03-19T11:16:25.751+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 17 class path changes (0 additions, 0 deletions, 17 modifications)
+2024-03-19T11:16:25.765+09:00  INFO 19440 --- [sboard] [Thread-155] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:16:25.765+09:00  INFO 19440 --- [sboard] [Thread-155] com.zaxxer.hikari.HikariDataSource       : HikariPool-39 - Shutdown initiated...
+2024-03-19T11:16:25.768+09:00  INFO 19440 --- [sboard] [Thread-155] com.zaxxer.hikari.HikariDataSource       : HikariPool-39 - Shutdown completed.
+2024-03-19T11:16:25.824+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T11:16:25.825+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T11:16:25.920+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T11:16:25.924+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-03-19T11:16:25.966+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T11:16:25.967+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T11:16:25.967+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T11:16:25.976+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T11:16:25.976+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 151 ms
+2024-03-19T11:16:25.993+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T11:16:25.995+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T11:16:25.998+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T11:16:25.998+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-40 - Starting...
+2024-03-19T11:16:26.004+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-40 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a6eb74d
+2024-03-19T11:16:26.004+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-40 - Start completed.
+2024-03-19T11:16:26.005+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T11:16:26.018+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T11:16:26.022+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:16:26.061+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T11:16:26.067+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T11:16:26.087+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4999c803, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b12ebc2, org.springframework.security.web.context.SecurityContextHolderFilter@68cba159, org.springframework.security.web.header.HeaderWriterFilter@70617571, org.springframework.web.filter.CorsFilter@205be854, org.springframework.security.web.authentication.logout.LogoutFilter@6d3b212c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@f43bb41, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67b0b547, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23feb1e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2062195e, org.springframework.security.web.access.ExceptionTranslationFilter@5d83a45, org.springframework.security.web.access.intercept.AuthorizationFilter@7d1fa4cd]
+2024-03-19T11:16:26.110+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T11:16:26.115+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T11:16:26.117+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.305 seconds (process running for 4646.357)
+2024-03-19T11:16:26.118+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-03-19T11:16:26.237+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-19T11:16:26.237+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-19T11:16:26.237+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-03-19T11:16:39.441+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-10] kr.co.sboard.controller.UserController   : count : 1
+2024-03-19T11:16:48.135+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-3] kr.co.sboard.controller.UserController   : count : 0
+2024-03-19T11:16:48.135+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-3] kr.co.sboard.controller.UserController   : email : chhak0503@naver.com
+2024-03-19T11:16:48.136+09:00  INFO 19440 --- [sboard] [http-nio-8080-exec-3] kr.co.sboard.service.UserService         : sender : chhak0503@gmail.com
+2024-03-19T11:17:27.850+09:00  INFO 19440 --- [sboard] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 16 class path changes (0 additions, 0 deletions, 16 modifications)
+2024-03-19T11:17:27.866+09:00  INFO 19440 --- [sboard] [Thread-159] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:17:27.866+09:00  INFO 19440 --- [sboard] [Thread-159] com.zaxxer.hikari.HikariDataSource       : HikariPool-40 - Shutdown initiated...
+2024-03-19T11:17:27.869+09:00  INFO 19440 --- [sboard] [Thread-159] com.zaxxer.hikari.HikariDataSource       : HikariPool-40 - Shutdown completed.
+2024-03-19T11:17:27.928+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.9 with PID 19440 (C:\Users\java\Desktop\Workspace\Spring\sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\sboard)
+2024-03-19T11:17:27.928+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-03-19T11:17:28.016+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-19T11:17:28.019+09:00  INFO 19440 --- [sboard] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2024-03-19T11:17:28.059+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-19T11:17:28.059+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-19T11:17:28.059+09:00  INFO 19440 --- [sboard] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-19T11:17:28.068+09:00  INFO 19440 --- [sboard] [restartedMain] o.a.c.c.C.[.[localhost].[/sboard]        : Initializing Spring embedded WebApplicationContext
+2024-03-19T11:17:28.068+09:00  INFO 19440 --- [sboard] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 139 ms
+2024-03-19T11:17:28.082+09:00  INFO 19440 --- [sboard] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-19T11:17:28.084+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-19T11:17:28.087+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-19T11:17:28.087+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-41 - Starting...
+2024-03-19T11:17:28.092+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-41 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b027ec7
+2024-03-19T11:17:28.092+09:00  INFO 19440 --- [sboard] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-41 - Start completed.
+2024-03-19T11:17:28.092+09:00  WARN 19440 --- [sboard] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-19T11:17:28.104+09:00  INFO 19440 --- [sboard] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-19T11:17:28.107+09:00  INFO 19440 --- [sboard] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-19T11:17:28.143+09:00  WARN 19440 --- [sboard] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-19T11:17:28.150+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-03-19T11:17:28.170+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4854beb7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@567a145d, org.springframework.security.web.context.SecurityContextHolderFilter@1fc2506f, org.springframework.security.web.header.HeaderWriterFilter@4a21745, org.springframework.web.filter.CorsFilter@407e6e7e, org.springframework.security.web.authentication.logout.LogoutFilter@370d9020, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@666f1be3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f43de1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ecddc9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ef06e0e, org.springframework.security.web.access.ExceptionTranslationFilter@394b149c, org.springframework.security.web.access.intercept.AuthorizationFilter@1383b077]
+2024-03-19T11:17:28.191+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-19T11:17:28.196+09:00  INFO 19440 --- [sboard] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/sboard'
+2024-03-19T11:17:28.198+09:00  INFO 19440 --- [sboard] [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 0.281 seconds (process running for 4708.437)
+2024-03-19T11:17:28.198+09:00  INFO 19440 --- [sboard] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
