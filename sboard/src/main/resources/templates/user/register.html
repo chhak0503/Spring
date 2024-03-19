@@ -206,17 +206,18 @@
                 }
 
                 // 이메일 유효성 검사
+                const divEmailCode = document.getElementById('divEmailCode');
+                const inputEmail = document.getElementById('inputEmail');
                 const btnCheckEmail = document.getElementById('btnCheckEmail');
                 const resultEmail = document.getElementById('resultEmail');
 
                 btnCheckEmail.onclick = function(){
 
-                    const inputEmail = document.registerForm.email;
-                    const value = document.registerForm.email.value;
+                    const type       = this.dataset.type;
                     const spinner = this.getElementsByClassName('spinner')[0];
 
                     // 유효성 검사
-                    if(!value.match(reEmail)){
+                    if(!inputEmail.value.match(reEmail)){
                         inputEmail.classList.add('is-invalid');
                         resultEmail.classList.add('invalid-feedback');
                         resultEmail.innerText = '이메일 형식이 맞지 않습니다.';
@@ -224,10 +225,55 @@
                         return;
                     }
 
-                    // 일단 여기서 상태값 true 차후 이메일 인증코드 발급 및 중복체크 추가 예정
+                    spinner.classList.remove('d-none');
+
+                    // 이메일 인증코드 발급 및 중복체크 추가 예정
+                    setTimeout(async () => {
+
+                        // 인증코드 입력 필드 활성화
+                        spinner.classList.add('d-none');
+                        divEmailCode.classList.remove('d-none');
+
+                        console.log('type : ' + type);
+                        console.log('inputEmail value : ' + inputEmail.value);
+
+                        const data = await fetchData(`/sboard/user/${type}/${inputEmail.value}`);
+                        console.log('data : ' + data.result);
+
+                        if(data.result > 0){
+                            inputEmail.classList.add('is-invalid');
+                            resultHp.classList.add('invalid-feedback');
+                            resultHp.innerText = '이미 사용중인 이메일 입니다.';
+                            isEmailOk = false;
+                        }
+
+                    }, 1000);
+
                     isEmailOk = true;
                 }
 
+                // 이메일 인증코드 확인
+                const btnCheckEmailCode = document.getElementById('btnCheckEmailCode');
+                const inputEmailCode = document.getElementById('inputEmailCode');
+
+                btnCheckEmailCode.onclick = async function (){
+                    const data = await fetchData(`/sboard/email/${inputEmailCode.value}`);
+
+                    if(!data.result){
+                        inputEmail.classList.add('is-invalid');
+                        inputEmailCode.classList.add('is-invalid');
+                        resultEmail.classList.add('invalid-feedback');
+                        resultEmail.innerText = '인증코드가 일치하지 않습니다.';
+                        isEmailOk = false;
+                    }else{
+                        inputEmail.classList.add('is-valid');
+                        inputEmailCode.classList.add('is-valid');
+                        resultEmail.classList.add('valid-feedback');
+                        resultEmail.innerText = '이메일이 인증되었습니다.';
+                        isEmailOk = true;
+                    }
+
+                }
 
                 // 최종 유효성 검사 확인
                 document.registerForm.onsubmit = function (){
@@ -361,6 +407,22 @@
                                     <button type="button" class="btn btn-outline-secondary" id="btnCheckEmail" data-type="email">
                                         <span class="spinner spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
                                         <span class="" role="status">이메일 인증</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="divEmailCode" class="row mb-3 d-none">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3 mb-md-0">
+                                        <input class="form-control" id="inputEmailCode" name="code" type="text" placeholder="이메일 인증코드 입력"/>
+                                        <label for="inputEmail">이메일 인증코드 입력</label>
+                                    </div>
+                                    <div id="resultEmailCode" class="d-block"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-outline-secondary" id="btnCheckEmailCode" data-type="email">
+                                        <span class="spinner spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+                                        <span class="" role="status">인증코드 확인</span>
                                     </button>
                                 </div>
                             </div>
