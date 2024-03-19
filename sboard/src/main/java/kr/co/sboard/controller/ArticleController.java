@@ -33,7 +33,10 @@ public class ArticleController {
 
     @PostMapping("/article/write")
     public String write(HttpServletRequest req, ArticleDTO articleDTO){
-
+        /*
+            글작성을 테스트할 때는 로그인해야하기 때문에
+            SecurityConfig 인가 설정 수정할 것
+        */
         String regip = req.getRemoteAddr();
         articleDTO.setRegip(regip);
 
