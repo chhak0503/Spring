@@ -58,8 +58,6 @@ public class UserController {
         return "redirect:/user/register?success=200";
     }
 
-
-
     @ResponseBody
     @GetMapping("/user/{type}/{value}")
     public ResponseEntity<?> checkUser(HttpSession session,
@@ -102,8 +100,5 @@ public class UserController {
 
             return ResponseEntity.ok().body(resultMap);
         }
-
-
     }
-
 }

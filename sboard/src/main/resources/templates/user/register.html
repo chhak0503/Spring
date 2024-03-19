@@ -3,6 +3,7 @@
       layout:decorate="/layout/userLayout.html">
 
     <div class="container" layout:fragment="content">
+        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
         <script>
             //유효성 검사에 사용할 상태변수
             let isUidOk   = false;
@@ -272,7 +273,13 @@
                         resultEmail.innerText = '이메일이 인증되었습니다.';
                         isEmailOk = true;
                     }
+                }
 
+                // 우편번호 주소검색
+                // 다음 우편번호 API 스크립트 상단 추가, postcode 함수 util.js 파일 추가
+                const inputZip = document.getElementById('inputZip');
+                inputZip.onclick = function (){
+                    postcode();
                 }
 
                 // 최종 유효성 검사 확인
@@ -312,8 +319,6 @@
                     return true;
                 }
             }
-
-
         </script>
 
         <div class="row justify-content-center">
@@ -430,20 +435,14 @@
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <div class="form-floating mb-3 mb-md-0">
-                                        <input class="form-control" id="inputZip" name="zip" type="text" placeholder="우편번호 검색"/>
+                                        <input class="form-control" id="inputZip" name="zip" type="text" readonly placeholder="우편번호 검색"/>
                                         <label for="inputZip">우편번호 검색</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <button type="button" class="btn btn-outline-secondary">우편번호 검색</button>
-                                    <div class="invalid-feedback">
-                                        Please choose a username.
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="inputAddr1" type="addr1" placeholder="기본주소 입력" />
+                                <input class="form-control" id="inputAddr1" type="addr1" readonly placeholder="기본주소 입력" />
                                 <label for="inputAddr1">기본주소</label>
                             </div>
 
