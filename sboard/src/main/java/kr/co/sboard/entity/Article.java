@@ -24,19 +24,18 @@ public class Article {
     private String cate;
     private String title;
     private String content;
+    //private String writer;
+
     private int file;
     private int hit;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "writer")
-    private User user;
-
     private String regip;
 
     @CreationTimestamp
     private LocalDateTime rdate;
 
-
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "writer")
+    private User user;
 
 
 }

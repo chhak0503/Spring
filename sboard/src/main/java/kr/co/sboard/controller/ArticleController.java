@@ -57,4 +57,11 @@ public class ArticleController {
 
         return "redirect:/article/list";
     }
+
+    @GetMapping("/article/view")
+    public String view(){
+        return "/article/view";
+    }
+
+
 }

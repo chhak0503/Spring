@@ -32,5 +32,4 @@ public class ArticleDTO {
 
     private UserDTO user;
 
-
 }
