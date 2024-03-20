@@ -2,6 +2,8 @@ package kr.co.sboard.service;
 
 import kr.co.sboard.dto.ArticleDTO;
 import kr.co.sboard.dto.FileDTO;
+import kr.co.sboard.dto.PageRequestDTO;
+import kr.co.sboard.dto.PageResponseDTO;
 import kr.co.sboard.entity.Article;
 import kr.co.sboard.entity.File;
 import kr.co.sboard.repository.ArticleRepository;
@@ -10,6 +12,9 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -30,13 +35,24 @@ public class ArticleService {
     // RootConfig Bean 생성/등록
     private final ModelMapper modelMapper;
 
-    public List<ArticleDTO> findByParentAndCate(int parent, String cate){
+    public PageResponseDTO findByParentAndCate(PageRequestDTO pageRequestDTO){
 
-        List<Article> articles = articleRepository.findByParentAndCate(parent, cate);
+        Pageable pageable = pageRequestDTO.getPageable("no");
 
-        return articles.stream()
-                        .map(entity -> modelMapper.map(entity, ArticleDTO.class))
-                        .toList();
+        Page<Article> pageArticle = articleRepository.findByParentAndCate(0, pageRequestDTO.getCate(), pageable);
+
+
+        List<ArticleDTO> dtoList = pageArticle.getContent().stream()
+                                    .map(entity -> modelMapper.map(entity, ArticleDTO.class))
+                                    .toList();
+
+        int total = (int) pageArticle.getTotalElements();
+
+        return PageResponseDTO.builder()
+                        .pageRequestDTO(pageRequestDTO)
+                        .dtoList(dtoList)
+                        .total(total)
+                        .build();
     }
 
 

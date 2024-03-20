@@ -2,6 +2,8 @@ package kr.co.sboard.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import kr.co.sboard.dto.ArticleDTO;
+import kr.co.sboard.dto.PageRequestDTO;
+import kr.co.sboard.dto.PageResponseDTO;
 import kr.co.sboard.service.ArticleService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -25,10 +27,12 @@ public class ArticleController {
          - modelAttribute("cate", cate)와 동일
     */
     @GetMapping("/article/list")
-    public String list(@ModelAttribute("cate") String cate, Model model){
+    public String list(Model model, PageRequestDTO pageRequestDTO){
 
-        List<ArticleDTO> articles = articleService.findByParentAndCate(0, cate);
-        model.addAttribute("articles", articles);
+        PageResponseDTO pageResponseDTO = articleService.findByParentAndCate(pageRequestDTO);
+        log.info("pageResponseDTO : " + pageResponseDTO);
+
+        model.addAttribute(pageResponseDTO);
 
         return "/article/list";
     }
