@@ -2,6 +2,7 @@ package kr.co.sboard.dto;
 
 import jakarta.mail.Multipart;
 import kr.co.sboard.entity.Article;
+import kr.co.sboard.entity.File;
 import lombok.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -31,5 +32,6 @@ public class ArticleDTO {
     private List<MultipartFile> files;
 
     private UserDTO user;
+    private List<FileDTO> fileList;
 
 }

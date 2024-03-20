@@ -5,14 +5,17 @@ import kr.co.sboard.dto.ArticleDTO;
 import kr.co.sboard.dto.PageRequestDTO;
 import kr.co.sboard.dto.PageResponseDTO;
 import kr.co.sboard.service.ArticleService;
+import kr.co.sboard.service.FileService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.io.IOException;
 import java.util.List;
 
 @Slf4j
@@ -21,6 +24,7 @@ import java.util.List;
 public class ArticleController {
 
     private final ArticleService articleService;
+    private final FileService fileService;
 
     /*
         @ModelAttribute("cate")
@@ -65,6 +69,11 @@ public class ArticleController {
         model.addAttribute(articleDTO);
 
         return "/article/view";
+    }
+
+    @GetMapping("/article/fileDownload")
+    public ResponseEntity<?> fileDownload(int fno) {
+        return fileService.fileDownload(fno);
     }
 
 

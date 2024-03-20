@@ -42,10 +42,9 @@ public class Article {
     @CreationTimestamp
     private LocalDateTime rdate;
 
-    /*
-    @OneToMany(mappedBy = "article")
-    private List<File> files;
-    */
+    @OneToMany(mappedBy = "ano")
+    private List<File> fileList;
+
 
 
 }

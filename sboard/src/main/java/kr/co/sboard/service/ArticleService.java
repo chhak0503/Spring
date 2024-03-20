@@ -59,12 +59,17 @@ public class ArticleService {
     public ArticleDTO findById(int no){
 
         Optional<Article> optArticle = articleRepository.findById(no);
+        log.info("findById...1");
 
         ArticleDTO articleDTO = null;
 
         if(optArticle.isPresent()){
+            log.info("findById...2");
             Article article = optArticle.get();
+
+            log.info("findById...3 : " + article.toString());
             articleDTO = modelMapper.map(article, ArticleDTO.class);
+            log.info("findById...4");
         }
 
         log.info("articleDTO : " + articleDTO.toString());

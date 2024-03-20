@@ -2,20 +2,36 @@ package kr.co.sboard.service;
 
 import kr.co.sboard.dto.ArticleDTO;
 import kr.co.sboard.dto.FileDTO;
+import kr.co.sboard.repository.FileRepository;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.ContentDisposition;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Slf4j
+@RequiredArgsConstructor
 @Service
 public class FileService {
+
+    private final FileRepository fileRepository;
 
     @Value("${file.upload.path}")
     private String fileUploadPath;
@@ -70,4 +86,27 @@ public class FileService {
         return files;
     }
 
+    public ResponseEntity<?> fileDownload(int fno)  {
+
+        kr.co.sboard.entity.File file = fileRepository.findById(fno).get();
+
+        try {
+            Path path = Paths.get(fileUploadPath + file.getSName());
+            String contentType = Files.probeContentType(path);
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentDisposition(
+                    ContentDisposition.builder("attachment")
+                            .filename(file.getOName(), StandardCharsets.UTF_8).build());
+
+            headers.add(HttpHeaders.CONTENT_TYPE, contentType);
+            Resource resource = new InputStreamResource(Files.newInputStream(path));
+
+            return new ResponseEntity<>(resource, headers, HttpStatus.OK);
+
+        }catch (IOException e){
+            log.error("fileDownload : " + e.getMessage());
+            return new ResponseEntity<>(null, null, HttpStatus.NOT_FOUND);
+        }
+    }
 }
