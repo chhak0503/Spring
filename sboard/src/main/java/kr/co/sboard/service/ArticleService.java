@@ -30,9 +30,19 @@ public class ArticleService {
     // RootConfig Bean 생성/등록
     private final ModelMapper modelMapper;
 
+    public List<ArticleDTO> findByParentAndCate(int parent, String cate){
+
+        List<Article> articles = articleRepository.findByParentAndCate(parent, cate);
+
+        return articles.stream()
+                        .map(entity -> modelMapper.map(entity, ArticleDTO.class))
+                        .toList();
+    }
+
 
     public void insertArticle(ArticleDTO articleDTO){
 
+        // 파일 첨부 처리
         // 파일 첨부 처리
         List<FileDTO> files = fileService.fileUpload(articleDTO);
 
@@ -49,7 +59,7 @@ public class ArticleService {
 
         // 파일 insert
         for(FileDTO fileDTO : files){
-            
+
             fileDTO.setAno(savedArticle.getNo());
 
             // 여기서 에러나는데 RootConfig 파일에 ModelMapper 설정에 이거 추가 -> .setMatchingStrategy(MatchingStrategies.STRICT)
@@ -57,7 +67,6 @@ public class ArticleService {
 
             fileRepository.save(file);
         }
-
     }
 
     // fileUpload 메서드 -> FileService 클래스로 이동

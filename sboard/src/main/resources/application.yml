@@ -20,6 +20,7 @@ server:
 spring:
     application:
         name: sboard
+        version: 0.0.1-SNAPSHOT
 
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver

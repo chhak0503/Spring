@@ -30,7 +30,7 @@ public class ArticleDTO {
 
     private List<MultipartFile> files;
 
-
+    private UserDTO user;
 
 
 }

@@ -26,7 +26,11 @@ public class Article {
     private String content;
     private int file;
     private int hit;
-    private String writer;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "writer")
+    private User user;
+
     private String regip;
 
     @CreationTimestamp
