@@ -3,8 +3,10 @@ package kr.co.sboard.entity;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.Formula;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @ToString
@@ -19,23 +21,31 @@ public class Article {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int no;
 
-    private int parent;
-    private int comment;
+    @Builder.Default
+    private int parent = 0;
+
+    @Builder.Default
+    private int comment = 0;
     private String cate;
     private String title;
     private String content;
-    //private String writer;
+    private String writer;
 
-    private int file;
-    private int hit;
+    @Builder.Default
+    private int file = 0;
+
+    @Builder.Default
+    private int hit = 0;
+
     private String regip;
 
     @CreationTimestamp
     private LocalDateTime rdate;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "writer")
-    private User user;
+    /*
+    @OneToMany(mappedBy = "article")
+    private List<File> files;
+    */
 
 
 }

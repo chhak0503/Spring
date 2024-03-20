@@ -21,6 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Slf4j
@@ -53,6 +54,22 @@ public class ArticleService {
                         .dtoList(dtoList)
                         .total(total)
                         .build();
+    }
+
+    public ArticleDTO findById(int no){
+
+        Optional<Article> optArticle = articleRepository.findById(no);
+
+        ArticleDTO articleDTO = null;
+
+        if(optArticle.isPresent()){
+            Article article = optArticle.get();
+            articleDTO = modelMapper.map(article, ArticleDTO.class);
+        }
+
+        log.info("articleDTO : " + articleDTO.toString());
+
+        return articleDTO;
     }
 
 

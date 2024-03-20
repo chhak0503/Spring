@@ -59,7 +59,11 @@ public class ArticleController {
     }
 
     @GetMapping("/article/view")
-    public String view(){
+    public String view(int no, Model model){
+
+        ArticleDTO articleDTO = articleService.findById(no);
+        model.addAttribute(articleDTO);
+
         return "/article/view";
     }
 
