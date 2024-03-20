@@ -1,7 +1,10 @@
 package kr.co.sboard.service;
 
+import jakarta.persistence.EntityManager;
+import jakarta.transaction.Transactional;
 import kr.co.sboard.dto.ArticleDTO;
 import kr.co.sboard.dto.FileDTO;
+import kr.co.sboard.entity.Article;
 import kr.co.sboard.repository.FileRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -86,8 +89,11 @@ public class FileService {
         return files;
     }
 
+
+    @Transactional
     public ResponseEntity<?> fileDownload(int fno)  {
 
+        // 파일 조회
         kr.co.sboard.entity.File file = fileRepository.findById(fno).get();
 
         try {
@@ -101,6 +107,10 @@ public class FileService {
 
             headers.add(HttpHeaders.CONTENT_TYPE, contentType);
             Resource resource = new InputStreamResource(Files.newInputStream(path));
+
+            // 파일 다운로드 카운트 업데이트
+            file.setDownload(file.getDownload() + 1);
+            fileRepository.save(file);
 
             return new ResponseEntity<>(resource, headers, HttpStatus.OK);
 

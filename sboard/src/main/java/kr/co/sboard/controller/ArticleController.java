@@ -71,6 +71,7 @@ public class ArticleController {
         return "/article/view";
     }
 
+
     @GetMapping("/article/fileDownload")
     public ResponseEntity<?> fileDownload(int fno) {
         return fileService.fileDownload(fno);
