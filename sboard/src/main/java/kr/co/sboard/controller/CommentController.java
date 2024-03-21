@@ -6,11 +6,10 @@ import kr.co.sboard.entity.Article;
 import kr.co.sboard.service.CommentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpRequest;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -19,6 +18,11 @@ public class CommentController {
 
     private final CommentService commentService;
 
+    @GetMapping("/comment/{no}")
+    public ResponseEntity<List<ArticleDTO>> comment(@PathVariable("no") int no){
+        return commentService.selectComments(no);
+    }
+
     @PostMapping("/comment")
     public ResponseEntity<Article> comment(@RequestBody ArticleDTO articleDTO, HttpServletRequest req){
 
@@ -26,8 +30,9 @@ public class CommentController {
         articleDTO.setRegip(regip);
         log.info("articleDTO : " + articleDTO);
 
-
         return commentService.insertComment(articleDTO);
     }
+
+
 
 }
