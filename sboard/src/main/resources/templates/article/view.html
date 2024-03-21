@@ -5,21 +5,44 @@
     <div class="container-fluid px-4" layout:fragment="content">
         <script>
             window.onload = function (){
+
+                // 파일 다운로드 카운트 동적처리
                 const fileLinks = document.getElementsByClassName('fileLink');
 
                 for(const fileLink of fileLinks){
 
                     // 파일 다운로드 요청과 동시에 다운로드 카운트 요청
                     fileLink.onclick = async function () {
-
-                        const fno = this.dataset.fno;
-
-                        // FileController - downloadCount 요청 메서드 실행
-                        const data = await fetchData(`/sboard/file/downloadCount/${fno}`);
-
-                        this.nextElementSibling.innerHTML = data.count;
+                        const count = this.nextElementSibling.innerText;
+                        this.nextElementSibling.innerText = parseInt(count) + 1;
                     }
                 }
+
+                // 댓글 등록
+                const formComment = document.formComment;
+                formComment.onsubmit = async function (e) {
+                    e.preventDefault();
+
+                    const jsonData = {
+                        "parent": formComment.parent.value,
+                        "writer": formComment.writer.value,
+                        "content": formComment.content.value
+                    };
+
+                    console.log(jsonData);
+
+                    // POST용 fetchData 호출(util.js 확인, 기존 fetchData 이름을 fetchGet으로 변경)
+                    const data = await fetchPost(`/sboard/comment`, jsonData);
+
+                    console.log(data);
+
+                    // 댓글목록 동적처리
+
+
+
+
+                }
+
             }
         </script>
 
@@ -69,10 +92,13 @@
             <textarea class="form-control" rows="3" readonly>댓글 내용1</textarea>
         </div>
 
-        <form>
+        <form name="formComment">
+            <input type="text" name="parent" th:value="${articleDTO.no}">
+            <input type="text" name="writer" th:value="${#authentication.principal.user.uid}">
+
             <div class="input-group">
                 <span class="input-group-text">댓글입력</span>
-                <textarea class="form-control" aria-label="With textarea" rows="5"></textarea>
+                <textarea name="content" class="form-control" aria-label="With textarea" rows="5"></textarea>
             </div>
 
             <div class="mt-4 mb-4 text-end">
