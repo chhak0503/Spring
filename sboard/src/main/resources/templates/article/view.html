@@ -3,6 +3,7 @@
       layout:decorate="/layout/defaultLayout.html">
 
     <div class="container-fluid px-4" layout:fragment="content">
+
         <script th:inline="javascript">
             window.onload = function (){
 
@@ -17,6 +18,41 @@
                         this.nextElementSibling.innerText = parseInt(count) + 1;
                     }
                 }
+
+                //////////////////////////////////////////////////////////////////////////
+                // 댓글 삭제/수정(동적 이벤트 처리)
+                //////////////////////////////////////////////////////////////////////////
+                document.addEventListener('click', async function(e){
+
+                    // 이벤트 대상의 클래스값이 remove일 경우
+                    if(e.target.dataset.mode == 'remove'){
+                        e.preventDefault();
+
+                        // 해당 삭제에서 가장 가까운 부모 comment 문서객체 생성
+                        const comment = e.target.closest('.comment');
+
+                        // 댓글 번호
+                        const no = e.target.dataset.no;
+
+                        console.log('no : ' + no);
+
+                        // DELETE용 fetch 함수 정의
+                        const data = fetchDelete(`/sboard/comment/${no}`);
+
+                        if(data){
+                            alertModal("삭제 되었습니다.");
+                            comment.remove();
+
+                        }
+
+                    }else if(e.target.dataset.mode == 'modify'){
+                        const result = confirmModal("정말 수정 하시겠습니까?");
+                        console.log("result : " + result);
+                    }
+
+                });
+
+
 
 
                 //////////////////////////////////////////////////////////////////////////
@@ -34,21 +70,22 @@
 
                     const comments = await fetchGet(`/sboard/comment/${no}`);
                     console.log('comments : ' + comments);
+
                     for(const comment of comments){
                         commentPlaceholder.remove();
 
-                        const commentArticle = `<div class="mb-3">
-                                                <ol class="breadcrumb mb-1">
-                                                    <li class="breadcrumb-item">${comment.writer}</li>
-                                                    <li class="breadcrumb-item">${comment.rdate.substring(0, 10)}</li>
-                                                </ol>
+                        const commentArticle = `<div class="mb-3 comment">
+                                                    <ol class="breadcrumb mb-1">
+                                                        <li class="breadcrumb-item">${comment.writer}</li>
+                                                        <li class="breadcrumb-item">${comment.rdate.substring(0, 10)}</li>
+                                                    </ol>
 
-                                                <textarea class="form-control" rows="3" readonly>${comment.content}</textarea>
-                                                <div class="text-end mt-1">
-                                                    <button type="button" class="btn btn-warning btn-sm">수정</button>
-                                                    <button type="button" class="btn btn-danger btn-sm">삭제</button>
-                                                </div>
-                                            </div>`;
+                                                    <textarea class="form-control" rows="3" readonly>${comment.content}</textarea>
+                                                    <div class="text-end mt-1">
+                                                        <button type="button" class="btn btn-warning btn-sm btnModify" data-mode="modify" data-no="${comment.no}">수정</button>
+                                                        <button type="button" class="btn btn-danger btn-sm btnRemove" data-mode="remove" data-no="${comment.no}">삭제</button>
+                                                    </div>
+                                                </div>`;
 
                         // 태그 문자열 삽입
                         commentList.insertAdjacentHTML('beforeend', commentArticle);
@@ -78,7 +115,7 @@
                     console.log(data);
 
                     // 댓글목록 동적처리
-                    const commentArticle = `<div class="mb-3">
+                    const commentArticle = `<div class="mb-3 comment">
                                                 <ol class="breadcrumb mb-1">
                                                     <li class="breadcrumb-item">${data.writer}</li>
                                                     <li class="breadcrumb-item">${data.rdate.substring(0, 10)}</li>

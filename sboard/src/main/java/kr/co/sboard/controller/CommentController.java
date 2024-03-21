@@ -19,12 +19,12 @@ public class CommentController {
     private final CommentService commentService;
 
     @GetMapping("/comment/{no}")
-    public ResponseEntity<List<ArticleDTO>> comment(@PathVariable("no") int no){
+    public ResponseEntity<List<ArticleDTO>> getComment(@PathVariable("no") int no){
         return commentService.selectComments(no);
     }
 
     @PostMapping("/comment")
-    public ResponseEntity<Article> comment(@RequestBody ArticleDTO articleDTO, HttpServletRequest req){
+    public ResponseEntity<Article> postComment(@RequestBody ArticleDTO articleDTO, HttpServletRequest req){
 
         String regip = req.getRemoteAddr();
         articleDTO.setRegip(regip);
@@ -33,6 +33,10 @@ public class CommentController {
         return commentService.insertComment(articleDTO);
     }
 
+    @DeleteMapping("/comment/{no}")
+    public ResponseEntity<?> deleteComment(@PathVariable("no") int no){
+        return commentService.deleteComment(no);
+    }
 
 
 }
