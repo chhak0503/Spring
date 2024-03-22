@@ -22,13 +22,11 @@ import java.util.Map;
 public class UserController {
 
     private final UserService userService;
-    private final AppInfo appInfo;
 
     @GetMapping("/user/login")
-    public String login(@ModelAttribute("success") String success, Model model){
+    public String login(@ModelAttribute("success") String success){
         // 매개변수 success에 @ModelAttribute 선언으로 View 참조할 수 있음
 
-        model.addAttribute(appInfo);
 
         return "/user/login";
     }
