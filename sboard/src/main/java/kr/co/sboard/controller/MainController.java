@@ -28,18 +28,8 @@ public class MainController {
         log.info("user : " + user);
         */
 
-        //log.info("appName : " + appName);
-        //log.info("appVersion : " + appVersion);
 
 
-        // 상단 BuildProperties 주입
-        //String appName = buildProperties.getName();
-        //String appVersion = buildProperties.getVersion();
-        //log.info("appVersion : " + appVersion);
-
-        // View에 출력할 데이터 모델 참조
-        //model.addAttribute("appVersion", appVersion);
-        //model.addAttribute("userEmail", user.getEmail());
 
         return "/index";
     }
