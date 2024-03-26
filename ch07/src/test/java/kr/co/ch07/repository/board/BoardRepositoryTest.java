@@ -2,7 +2,6 @@ package kr.co.ch07.repository.board;
 
 import jakarta.transaction.Transactional;
 import kr.co.ch07.entity.board.Article;
-import kr.co.ch07.entity.board.Comment;
 import kr.co.ch07.entity.board.File;
 import kr.co.ch07.entity.board.User;
 import lombok.extern.slf4j.Slf4j;
@@ -21,23 +20,23 @@ class BoardRepositoryTest {
     @Autowired private FileRepository fileRepository;
     @Autowired private UserRepository userRepository;
 
-    @Test
     public void insertUser(){
         // 작업1 - 사용자 등록
         User user = User.builder()
-                    .uid("a102")
-                    .name("김춘추")
-                    .hp("010-1234-1002")
+                    .uid("a101")
+                    .name("김유신")
+                    .hp("010-1234-1001")
                     .build();
 
         userRepository.save(user);
     }
 
 
+
     public void insertArticle(){
         // 작업2 - 글 등록
         User user = User.builder()
-                        .uid("a102")
+                        .uid("a101")
                         .build();
 
         Article article = Article.builder()
@@ -48,27 +47,6 @@ class BoardRepositoryTest {
 
         articleRepository.save(article);
     }
-
-
-    public void insertComment(){
-        // 작업3 - 댓글 등록
-        User user = User.builder()
-                .uid("a101")
-                .build();
-
-        Article article = Article.builder()
-                            .no(2)
-                            .build();
-
-        Comment comment= Comment.builder()
-                        .content("댓글2-3입니다.")
-                        .user(user)
-                        .article(article)
-                        .build();
-
-        commentRepository.save(comment);
-    }
-
 
     public void insertFile(){
 
@@ -90,6 +68,7 @@ class BoardRepositoryTest {
         @Transactional 선언으로 한번의 실행으로 처리해야 no session 에러 방지
     */
 
+    @Test
     @Transactional
     public void selectArticles(){
 
