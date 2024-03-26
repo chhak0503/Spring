@@ -24,6 +24,7 @@ public class Order {
     @ManyToOne
     @JoinColumn(name = "orderer")
     private Customer customer;
+
     private int orderPrice;
     private int orderStatus;
 
