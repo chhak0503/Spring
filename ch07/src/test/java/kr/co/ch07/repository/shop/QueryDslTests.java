@@ -6,6 +6,7 @@ import com.querydsl.core.types.Projections;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.transaction.Transactional;
+import kr.co.ch07.dto.CustomerDTO;
 import kr.co.ch07.dto.ProductAggDTO;
 import kr.co.ch07.entity.shop.*;
 import lombok.extern.slf4j.Slf4j;
@@ -149,8 +150,16 @@ public class QueryDslTests {
     @Test
     public void test10(){
         // select ~ where orderStatus = 1 group by `orderer` having custId >= 2;
-        List<Order> orders = jpaQueryFactory
-                                    .selectFrom(qOrder)
+        List<CustomerDTO> orders = jpaQueryFactory
+                                    .select(
+                                            Projections.fields(
+                                                    CustomerDTO.class,
+                                                    qOrder.customer.custId,
+                                                    qOrder.customer.name,
+                                                    qOrder.customer.custId.count().as("orderCount")
+                                            )
+                                    )
+                                    .from(qOrder)
                                     .where(qOrder.orderStatus.eq(1))
                                     .groupBy(qOrder.customer.custId)
                                     .having(qOrder.customer.custId.count().goe(2))
