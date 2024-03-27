@@ -38,7 +38,7 @@ public class ArticleController {
 
         if(pageRequestDTO.getKeyword() == null) {
             // 일반 글 목록 조회
-            pageResponseDTO = articleService.findByParentAndCate(pageRequestDTO);
+            pageResponseDTO = articleService.selectArticles(pageRequestDTO);
         }else {
             // 검색 글 목록 조회
             pageResponseDTO = articleService.searchArticles(pageRequestDTO);
