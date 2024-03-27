@@ -52,7 +52,13 @@ public class ArticleController {
     }
 
     @GetMapping("/article/write")
-    public String write(Model model, String cate){
+    public String write(Model model, String cate, PageRequestDTO pageRequestDTO){
+
+        PageResponseDTO pageResponseDTO = PageResponseDTO.builder()
+                .pageRequestDTO(pageRequestDTO)
+                .build();
+
+        model.addAttribute(pageResponseDTO);
 
         return "/article/write";
     }
