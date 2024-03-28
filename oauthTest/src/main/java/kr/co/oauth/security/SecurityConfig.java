@@ -1,5 +1,8 @@
 package kr.co.oauth.security;
 
+import kr.co.oauth.oauth2.OAuth2UserService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -9,8 +12,12 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
+@RequiredArgsConstructor
 @Configuration
 public class SecurityConfig {
+
+
+    private final OAuth2UserService oauth2UserService;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
@@ -30,8 +37,9 @@ public class SecurityConfig {
                                         .logoutSuccessUrl("/user/login?success=300"));
 
         // OAuth 설정
-        httpSecurity.oauth2Login(config -> config.loginPage("/user/login")
-                                                .defaultSuccessUrl("/"));
+        httpSecurity.oauth2Login(config -> config
+                                            .loginPage("/user/login")
+                                            .defaultSuccessUrl("/"));
 
         /*
             인가 설정
