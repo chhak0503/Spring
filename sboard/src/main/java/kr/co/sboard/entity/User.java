@@ -6,8 +6,12 @@ import jakarta.persistence.Table;
 import kr.co.sboard.dto.UserDTO;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 
 import java.time.LocalDateTime;
+import java.util.Collection;
+import java.util.Map;
 
 @Getter
 @AllArgsConstructor
@@ -16,7 +20,7 @@ import java.time.LocalDateTime;
 @Builder
 @Entity
 @Table(name = "user")
-public class User {
+public class User implements OAuth2User {
 
     @Id
     private String uid;
@@ -31,9 +35,19 @@ public class User {
     private String addr2;
     private String regip;
     private String sms;
+    private String provider;
 
     @CreationTimestamp
     private LocalDateTime regDate;
     private LocalDateTime leaveDate;
 
+    @Override
+    public Map<String, Object> getAttributes() {
+        return null;
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return null;
+    }
 }
