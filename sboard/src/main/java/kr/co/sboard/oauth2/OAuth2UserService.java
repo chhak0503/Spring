@@ -2,6 +2,7 @@ package kr.co.sboard.oauth2;
 
 import kr.co.sboard.entity.User;
 import kr.co.sboard.repository.UserRepository;
+import kr.co.sboard.security.MyUserDetails;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
@@ -49,12 +50,16 @@ public class OAuth2UserService extends DefaultOAuth2UserService {
                                                 .email(email)
                                                 .name(name)
                                                 .nick(name)
+                                                .role("USER")
                                                 .provider(provider)
                                                 .build());
 
         // 저장 or 수정
         userRepository.save(user);
 
-        return user;
+        // SecurityContextHolder의 principal(사용자 인증 객체)로 저장
+        return MyUserDetails.builder()
+                .user(user)
+                .build();
     }
 }

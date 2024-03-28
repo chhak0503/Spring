@@ -20,7 +20,7 @@ import java.util.Map;
 @Builder
 @Entity
 @Table(name = "user")
-public class User implements OAuth2User {
+public class User {
 
     @Id
     private String uid;
@@ -41,13 +41,5 @@ public class User implements OAuth2User {
     private LocalDateTime regDate;
     private LocalDateTime leaveDate;
 
-    @Override
-    public Map<String, Object> getAttributes() {
-        return null;
-    }
 
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
-    }
 }
