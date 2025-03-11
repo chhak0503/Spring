@@ -34,8 +34,9 @@ public class User1DAO {
         return null;
     }
 
-    public List<User1DTO> selectAllUser1(User1DTO dto){
-        return null;
+    public List<User1DTO> selectAllUser1(){
+        String sql = "select * from user1";
+        return jdbcTemplate.query(sql, new User1RowMapper());
     }
 
     public void updateUser1(User1DTO dto){
