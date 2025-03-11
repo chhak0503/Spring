@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @ComponentScan(basePackages = {"kr.co.ch04"})
 @EnableWebMvc
 public class AppConfig implements WebMvcConfigurer {
-
+    
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         // ViewResolver 설정(jsp 경로 위치 설정)

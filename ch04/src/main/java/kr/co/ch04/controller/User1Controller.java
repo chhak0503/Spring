@@ -6,10 +6,7 @@ import kr.co.ch04.service.User1Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -56,8 +53,26 @@ public class User1Controller {
     }
 
     @GetMapping("/user1/modify")
-    public String modify(){
+    public String modify(Model model, @RequestParam("uid") String uid){
+
+        // 서비스 호출
+        User1DTO dto = service.findById(uid);
+
+        // 모델 참조 공유
+        model.addAttribute(dto); // 참조이름을 쓰지 않으면 소문자로 시작하는 객체 타입명
+
         return "/user1/modify";
     }
+
+    @PostMapping("/user1/modify")
+    public String modify(User1DTO dto){
+
+        // 서비스 호출
+        service.update(dto);
+
+        // 리다이렉트
+        return "redirect:/user1/list";
+    }
+
 
 }

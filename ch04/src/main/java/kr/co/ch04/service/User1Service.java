@@ -19,9 +19,13 @@ public class User1Service {
     public List<User1DTO> findAll() {
         return dao.selectAllUser1();
     }
-    public void findById(String uid) {}
+    public User1DTO findById(String uid) {
+        return dao.selectUser1(uid);
+    }
     public void delete(String uid) {}
-    public void update(User1DTO dto) {}
+    public void update(User1DTO dto) {
+        dao.updateUser1(dto);
+    }
 
 
 }
