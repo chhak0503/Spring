@@ -1,6 +1,5 @@
 package kr.co.ch05.controller;
 
-import jakarta.servlet.http.HttpServletRequest;
 import kr.co.ch05.dto.User1DTO;
 import kr.co.ch05.service.User1Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,12 +29,12 @@ public class User1Controller {
         model.addAttribute("user1DTOs", user1DTOs);
 
         // 뷰 포워딩
-        return "list";
+        return "/user1/list";
     }
 
     @GetMapping("/user1/register")
     public String register(){
-        return "register";
+        return "/user1/register";
     }
 
     @PostMapping("/user1/register")
@@ -56,7 +55,7 @@ public class User1Controller {
         // 수정 출력하기 위해 모델 참조
         model.addAttribute(user1DTO);
 
-        return "modify";
+        return "/user1/modify";
     }
 
     @PostMapping("/user1/modify")
