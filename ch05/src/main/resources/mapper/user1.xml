@@ -13,6 +13,22 @@
         SELECT * FROM `user1`;
     </select>
 
+    <select id="selectUser1" resultType="kr.co.ch05.dto.User1DTO">
+        select * from `user1` where `uid`=#{uid};
+    </select>
+
+    <update id="updateUser1">
+        update user1 set
+                        name = #{name},
+                        hp = #{hp},
+                        age = #{age}
+                     where
+                        uid = #{uid};
+    </update>
+
+    <delete id="deleteUser1">
+        delete from `user1` where uid = #{uid};
+    </delete>
 
 
 </mapper>
