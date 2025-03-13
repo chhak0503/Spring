@@ -49,9 +49,6 @@ public class Sub2Controller {
         // 리스트 생성
         List<User1DTO> users = List.of(u1, u2, u3);
 
-
-
-
         // 모델 참조
         model.addAttribute("str1", str1);
         model.addAttribute("str2", str2);

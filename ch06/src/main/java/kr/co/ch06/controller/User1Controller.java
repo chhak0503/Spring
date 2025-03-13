@@ -38,7 +38,7 @@ public class User1Controller {
 
     @PostMapping("/user1/register")
     public String register(User1DTO user1DTO){
-        log.info("user1DTO: {}", user1DTO);
+        log.info("register user1DTO: {}", user1DTO);
 
         // 서비스 호출
         user1Service.register(user1DTO);
@@ -49,7 +49,7 @@ public class User1Controller {
 
     @GetMapping("/user1/modify")
     public String modify(String uid, Model model){ // 스프링부트는 @RequestParam("uid") 안해도 됨
-        log.info("uid: {}", uid);
+        log.info("modify uid: {}", uid);
 
         // 수정 데이터 조회
         User1DTO user1DTO = user1Service.findById(uid);

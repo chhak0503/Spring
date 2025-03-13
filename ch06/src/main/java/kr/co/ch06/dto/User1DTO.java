@@ -16,6 +16,4 @@ public class User1DTO {
     private int age;
 
 
-
-
 }
