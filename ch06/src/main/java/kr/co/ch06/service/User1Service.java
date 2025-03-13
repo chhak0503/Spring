@@ -31,7 +31,7 @@ public class User1Service {
         user1Mapper.updateUser1(user1DTO);
     }
 
-    public void deleteUser1(String uid) {
+    public void delete(String uid) {
         user1Mapper.deleteUser1(uid);
     }
 
