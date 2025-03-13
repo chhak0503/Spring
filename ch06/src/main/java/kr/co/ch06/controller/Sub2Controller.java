@@ -26,7 +26,7 @@ public class Sub2Controller {
 
         // User1DTO 객체 생성 - 생성자 방식
         User1DTO u1 = new User1DTO("a101", "김유신", "010-2121-1001", 21);
-        log.debug("u1: {}", u1);
+        log.info("u1: {}", u1);
 
         // User1DTO 객체 생성 - 세터 방식
         User1DTO u2 = new User1DTO();
@@ -34,7 +34,7 @@ public class Sub2Controller {
         u2.setName("김춘추");
         u2.setHp("010-1212-1002");
         u2.setAge(22);
-        log.debug("u2: {}", u2);
+        log.info("u2: {}", u2);
 
         // User1DTO 객체 생성 - 빌더 방식
         User1DTO u3 = User1DTO.builder()
@@ -44,7 +44,7 @@ public class Sub2Controller {
                             .age(23)
                             .build();
 
-        log.debug("u3: {}", u3);
+        log.info("u3: {}", u3);
 
         // 리스트 생성
         List<User1DTO> users = List.of(u1, u2, u3);
