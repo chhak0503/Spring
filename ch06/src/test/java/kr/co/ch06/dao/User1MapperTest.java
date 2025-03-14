@@ -99,7 +99,6 @@ class User1MapperTest {
         System.out.println(resultDTO);
     }
 
-
     @DisplayName("user1 삭제")
     @Test
     @Order(5)
