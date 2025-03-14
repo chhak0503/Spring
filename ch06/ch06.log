@@ -1,382 +1,243 @@
-2025-03-13T12:01:44.520+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:01:44.521+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:01:44.557+09:00  INFO 10812 --- [ch06] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-13T12:01:44.557+09:00  INFO 10812 --- [ch06] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-13T12:01:45.960+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:01:45.969+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:01:45.970+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:01:46.003+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:01:46.004+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1445 ms
-2025-03-13T12:01:46.249+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:01:46.665+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:01:46.691+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:01:46.716+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 2.865 seconds (process running for 4.021)
-2025-03-13T12:01:50.011+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-13T12:01:50.017+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-13T12:01:50.023+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-03-13T12:04:17.279+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 13 class path changes (0 additions, 0 deletions, 13 modifications)
-2025-03-13T12:04:17.290+09:00  INFO 10812 --- [ch06] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:04:17.463+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:04:17.687+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:04:17.688+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:04:18.189+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:04:18.190+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:04:18.190+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:04:18.203+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:04:18.203+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 512 ms
-2025-03-13T12:04:18.243+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:04:18.289+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:04:18.297+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:04:18.300+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.677 seconds (process running for 155.604)
-2025-03-13T12:04:18.301+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:05:45.521+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-13T12:05:45.522+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-13T12:05:45.523+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-03-13T12:05:46.798+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-03-13T12:05:47.401+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@523cc9e0
-2025-03-13T12:05:47.404+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-03-13T12:05:47.651+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-03-13T12:05:47.654+09:00  INFO 10812 --- [ch06] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:05:47.949+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:05:47.951+09:00  INFO 10812 --- [ch06] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-03-13T12:05:47.983+09:00  INFO 10812 --- [ch06] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-03-13T12:05:48.133+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:05:48.134+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:05:48.923+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:05:48.924+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:05:48.925+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:05:48.952+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:05:48.953+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 799 ms
-2025-03-13T12:05:49.051+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:05:49.191+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:05:49.200+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:05:49.222+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 1.131 seconds (process running for 246.527)
-2025-03-13T12:05:49.223+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:05:49.325+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-13T12:05:49.325+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-13T12:05:49.325+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-03-13T12:05:50.614+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-03-13T12:05:50.615+09:00  INFO 10812 --- [ch06] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:05:50.689+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:05:50.746+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:05:50.746+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:05:51.108+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:05:51.108+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:05:51.109+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:05:51.137+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:05:51.137+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 390 ms
-2025-03-13T12:05:51.172+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:05:51.213+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:05:51.220+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:05:51.223+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.496 seconds (process running for 248.528)
-2025-03-13T12:05:51.224+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:06:03.114+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-13T12:06:03.115+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-13T12:06:03.115+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-03-13T12:06:03.136+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] kr.co.ch06.controller.User1Controller    : user1DTO: User1DTO(uid=ss1003, name=김춘추, hp=010-2121-0003, age=22)
-2025-03-13T12:06:03.147+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-03-13T12:06:03.158+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cf467bd
-2025-03-13T12:06:03.158+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-03-13T12:06:56.152+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 13 class path changes (0 additions, 0 deletions, 13 modifications)
-2025-03-13T12:06:56.154+09:00  INFO 10812 --- [ch06] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:06:56.301+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:06:56.302+09:00  INFO 10812 --- [ch06] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2025-03-13T12:06:56.305+09:00  INFO 10812 --- [ch06] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2025-03-13T12:06:56.443+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:06:56.443+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:06:56.885+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:06:56.886+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:06:56.886+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:06:56.915+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:06:56.915+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 471 ms
-2025-03-13T12:06:56.998+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:06:57.167+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:06:57.200+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:06:57.205+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.802 seconds (process running for 314.509)
-2025-03-13T12:06:57.212+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:07:21.146+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 13 class path changes (0 additions, 0 deletions, 13 modifications)
-2025-03-13T12:07:21.148+09:00  INFO 10812 --- [ch06] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:07:21.328+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:07:21.496+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:07:21.496+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:07:21.813+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:07:21.814+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:07:21.815+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:07:21.842+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:07:21.843+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 344 ms
-2025-03-13T12:07:21.911+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:07:22.003+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:07:22.009+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:07:22.012+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.581 seconds (process running for 339.317)
-2025-03-13T12:07:22.013+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:07:36.255+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-13T12:07:36.255+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-13T12:07:36.256+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-03-13T12:07:36.259+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2025-03-13T12:07:36.290+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48c492c6
-2025-03-13T12:07:36.291+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2025-03-13T12:08:18.517+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-03-13T12:08:18.519+09:00  INFO 10812 --- [ch06] [Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:08:18.693+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:08:18.695+09:00  INFO 10812 --- [ch06] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2025-03-13T12:08:18.719+09:00  INFO 10812 --- [ch06] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2025-03-13T12:08:18.894+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:08:18.894+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:08:19.534+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:08:19.534+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:08:19.534+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:08:19.545+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:08:19.545+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 649 ms
-2025-03-13T12:08:19.576+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:08:19.639+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:08:19.647+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:08:19.651+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.821 seconds (process running for 396.955)
-2025-03-13T12:08:19.652+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:08:21.088+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-03-13T12:08:21.090+09:00  INFO 10812 --- [ch06] [Thread-27] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:08:21.206+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:08:21.261+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:08:21.261+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:08:21.603+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:08:21.604+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:08:21.604+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:08:21.614+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:08:21.615+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 352 ms
-2025-03-13T12:08:21.649+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:08:21.690+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:08:21.697+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:08:21.700+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.457 seconds (process running for 399.005)
-2025-03-13T12:08:21.701+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:08:41.671+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-03-13T12:08:41.672+09:00  INFO 10812 --- [ch06] [Thread-31] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:08:41.774+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:08:41.858+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:08:41.858+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:08:42.252+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:08:42.253+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:08:42.253+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:08:42.263+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:08:42.263+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 403 ms
-2025-03-13T12:08:42.297+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:08:42.464+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:08:42.532+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:08:42.548+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.713 seconds (process running for 419.852)
-2025-03-13T12:08:42.565+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:08:43.916+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-03-13T12:08:43.917+09:00  INFO 10812 --- [ch06] [Thread-35] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:08:43.997+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:08:44.067+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:08:44.067+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:08:44.269+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:08:44.269+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:08:44.269+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:08:44.283+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:08:44.283+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 215 ms
-2025-03-13T12:08:44.325+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:08:44.452+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:08:44.489+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:08:44.495+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.448 seconds (process running for 421.799)
-2025-03-13T12:08:44.496+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:09:00.417+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-03-13T12:09:00.421+09:00  INFO 10812 --- [ch06] [Thread-39] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:09:00.837+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:09:01.105+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:09:01.106+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:09:01.462+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:09:01.463+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:09:01.463+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:09:01.476+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:09:01.476+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 365 ms
-2025-03-13T12:09:01.522+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:09:01.561+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:09:01.567+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:09:01.570+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.556 seconds (process running for 438.874)
-2025-03-13T12:09:01.570+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:09:03.041+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-03-13T12:09:03.042+09:00  INFO 10812 --- [ch06] [Thread-43] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:09:03.275+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:09:03.418+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:09:03.418+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:09:03.826+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:09:03.827+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:09:03.827+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:09:03.861+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:09:03.861+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 441 ms
-2025-03-13T12:09:03.961+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:09:04.091+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:09:04.105+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:09:04.124+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.75 seconds (process running for 441.428)
-2025-03-13T12:09:04.127+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:10:57.193+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-03-13T12:10:57.195+09:00  INFO 10812 --- [ch06] [Thread-47] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:10:57.398+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:10:57.539+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:10:57.539+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:10:57.937+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:10:57.937+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:10:57.938+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:10:57.948+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:10:57.948+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 406 ms
-2025-03-13T12:10:58.014+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:10:58.054+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:10:58.061+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:10:58.063+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.596 seconds (process running for 555.368)
-2025-03-13T12:10:58.064+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:10:59.480+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (1 addition, 0 deletions, 13 modifications)
-2025-03-13T12:10:59.481+09:00  INFO 10812 --- [ch06] [Thread-51] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:10:59.555+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:10:59.609+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:10:59.609+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:10:59.791+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:10:59.791+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:10:59.791+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:10:59.802+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:10:59.802+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 191 ms
-2025-03-13T12:10:59.833+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:10:59.869+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:10:59.875+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:10:59.878+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.287 seconds (process running for 557.182)
-2025-03-13T12:10:59.879+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:11:48.308+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-13T12:11:48.308+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-13T12:11:48.309+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-03-13T12:11:48.311+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2025-03-13T12:11:48.343+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d086e4c
-2025-03-13T12:11:48.344+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2025-03-13T12:11:49.342+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 13 class path changes (0 additions, 0 deletions, 13 modifications)
-2025-03-13T12:11:49.343+09:00  INFO 10812 --- [ch06] [Thread-55] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:11:49.565+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:11:49.566+09:00  INFO 10812 --- [ch06] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
-2025-03-13T12:11:49.569+09:00  INFO 10812 --- [ch06] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
-2025-03-13T12:11:49.723+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:11:49.723+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:11:50.126+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:11:50.126+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:11:50.126+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:11:50.153+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:11:50.154+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 429 ms
-2025-03-13T12:11:50.187+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:11:50.242+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:11:50.248+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:11:50.251+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.565 seconds (process running for 607.555)
-2025-03-13T12:11:50.252+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:11:51.535+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-13T12:11:51.535+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-13T12:11:51.536+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-03-13T12:11:51.539+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] kr.co.ch06.controller.User1Controller    : uid: ss1003
-2025-03-13T12:11:51.539+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
-2025-03-13T12:11:51.568+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d4b49aa
-2025-03-13T12:11:51.568+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
-2025-03-13T12:11:55.240+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-5] kr.co.ch06.controller.User1Controller    : uid: ss1002
-2025-03-13T12:11:57.100+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-2] kr.co.ch06.controller.User1Controller    : uid: ss1001
-2025-03-13T12:11:58.957+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-7] kr.co.ch06.controller.User1Controller    : uid: ss1003
-2025-03-13T12:13:50.538+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-03-13T12:13:50.539+09:00  INFO 10812 --- [ch06] [Thread-59] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:13:50.711+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:13:50.713+09:00  INFO 10812 --- [ch06] [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
-2025-03-13T12:13:50.715+09:00  INFO 10812 --- [ch06] [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
-2025-03-13T12:13:50.852+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:13:50.853+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:13:51.322+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:13:51.323+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:13:51.323+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:13:51.333+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:13:51.333+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 479 ms
-2025-03-13T12:13:51.428+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:13:51.504+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:13:51.510+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:13:51.513+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.696 seconds (process running for 728.817)
-2025-03-13T12:13:51.513+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:13:52.934+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (1 addition, 0 deletions, 13 modifications)
-2025-03-13T12:13:52.935+09:00  INFO 10812 --- [ch06] [Thread-63] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:13:53.075+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:13:53.305+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:13:53.306+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:13:53.745+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:13:53.745+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:13:53.745+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:13:53.756+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:13:53.756+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 449 ms
-2025-03-13T12:13:53.824+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:13:53.860+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:13:53.866+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:13:53.869+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.634 seconds (process running for 731.173)
-2025-03-13T12:13:53.870+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:13:56.293+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-13T12:13:56.293+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-13T12:13:56.295+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-03-13T12:13:56.296+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] kr.co.ch06.controller.User1Controller    : uid: ss1003
-2025-03-13T12:13:56.297+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
-2025-03-13T12:13:56.326+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ad7dad
-2025-03-13T12:13:56.326+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
-2025-03-13T12:13:58.071+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-2] kr.co.ch06.controller.User1Controller    : uid: ss1003
-2025-03-13T12:13:58.274+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-5] kr.co.ch06.controller.User1Controller    : uid: ss1003
-2025-03-13T12:13:58.449+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-4] kr.co.ch06.controller.User1Controller    : uid: ss1003
-2025-03-13T12:13:58.620+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-8] kr.co.ch06.controller.User1Controller    : uid: ss1003
-2025-03-13T12:13:58.795+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-10] kr.co.ch06.controller.User1Controller    : uid: ss1003
-2025-03-13T12:13:58.974+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-7] kr.co.ch06.controller.User1Controller    : uid: ss1003
-2025-03-13T12:13:59.148+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-3] kr.co.ch06.controller.User1Controller    : uid: ss1003
-2025-03-13T12:13:59.348+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-9] kr.co.ch06.controller.User1Controller    : uid: ss1003
-2025-03-13T12:14:10.992+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-6] kr.co.ch06.controller.User1Controller    : user1DTO: User1DTO(uid=ss1003, name=김춘우, hp=010-2121-0333, age=23)
-2025-03-13T12:17:38.160+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 15 class path changes (0 additions, 0 deletions, 15 modifications)
-2025-03-13T12:17:38.162+09:00  INFO 10812 --- [ch06] [Thread-67] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:17:38.534+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:17:38.542+09:00  INFO 10812 --- [ch06] [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
-2025-03-13T12:17:38.564+09:00  INFO 10812 --- [ch06] [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
-2025-03-13T12:17:38.706+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:17:38.707+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:17:39.042+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:17:39.042+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:17:39.042+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:17:39.053+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:17:39.053+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 345 ms
-2025-03-13T12:17:39.111+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:17:39.250+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:17:39.258+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:17:39.280+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.612 seconds (process running for 956.583)
-2025-03-13T12:17:39.281+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:17:39.351+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-13T12:17:39.351+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-13T12:17:39.353+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-03-13T12:17:39.355+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
-2025-03-13T12:17:39.384+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53c13cd9
-2025-03-13T12:17:39.386+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
-2025-03-13T12:17:42.941+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-6] kr.co.ch06.controller.User1Controller    : uid: ss1002
-2025-03-13T12:17:44.029+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-8] kr.co.ch06.controller.User1Controller    : uid: ss1001
-2025-03-13T12:19:02.567+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2025-03-13T12:19:02.568+09:00  INFO 10812 --- [ch06] [Thread-71] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:19:02.814+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:19:02.816+09:00  INFO 10812 --- [ch06] [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
-2025-03-13T12:19:02.839+09:00  INFO 10812 --- [ch06] [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
-2025-03-13T12:19:03.008+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:19:03.008+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:19:03.563+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:19:03.564+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:19:03.564+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:19:03.596+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:19:03.596+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 586 ms
-2025-03-13T12:19:03.698+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:19:03.838+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:19:03.868+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:19:03.872+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.921 seconds (process running for 1041.175)
-2025-03-13T12:19:03.872+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:19:03.949+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-13T12:19:03.950+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-13T12:19:03.967+09:00  INFO 10812 --- [ch06] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
-2025-03-13T12:19:05.273+09:00  INFO 10812 --- [ch06] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-03-13T12:19:05.274+09:00  INFO 10812 --- [ch06] [Thread-75] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:19:05.347+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-13T12:19:05.523+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Starting Ch06Application using Java 17.0.12 with PID 10812 (C:\Users\lotte6\Desktop\workspace\Spring\ch06\build\classes\java\main started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
-2025-03-13T12:19:05.523+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : No active profile set, falling back to 1 default profile: "default"
-2025-03-13T12:19:05.936+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-13T12:19:05.936+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-13T12:19:05.936+09:00  INFO 10812 --- [ch06] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-13T12:19:05.965+09:00  INFO 10812 --- [ch06] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/ch06]   : Initializing Spring embedded WebApplicationContext
-2025-03-13T12:19:05.965+09:00  INFO 10812 --- [ch06] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 440 ms
-2025-03-13T12:19:05.998+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2025-03-13T12:19:06.036+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-03-13T12:19:06.043+09:00  INFO 10812 --- [ch06] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch06'
-2025-03-13T12:19:06.045+09:00  INFO 10812 --- [ch06] [restartedMain] kr.co.ch06.Ch06Application               : Started Ch06Application in 0.624 seconds (process running for 1043.348)
-2025-03-13T12:19:06.046+09:00  INFO 10812 --- [ch06] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-03-13T12:20:15.383+09:00  INFO 10812 --- [ch06] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-13T12:20:15.559+09:00  INFO 10812 --- [ch06] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-14T09:25:45.535+09:00  INFO 9584 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 9584 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:25:45.543+09:00  INFO 9584 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:25:46.997+09:00  INFO 9584 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:25:47.402+09:00  INFO 9584 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.347 seconds (process running for 4.307)
+2025-03-14T09:25:48.310+09:00  INFO 9584 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:25:48.742+09:00  INFO 9584 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6604f246
+2025-03-14T09:25:48.746+09:00  INFO 9584 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:25:48.871+09:00  INFO 9584 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:25:48.956+09:00  INFO 9584 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:26:40.136+09:00  INFO 8644 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 8644 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:26:40.138+09:00  INFO 8644 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:26:41.534+09:00  INFO 8644 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:26:41.976+09:00  INFO 8644 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.161 seconds (process running for 3.427)
+2025-03-14T09:26:42.855+09:00  INFO 8644 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:26:43.200+09:00  INFO 8644 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@602c167e
+2025-03-14T09:26:43.203+09:00  INFO 8644 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:26:43.278+09:00  INFO 8644 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:26:43.281+09:00  INFO 8644 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:29:37.470+09:00  INFO 4148 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 4148 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:29:37.473+09:00  INFO 4148 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:29:38.873+09:00  INFO 4148 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:29:39.300+09:00  INFO 4148 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.181 seconds (process running for 3.439)
+2025-03-14T09:29:40.198+09:00  INFO 4148 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:29:40.576+09:00  INFO 4148 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b5e1fc5
+2025-03-14T09:29:40.577+09:00  INFO 4148 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:29:40.676+09:00  INFO 4148 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:29:40.680+09:00  INFO 4148 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:32:03.897+09:00  INFO 4732 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 4732 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:32:03.900+09:00  INFO 4732 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:32:05.540+09:00  INFO 4732 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:32:06.109+09:00  INFO 4732 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.547 seconds (process running for 3.825)
+2025-03-14T09:32:07.134+09:00  INFO 4732 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:32:07.721+09:00  INFO 4732 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47ffa248
+2025-03-14T09:32:07.724+09:00  INFO 4732 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:32:07.851+09:00  INFO 4732 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:32:07.911+09:00  INFO 4732 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:32:28.064+09:00  INFO 4520 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 4520 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:32:28.066+09:00  INFO 4520 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:32:29.466+09:00  INFO 4520 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:32:29.882+09:00  INFO 4520 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.16 seconds (process running for 3.47)
+2025-03-14T09:32:30.887+09:00  INFO 4520 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:32:31.217+09:00  INFO 4520 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@eb695e8
+2025-03-14T09:32:31.220+09:00  INFO 4520 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:32:31.307+09:00  INFO 4520 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:32:31.310+09:00  INFO 4520 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:34:43.410+09:00  INFO 1860 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 1860 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:34:43.412+09:00  INFO 1860 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:34:45.009+09:00  INFO 1860 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:34:45.541+09:00  INFO 1860 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.424 seconds (process running for 3.801)
+2025-03-14T09:34:46.574+09:00  INFO 1860 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:34:46.952+09:00  INFO 1860 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74c04377
+2025-03-14T09:34:46.954+09:00  INFO 1860 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:34:47.035+09:00  INFO 1860 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:34:47.042+09:00  INFO 1860 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:35:13.943+09:00  INFO 9264 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 9264 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:35:13.945+09:00  INFO 9264 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:35:15.329+09:00  INFO 9264 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:35:15.752+09:00  INFO 9264 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.12 seconds (process running for 3.334)
+2025-03-14T09:35:16.646+09:00  INFO 9264 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:35:17.005+09:00  INFO 9264 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74c04377
+2025-03-14T09:35:17.007+09:00  INFO 9264 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:35:17.140+09:00  INFO 9264 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:35:17.211+09:00  INFO 9264 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:35:55.191+09:00  INFO 12784 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 12784 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:35:55.192+09:00  INFO 12784 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:35:56.637+09:00  INFO 12784 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:35:57.110+09:00  INFO 12784 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.233 seconds (process running for 3.508)
+2025-03-14T09:35:58.037+09:00  INFO 12784 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:35:58.403+09:00  INFO 12784 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74c04377
+2025-03-14T09:35:58.405+09:00  INFO 12784 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:35:58.494+09:00  INFO 12784 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:35:58.503+09:00  INFO 12784 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:38:49.888+09:00  INFO 6244 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 6244 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:38:49.893+09:00  INFO 6244 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:38:51.553+09:00  INFO 6244 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:38:52.039+09:00  INFO 6244 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.528 seconds (process running for 3.937)
+2025-03-14T09:38:52.972+09:00  INFO 6244 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:38:53.340+09:00  INFO 6244 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45273d40
+2025-03-14T09:38:53.342+09:00  INFO 6244 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:38:53.449+09:00  INFO 6244 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:38:53.510+09:00  INFO 6244 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:41:33.532+09:00  INFO 11148 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 11148 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:41:33.536+09:00  INFO 11148 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:41:35.102+09:00  INFO 11148 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:41:35.579+09:00  INFO 11148 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.481 seconds (process running for 3.691)
+2025-03-14T09:41:36.606+09:00  INFO 11148 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:41:37.011+09:00  INFO 11148 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45273d40
+2025-03-14T09:41:37.019+09:00  INFO 11148 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:41:37.124+09:00  INFO 11148 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:41:37.128+09:00  INFO 11148 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:42:11.283+09:00  INFO 6876 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 6876 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:42:11.286+09:00  INFO 6876 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:42:12.636+09:00  INFO 6876 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:42:13.141+09:00  INFO 6876 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.213 seconds (process running for 3.409)
+2025-03-14T09:42:14.051+09:00  INFO 6876 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:42:14.443+09:00  INFO 6876 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7eebb316
+2025-03-14T09:42:14.446+09:00  INFO 6876 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:42:14.528+09:00  INFO 6876 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:42:14.532+09:00  INFO 6876 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:45:34.034+09:00  INFO 3924 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 3924 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:45:34.037+09:00  INFO 3924 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:45:35.594+09:00  INFO 3924 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:45:36.038+09:00  INFO 3924 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.364 seconds (process running for 3.851)
+2025-03-14T09:45:36.970+09:00  INFO 3924 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:45:37.415+09:00  INFO 3924 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ba318c2
+2025-03-14T09:45:37.422+09:00  INFO 3924 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:45:37.606+09:00  INFO 3924 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:45:37.614+09:00  INFO 3924 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:47:04.899+09:00  INFO 12960 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 12960 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:47:04.902+09:00  INFO 12960 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:47:06.287+09:00  INFO 12960 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:47:06.708+09:00  INFO 12960 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.172 seconds (process running for 3.551)
+2025-03-14T09:47:07.653+09:00  INFO 12960 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:47:08.044+09:00  INFO 12960 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7eebb316
+2025-03-14T09:47:08.046+09:00  INFO 12960 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:47:08.206+09:00  INFO 12960 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:47:08.249+09:00  INFO 12960 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:49:49.526+09:00  INFO 7948 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 7948 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:49:49.528+09:00  INFO 7948 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:49:50.977+09:00  INFO 7948 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:49:51.430+09:00  INFO 7948 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.3 seconds (process running for 3.733)
+2025-03-14T09:49:52.413+09:00  INFO 7948 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:49:52.795+09:00  INFO 7948 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f9213d2
+2025-03-14T09:49:52.798+09:00  INFO 7948 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:49:52.935+09:00  INFO 7948 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:49:52.992+09:00  INFO 7948 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:50:12.260+09:00  INFO 5280 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 5280 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:50:12.262+09:00  INFO 5280 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:50:13.665+09:00  INFO 5280 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:50:14.090+09:00  INFO 5280 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.183 seconds (process running for 3.448)
+2025-03-14T09:50:15.013+09:00  INFO 5280 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:50:15.348+09:00  INFO 5280 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@eb695e8
+2025-03-14T09:50:15.351+09:00  INFO 5280 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:50:15.539+09:00  INFO 5280 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:50:15.619+09:00  INFO 5280 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:51:08.189+09:00  INFO 16352 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 16352 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:51:08.191+09:00  INFO 16352 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:51:09.881+09:00  INFO 16352 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:51:10.394+09:00  INFO 16352 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.537 seconds (process running for 3.89)
+2025-03-14T09:51:11.454+09:00  INFO 16352 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:51:11.868+09:00  INFO 16352 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f9213d2
+2025-03-14T09:51:11.870+09:00  INFO 16352 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:51:11.974+09:00  INFO 16352 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:51:11.977+09:00  INFO 16352 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:52:13.689+09:00  INFO 11200 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 11200 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:52:13.691+09:00  INFO 11200 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:52:15.228+09:00  INFO 11200 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:52:15.726+09:00  INFO 11200 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.361 seconds (process running for 3.698)
+2025-03-14T09:52:16.671+09:00  INFO 11200 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:52:17.001+09:00  INFO 11200 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@679f59f1
+2025-03-14T09:52:17.004+09:00  INFO 11200 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:52:17.110+09:00  INFO 11200 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:52:17.114+09:00  INFO 11200 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:52:24.539+09:00  INFO 5668 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 5668 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:52:24.542+09:00  INFO 5668 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:52:26.130+09:00  INFO 5668 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:52:26.727+09:00  INFO 5668 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.566 seconds (process running for 4.074)
+2025-03-14T09:52:27.738+09:00  INFO 5668 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:52:28.151+09:00  INFO 5668 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55a055cc
+2025-03-14T09:52:28.154+09:00  INFO 5668 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:52:28.246+09:00  INFO 5668 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:52:28.251+09:00  INFO 5668 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:52:35.850+09:00  INFO 8900 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 8900 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:52:35.853+09:00  INFO 8900 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:52:37.270+09:00  INFO 8900 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:52:37.692+09:00  INFO 8900 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.205 seconds (process running for 3.45)
+2025-03-14T09:52:38.736+09:00  INFO 8900 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:52:39.120+09:00  INFO 8900 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57167ccb
+2025-03-14T09:52:39.122+09:00  INFO 8900 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:52:39.222+09:00  INFO 8900 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:52:39.230+09:00  INFO 8900 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:52:47.951+09:00  INFO 6828 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 6828 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:52:47.953+09:00  INFO 6828 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:52:49.391+09:00  INFO 6828 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:52:49.831+09:00  INFO 6828 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.245 seconds (process running for 3.54)
+2025-03-14T09:52:50.762+09:00  INFO 6828 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:52:51.108+09:00  INFO 6828 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f9213d2
+2025-03-14T09:52:51.110+09:00  INFO 6828 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:52:51.215+09:00  INFO 6828 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:52:51.219+09:00  INFO 6828 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:52:58.671+09:00  INFO 4376 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 4376 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:52:58.674+09:00  INFO 4376 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:53:00.334+09:00  INFO 4376 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:53:00.859+09:00  INFO 4376 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.52 seconds (process running for 3.834)
+2025-03-14T09:53:01.877+09:00  INFO 4376 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:53:02.301+09:00  INFO 4376 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@eb695e8
+2025-03-14T09:53:02.304+09:00  INFO 4376 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:53:02.417+09:00  INFO 4376 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:53:02.474+09:00  INFO 4376 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:54:08.603+09:00  INFO 8308 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 8308 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:54:08.605+09:00  INFO 8308 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:54:10.457+09:00  INFO 8308 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:54:11.113+09:00  INFO 8308 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.854 seconds (process running for 4.355)
+2025-03-14T09:54:12.276+09:00  INFO 8308 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:54:12.740+09:00  INFO 8308 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7eebb316
+2025-03-14T09:54:12.743+09:00  INFO 8308 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:54:12.975+09:00  INFO 8308 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:54:13.025+09:00  INFO 8308 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:55:32.112+09:00  INFO 7760 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 7760 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:55:32.114+09:00  INFO 7760 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:55:33.746+09:00  INFO 7760 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:55:34.227+09:00  INFO 7760 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.444 seconds (process running for 3.7)
+2025-03-14T09:55:35.165+09:00  INFO 7760 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:55:35.540+09:00  INFO 7760 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f12d5e0
+2025-03-14T09:55:35.542+09:00  INFO 7760 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:55:35.720+09:00  INFO 7760 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:55:35.752+09:00  INFO 7760 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:56:25.571+09:00  INFO 6800 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 6800 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:56:25.573+09:00  INFO 6800 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:56:26.965+09:00  INFO 6800 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:56:27.431+09:00  INFO 6800 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.192 seconds (process running for 3.418)
+2025-03-14T09:56:28.532+09:00  INFO 6800 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:56:28.978+09:00  INFO 6800 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fef5792
+2025-03-14T09:56:28.982+09:00  INFO 6800 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:56:29.178+09:00  INFO 6800 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:56:29.233+09:00  INFO 6800 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T09:57:28.739+09:00  INFO 16196 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 16196 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T09:57:28.742+09:00  INFO 16196 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T09:57:30.238+09:00  INFO 16196 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T09:57:30.737+09:00  INFO 16196 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.347 seconds (process running for 3.767)
+2025-03-14T09:57:31.730+09:00  INFO 16196 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T09:57:32.179+09:00  INFO 16196 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57ed02e6
+2025-03-14T09:57:32.181+09:00  INFO 16196 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T09:57:32.338+09:00  INFO 16196 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T09:57:32.346+09:00  INFO 16196 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T10:03:09.437+09:00  INFO 6752 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 6752 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:03:09.439+09:00  INFO 6752 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:03:11.146+09:00  INFO 6752 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:03:11.595+09:00  INFO 6752 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.592 seconds (process running for 4.248)
+2025-03-14T10:03:12.699+09:00  INFO 6752 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T10:03:13.201+09:00  INFO 6752 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fef5792
+2025-03-14T10:03:13.204+09:00  INFO 6752 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T10:03:13.449+09:00  INFO 6752 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T10:03:13.491+09:00  INFO 6752 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T10:04:53.088+09:00  INFO 10748 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Starting User1MapperTest using Java 17.0.12 with PID 10748 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:04:53.092+09:00  INFO 10748 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:04:54.985+09:00  INFO 10748 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:04:55.430+09:00  INFO 10748 --- [ch06] [Test worker] kr.co.ch06.dao.User1MapperTest           : Started User1MapperTest in 2.847 seconds (process running for 4.358)
+2025-03-14T10:04:56.499+09:00  INFO 10748 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T10:04:57.106+09:00  INFO 10748 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cfe9594
+2025-03-14T10:04:57.108+09:00  INFO 10748 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T10:04:57.308+09:00  INFO 10748 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T10:04:57.352+09:00  INFO 10748 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
