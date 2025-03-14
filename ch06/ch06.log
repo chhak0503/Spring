@@ -241,3 +241,49 @@
 2025-03-14T10:04:57.108+09:00  INFO 10748 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2025-03-14T10:04:57.308+09:00  INFO 10748 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-03-14T10:04:57.352+09:00  INFO 10748 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T10:16:29.786+09:00  INFO 8808 --- [ch06] [Test worker] kr.co.ch06.service.User1ServiceTest      : Starting User1ServiceTest using Java 17.0.12 with PID 8808 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:16:29.790+09:00  INFO 8808 --- [ch06] [Test worker] kr.co.ch06.service.User1ServiceTest      : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:16:31.487+09:00  INFO 8808 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:16:31.995+09:00  INFO 8808 --- [ch06] [Test worker] kr.co.ch06.service.User1ServiceTest      : Started User1ServiceTest in 2.586 seconds (process running for 4.085)
+2025-03-14T10:16:33.142+09:00  INFO 8808 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-14T10:16:33.713+09:00  INFO 8808 --- [ch06] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f7c9755
+2025-03-14T10:16:33.716+09:00  INFO 8808 --- [ch06] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-14T10:16:33.844+09:00  INFO 8808 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-14T10:16:33.889+09:00  INFO 8808 --- [ch06] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-14T10:30:46.295+09:00  INFO 16104 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 16104 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:30:46.297+09:00  INFO 16104 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:30:48.342+09:00  INFO 16104 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:30:48.931+09:00  INFO 16104 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:30:48.932+09:00  INFO 16104 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:30:48.934+09:00  INFO 16104 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-03-14T10:30:48.996+09:00  INFO 16104 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 3.132 seconds (process running for 4.838)
+2025-03-14T10:34:32.656+09:00  INFO 9804 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 9804 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:34:32.658+09:00  INFO 9804 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:34:34.577+09:00  INFO 9804 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:34:35.205+09:00  INFO 9804 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:34:35.206+09:00  INFO 9804 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:34:35.208+09:00  INFO 9804 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-03-14T10:34:35.274+09:00  INFO 9804 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 3.046 seconds (process running for 4.686)
+2025-03-14T10:39:19.273+09:00  INFO 10052 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 10052 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:39:19.275+09:00  INFO 10052 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:39:21.059+09:00  INFO 10052 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:39:21.717+09:00  INFO 10052 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:39:21.718+09:00  INFO 10052 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:39:21.729+09:00  INFO 10052 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 10 ms
+2025-03-14T10:39:21.793+09:00  INFO 10052 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 2.984 seconds (process running for 4.719)
+2025-03-14T10:40:55.621+09:00  INFO 15264 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 15264 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:40:55.623+09:00  INFO 15264 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:40:57.632+09:00  INFO 15264 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:40:58.148+09:00  INFO 15264 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:40:58.148+09:00  INFO 15264 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:40:58.149+09:00  INFO 15264 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-03-14T10:40:58.179+09:00  INFO 15264 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 3.05 seconds (process running for 4.639)
+2025-03-14T10:40:59.512+09:00  WARN 15264 --- [ch06] [Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-03-14T10:42:26.968+09:00  INFO 14324 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Starting Sub1ControllerTest using Java 17.0.12 with PID 14324 (started by lotte6 in C:\Users\lotte6\Desktop\workspace\Spring\ch06)
+2025-03-14T10:42:26.970+09:00  INFO 14324 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2025-03-14T10:42:28.807+09:00  INFO 14324 --- [ch06] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-03-14T10:42:29.320+09:00  INFO 14324 --- [ch06] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-14T10:42:29.321+09:00  INFO 14324 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-14T10:42:29.323+09:00  INFO 14324 --- [ch06] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-03-14T10:42:29.382+09:00  INFO 14324 --- [ch06] [Test worker] k.co.ch06.controller.Sub1ControllerTest  : Started Sub1ControllerTest in 2.909 seconds (process running for 4.516)
+2025-03-14T10:42:30.721+09:00  WARN 14324 --- [ch06] [Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
