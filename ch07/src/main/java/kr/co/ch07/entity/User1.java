@@ -4,6 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import kr.co.ch07.dto.User1DTO;
 import lombok.*;
 
 // 엔티티는 @Setter 안씀
@@ -28,6 +29,15 @@ public class User1 {
     private int age;
     
     // DTO 변환 메서드 정의
+    public User1DTO toDTO(){
+        return User1DTO.builder()
+                .uid(uid)
+                .name(name)
+                .hp(hp)
+                .age(age)
+                .build();
+    }
+
 
 
 }
