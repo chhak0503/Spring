@@ -22,8 +22,8 @@
     <td th:text="${user1.hp}">휴대폰</td>
     <td th:text="${user1.age}">나이</td>
     <td>
-      <a th:href="@{/user1/modify}">수정</a>
-      <a th:href="@{/user1/delete}">삭제</a>
+      <a th:href="@{/user1/modify(uid=${user1.uid})}">수정</a>
+      <a th:href="@{/user1/delete(uid=${user1.uid})}">삭제</a>
     </td>
   </tr>
 </table>
