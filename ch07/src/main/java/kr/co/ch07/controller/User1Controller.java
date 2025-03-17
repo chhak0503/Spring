@@ -60,7 +60,8 @@ public class User1Controller {
     public String modify(User1DTO user1DTO){
 
         // 서비스 호출
-        service.modify(user1DTO);
+        //service.modify(user1DTO);
+        service.update(user1DTO);
 
         // 리다이렉트
         return "redirect:/user1/list";

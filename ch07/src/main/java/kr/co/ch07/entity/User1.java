@@ -8,6 +8,7 @@ import kr.co.ch07.dto.User1DTO;
 import lombok.*;
 
 // 엔티티는 @Setter 안씀
+@Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
