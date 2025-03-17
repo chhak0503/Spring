@@ -1,5 +1,7 @@
 package kr.co.ch07.repository;
 
+import kr.co.ch07.entity.Child;
+import kr.co.ch07.entity.Parent;
 import kr.co.ch07.entity.User1;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -108,5 +110,41 @@ class User1RepositoryTest {
 
     @Test
     void countUser1ByName() {
+    }
+
+    @Test
+    void selectUser1UnderAge30() {
+    }
+
+    @Test
+    void selectUser1ByName() {
+    }
+
+    @Test
+    void selectUser1ByNameParam() {
+    }
+
+    @Test
+    void selectUser1ByUid() {
+    }
+
+    @Test
+    void selectAllParentWithChild() {
+
+        // given
+        String pid = "p101";
+
+        // when
+        List<Object[]> list = user1Repository.selectAllParentWithChild(pid);
+
+        // then
+        for(Object[] arr : list){
+
+            Parent parent = (Parent) arr[0];
+            Child child = (Child) arr[1];
+
+            System.out.println(parent);
+            System.out.println(child);
+        }
     }
 }
