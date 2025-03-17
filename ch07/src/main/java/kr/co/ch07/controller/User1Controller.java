@@ -4,8 +4,12 @@ import kr.co.ch07.dto.User1DTO;
 import kr.co.ch07.service.User1Service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import javax.swing.*;
+import java.util.List;
 
 @RequiredArgsConstructor
 @Controller
@@ -14,7 +18,14 @@ public class User1Controller {
     private final User1Service service;
 
     @GetMapping("/user1/list")
-    public String list(){
+    public String list(Model model){
+
+        // 서비스 호출
+        List<User1DTO> user1DTOList = service.findAll();
+
+        // 모델 참조
+        model.addAttribute("user1DTOList", user1DTOList);
+
         return "/user1/list";
     }
 

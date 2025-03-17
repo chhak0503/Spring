@@ -7,7 +7,10 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -29,7 +32,25 @@ public class User1Service {
     }
 
     public List<User1DTO> findAll(){
-        return null;
+
+        // Entity 전체 조회
+        List<User1> user1Entities = repository.findAll();
+
+        // DTO 리스트 변환
+        /*
+        // 외부 반복자를 이용하기 때문에 성능에서 불리
+        List<User1DTO> user1DTOs = new ArrayList<>();
+        for(User1 user1 : user1Entities){
+            user1DTOs.add(user1.toDTO());
+        }
+        */
+        // 내부 반복자를 이용한 변환
+        List<User1DTO> user1DTOs = user1Entities
+                                    .stream()
+                                    .map(entity -> entity.toDTO())
+                                    .toList();
+
+        return user1DTOs;
     }
 
     public User1DTO findById(String uid){

@@ -16,11 +16,11 @@
     <th>나이</th>
     <th>관리</th>
   </tr>
-  <tr>
-    <td>dfdfdf</td>
-    <td>dfdfdf</td>
-    <td th:text="010-2222-1111">휴대폰</td>
-    <td th:text="21">나이</td>
+  <tr th:each="user1:${user1DTOList}">
+    <td>[[${user1.uid}]]</td>
+    <td>[[${user1.name}]]</td>
+    <td th:text="${user1.hp}">휴대폰</td>
+    <td th:text="${user1.age}">나이</td>
     <td>
       <a th:href="@{/user1/modify}">수정</a>
       <a th:href="@{/user1/delete}">삭제</a>
