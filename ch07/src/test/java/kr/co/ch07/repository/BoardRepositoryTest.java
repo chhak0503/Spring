@@ -97,11 +97,14 @@ public class BoardRepositoryTest {
         */
         List<Article> articleList = articleRepository.findAll();
 
+        System.out.println(articleList);
+
         /*
             양방향(@oneToMany) 엔티티 관계에서 @ToString 어노테이션으로 생성되는 toString 메서드에서
             엔티티간 toString 재귀호출로 인해 stackOverflow 에러 발생 -> @ToString에서 exclude 속성으로
             순환참조 되는 엔티티를 제외
         */
+
         for(Article article : articleList){
             System.out.println(article);
 
@@ -111,6 +114,7 @@ public class BoardRepositoryTest {
                 System.out.println(comment);
             }
         }
+
     }
 
     // 테스트6 - 글 조회

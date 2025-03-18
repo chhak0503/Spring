@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@ToString
+@ToString(exclude = "article")
 @Entity
 @Table(name = "Board_Comment")
 public class Comment {
@@ -23,9 +23,7 @@ public class Comment {
     @JoinColumn(name = "parent")
     private Article article;
 
-
     private String content;
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "writer")
     private User user;
