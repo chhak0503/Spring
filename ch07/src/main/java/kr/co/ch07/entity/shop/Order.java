@@ -26,7 +26,7 @@ public class Order {
     @JoinColumn(name = "custId")
     private Customer customer;
 
-    private String orderPrice;
+    private int orderPrice;
 
     @OneToMany(mappedBy = "order")
     private List<OrderItem> orderItem;
