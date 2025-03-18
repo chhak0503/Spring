@@ -2,14 +2,16 @@ package kr.co.ch07.entity.board;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@ToString
+@ToString(exclude = {"comment", "file"})
 @Entity
 @Table(name = "Board_Article")
 public class Article {
@@ -30,10 +32,8 @@ public class Article {
     @OneToMany(mappedBy = "article")
     private List<File> file;
 
-    private String wdate;
-
-
-
+    @CreationTimestamp
+    private LocalDateTime wdate;
 
 
 }

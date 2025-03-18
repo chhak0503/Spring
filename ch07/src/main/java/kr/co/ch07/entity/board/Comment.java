@@ -2,6 +2,9 @@ package kr.co.ch07.entity.board;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.time.LocalDateTime;
 
 @Getter
 @NoArgsConstructor
@@ -27,5 +30,8 @@ public class Comment {
     @JoinColumn(name = "writer")
     private User user;
 
-    private String wdate;
+    @CreationTimestamp
+    private LocalDateTime wdate;
+
+
 }
