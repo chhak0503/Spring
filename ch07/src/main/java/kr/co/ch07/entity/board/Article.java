@@ -46,7 +46,6 @@ public class Article {
          - 영속성 전이(cascade) 이해하기
          - N+1 문제 이해하기
          - 고아 객체(orphan) 문제 이해하기
-
     */
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "writer")
