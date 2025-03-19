@@ -10949,3 +10949,8 @@ Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK43pkx1760x1qt0shniyq0
 2025-03-18T16:00:36.324+09:00  INFO 19644 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-18T16:00:36.334+09:00  INFO 19644 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-03-18T16:00:36.347+09:00  INFO 19644 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-18T16:16:41.687+09:00  INFO 8616 --- [ch07] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T16:16:41.843+09:00  INFO 8616 --- [ch07] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T16:16:41.852+09:00  INFO 8616 --- [ch07] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T16:16:41.859+09:00  INFO 8616 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T16:16:41.870+09:00  INFO 8616 --- [ch07] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

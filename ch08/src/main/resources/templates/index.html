@@ -13,10 +13,14 @@
     <h3>ch08. Spring Security</h3>
 
     <h4>인증 테스트</h4>
-    <a th:href="@{/user/login}">로그인</a>
-    <a th:href="@{/user/register}">회원가입</a>
 
-
+    <th:block th:if="${user == null}">
+        <a th:href="@{/user/login}">로그인</a>
+        <a th:href="@{/user/register}">회원가입</a>
+    </th:block>
+    <th:block th:unless="${user == null}">
+        <a th:href="@{/user/logout}">로그아웃</a>
+    </th:block>
 
 </body>
 </html>
