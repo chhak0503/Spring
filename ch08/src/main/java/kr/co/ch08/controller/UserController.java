@@ -7,6 +7,7 @@ import kr.co.ch08.security.MyUserDetails;
 import kr.co.ch08.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -39,6 +40,7 @@ public class UserController {
         service.register(userDTO);
         return "redirect:/user/login";
     }
+
 
     @GetMapping("/user/info")
     public String info(Model model){
