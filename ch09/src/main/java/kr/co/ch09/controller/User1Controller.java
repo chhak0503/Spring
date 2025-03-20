@@ -1,5 +1,6 @@
 package kr.co.ch09.controller;
 
+import jakarta.validation.Valid;
 import kr.co.ch09.dto.User1DTO;
 import kr.co.ch09.service.User1Service;
 import lombok.RequiredArgsConstructor;
@@ -31,16 +32,26 @@ public class User1Controller {
         return user1Service.findById(uid);
     }
 
+    /*
+        @RequestBody
+         - 요청본문 내용에 포함된 데이터를 Java 객체로 변환하는 어노테이션, JSON 데이터 수신
 
+        @Valid
+         - REST API 서비스 특성상 클라이언트에서 유효성검사를 하기 어렵기 때문에 백엔드에서 유효성검사를 수행
+         - 수신 처리되는 DTO의 각 속성 데이터를 유효성검사 하기위해 어노테이션(@NotBlank, @NotEmpty, @NotNull, @Email...) 사용
+         - @Valid 어노테이션으로 DTO의 유효성검사 어노테이션을 수행
+    */
     @PostMapping("/user1")
-    public ResponseEntity<User1DTO> register(@RequestBody User1DTO user1DTO){ // 요청본문 내용에 포함된 데이터를 Java 객체로 변환하는 어노테이션, JSON 데이터 수신
+    public ResponseEntity<User1DTO> register(@Valid @RequestBody User1DTO user1DTO){
 
         log.info("user1DTO : {}", user1DTO);
 
         User1DTO savedUser1 = user1Service.save(user1DTO);
 
         // ResponseEntity 응답객체를 반환하면 @ResponseBody 어노테이션은 생략가능
-        return ResponseEntity.ok(savedUser1);
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(savedUser1);
     }
 
     @PutMapping("/user1")
