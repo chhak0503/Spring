@@ -50,7 +50,7 @@ public class User1Controller {
 
         // ResponseEntity 응답객체를 반환하면 @ResponseBody 어노테이션은 생략가능
         return ResponseEntity
-                .status(HttpStatus.CREATED)
+                .status(HttpStatus.OK)
                 .body(savedUser1);
     }
 
