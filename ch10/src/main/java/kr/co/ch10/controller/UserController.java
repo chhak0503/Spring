@@ -29,11 +29,15 @@ public class UserController {
     private final AuthenticationManager authenticationManager;
     private final JwtProvider jwtProvider;
 
-
-
     @GetMapping("/user")
-    public void user(){
+    public ResponseEntity<User> user(Authentication authentication){
 
+        log.info("authentication : {}", authentication);
+
+        User user = (User) authentication.getPrincipal();
+        log.info("user : {}", user);
+
+        return ResponseEntity.ok().body(user);
     }
 
     @PostMapping("/user/login")
