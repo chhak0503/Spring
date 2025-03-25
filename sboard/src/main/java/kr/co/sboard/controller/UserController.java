@@ -9,11 +9,15 @@ import kr.co.sboard.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -66,10 +70,18 @@ public class UserController {
 
 
     @GetMapping("/user/{type}/{value}")
-    public void user(@PathVariable("type") String type, @PathVariable("value") String value){
+    public ResponseEntity user(@PathVariable("type") String type, @PathVariable("value") String value){
+        log.info("type : " + type + ", value : " + value);
 
-        log.info("type : " + type + " value : " + value);
+        // 서비스 호출
+        long count = userService.checkUser(type, value);
 
+        // JSON 생성
+        Map<String, Long> resultMap = new HashMap<>();
+        resultMap.put("count", count);
+
+        // JSON 반환
+        return ResponseEntity.ok().body(resultMap);
     }
 
 

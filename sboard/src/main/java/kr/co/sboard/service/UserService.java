@@ -29,8 +29,20 @@ public class UserService {
         userRepository.save(user);
     }
 
-    public void findById(){
+    public long checkUser(String type, String value){
 
+        long count = 0;
+
+        if(type.equals("uid")){
+            count = userRepository.countByUid(value);
+        }else if(type.equals("nick")){
+            count = userRepository.countByNick(value);
+        }else if(type.equals("email")){
+            count = userRepository.countByEmail(value);
+        }else if(type.equals("hp")){
+            count = userRepository.countByHp(value);
+        }
+        return count;
     }
 
 
