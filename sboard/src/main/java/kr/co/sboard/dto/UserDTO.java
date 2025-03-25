@@ -1,46 +1,31 @@
-package kr.co.sboard.entity;
+package kr.co.sboard.dto;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
 @Builder
-@Entity
-@Table(name = "User")
-public class User {
-
-    @Id
+public class UserDTO {
     private String uid;
     private String pass;
     private String name;
     private String nick;
     private String email;
     private String hp;
-
-    @Column(nullable = false)
     private String role;
-
     private String zip;
     private String addr1;
     private String addr2;
     private String regip;
-
-    @CreationTimestamp
-    private LocalDateTime regDate;
-
+    private String regDate;
     private String leaveDate;
-
-    @PrePersist
-    public void prePersist(){
-        if(this.role == null){
-            this.role = "USER";
-        }
-    }
-
 }

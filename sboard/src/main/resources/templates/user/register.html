@@ -4,26 +4,61 @@
     <meta charset="UTF-8">
     <title>회원가입</title>
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function(){
+
+            // 아이디 중복체크
+            const inputUid = document.getElementsByName('uid')[0];
+            const checkUid = document.getElementById('checkUid');
+            checkUid.onclick = function(){
+                //alert('click!');
+                const value = inputUid.value;
+                console.log('value : ' + value);
+
+                fetch(`/user/uid/${value}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data);
+                    })
+                    .catch(err => {
+                        console.log(err);
+                    });
+            }
+
+
+
+
+
+
+
+
+
+        }); // DOMContentLoaded end
+
+
+    </script>
+
 </head>
 <body>
     <div id="wrapper">
         <th:block th:include="/user/_head.html"/>
         <main id="user">
             <section class="register">
-                <form action="#">
+                <form th:action="@{/user/register}" method="post">
                     <h2 class="tit">사이트 이용정보 입력</h2>
                     <table border="1">                        
                         <tr>
                             <td>아이디</td>
                             <td>
                                 <input type="text" name="uid" placeholder="아이디 입력"/>
-                                <button type="button"><img th:src="@{/images/chk_id.gif}" alt="중복확인"/></button>
+                                <button id="checkUid" type="button"><img th:src="@{/images/chk_id.gif}" alt="중복확인"/></button>
                                 <span class="uidResult"></span>
                             </td>
                         </tr>
                         <tr>
                             <td>비밀번호</td>
-                            <td><input type="password" name="pass1" placeholder="비밀번호 입력"/></td>
+                            <td><input type="password" name="pass" placeholder="비밀번호 입력"/></td>
                         </tr>
                         <tr>
                             <td>비밀번호 확인</td>
