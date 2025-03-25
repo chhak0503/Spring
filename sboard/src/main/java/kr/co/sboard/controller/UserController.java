@@ -1,6 +1,8 @@
 package kr.co.sboard.controller;
 
 import kr.co.sboard.config.AppInfo;
+import kr.co.sboard.dto.TermsDTO;
+import kr.co.sboard.service.TermsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,9 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class UserController {
 
-
-    private final AppInfo appInfo;
-
+    private final TermsService termsService;
 
     @GetMapping("/user/info")
     public String info(){
@@ -35,7 +35,10 @@ public class UserController {
     }
 
     @GetMapping("/user/terms")
-    public String terms(){
+    public String terms(Model model){
+
+        TermsDTO termsDTO = termsService.terms();
+        model.addAttribute(termsDTO);
 
         return "/user/terms";
     }
