@@ -1,9 +1,7 @@
 package kr.co.ch04.mapper;
 
 import kr.co.ch04.dto.User1DTO;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -11,13 +9,14 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @SpringBootTest
 class User1MapperTest {
 
     @Autowired
     private User1Mapper user1Mapper;
 
-    private String userid = "abc3001";
+    private String userid = "abc3333";
 
     @Order(1)
     @DisplayName("등록 테스트")
@@ -43,7 +42,6 @@ class User1MapperTest {
     @DisplayName("조회 테스트")
     @Test
     void select() {
-
         // Given
         //String uid = "abc1001";
 

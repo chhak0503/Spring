@@ -47,9 +47,18 @@ class User1ControllerTest {
     }
 
     @Test
-    void modify() {
+    void modify() throws Exception {
 
-
+        mockMvc.perform(
+                        post("/user1/modify")
+                                .param("uid", "asdfas")
+                                .param("name", "홍길동")
+                                .param("birth", "1992-10-02")
+                                .param("age", "21")
+                )
+                .andExpect(status().is3xxRedirection())
+                .andExpect(redirectedUrl("/user1/list"))
+                .andDo(print());
 
     }
 
