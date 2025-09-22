@@ -8,7 +8,9 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Getter
-@ToString
+// 엔티티 관계설정에서 엔티티의 toString()을 호출되면 또다른 엔티티의 toString() 호출되기 때문에 엔티티간의 toString() 호출로 stackoverflow 에러 발생
+// 엔티티의 어느 한쪽에서는 toString() 호출을 제외(exclude)에서 순환 참조 호출 방지
+@ToString(exclude = {"commentList"})
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -21,11 +23,18 @@ public class Article {
     private int ano;
     private String title;
     private String content;
-    private String author;
+
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "author")
+    private User user;
 
     // @OneToMany 관계설정에 반드시 mappedBy 속성은 양방향 관계에서 기준이 되는 속성, FK가 되는 엔티티 속성
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "article")
     private List<Comment> commentList;
+
+    @OneToMany(fetch = FetchType.LAZY)
+    private List<File> fileList;
 
 
     @CreationTimestamp
