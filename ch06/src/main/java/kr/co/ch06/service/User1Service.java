@@ -20,13 +20,13 @@ public class User1Service {
     private final User1Repository user1Repository;
 
     public void save(User1DTO user1DTO) {
-        
         // DTO를 Entity로 변환
         User1 user1 = user1DTO.toEntity();
 
         // save() : JPA 기본 Insert 메서드
         user1Repository.save(user1);
     }
+
     public User1DTO getUser(String userid) {
         /*
             findById() : JPA 기본 select 메서드, 반환값은 Optional 타입

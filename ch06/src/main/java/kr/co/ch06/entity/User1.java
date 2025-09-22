@@ -22,6 +22,7 @@ public class User1 {
 
     @Column(name = "name") // 매핑 컬럼, 일반적으로 생략
     private String name;
+
     private String birth;
     private int age;
 
