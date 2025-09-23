@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
 <head>
     <meta charset="UTF-8">
     <title>ch07.Spring Security</title>
@@ -11,6 +11,16 @@
 </head>
 <body>
     <h3>ch07.Spring Security</h3>
+
+    <h4>인증 실습</h4>
+
+    <th:block sec:authorize="isAnonymous()">
+        <a th:href="@{/user/login}">로그인</a>
+        <a th:href="@{/user/register}">회원가입</a>
+    </th:block>
+    <th:block sec:authorize="isAuthenticated()">
+        <a th:href="@{/user/logout}">로그아웃</a>
+    </th:block>
 
 </body>
 </html>
