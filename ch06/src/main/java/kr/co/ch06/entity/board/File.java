@@ -10,7 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table
+@Table(name = "TBL_File")
 public class File {
 
     @Id
@@ -19,10 +19,5 @@ public class File {
 
     private String oName;
     private String sName;
-
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "ano")
-    private Article article;
 
 }

@@ -10,12 +10,12 @@ import java.util.List;
 @Getter
 // 엔티티 관계설정에서 엔티티의 toString()을 호출되면 또다른 엔티티의 toString() 호출되기 때문에 엔티티간의 toString() 호출로 stackoverflow 에러 발생
 // 엔티티의 어느 한쪽에서는 toString() 호출을 제외(exclude)에서 순환 참조 호출 방지
-@ToString(exclude = {"commentList"})
+@ToString(exclude = {"commentList", "fileList"})
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "Article")
+@Table(name = "TBL_Article")
 public class Article {
 
     @Id
@@ -34,6 +34,7 @@ public class Article {
     private List<Comment> commentList;
 
     @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "ano") // OneToMany에서 JoinColumn으로 File 엔티티에 ano FK 생성
     private List<File> fileList;
 
 

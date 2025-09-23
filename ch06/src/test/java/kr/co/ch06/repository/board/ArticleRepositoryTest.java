@@ -34,8 +34,8 @@ class ArticleRepositoryTest {
     void insertUserTest(){
 
         User user = User.builder()
-                .userid("a101")
-                .name("김유신")
+                .userid("a102")
+                .name("김춘추")
                 .age(23)
                 .build();
 
@@ -69,7 +69,6 @@ class ArticleRepositoryTest {
         File file = File.builder()
                 .oName("매출자료2.xls")
                 .sName("akfal-asd-1213dsdf.xls")
-                .article(article)
                 .build();
 
         fileRepository.save(file);
