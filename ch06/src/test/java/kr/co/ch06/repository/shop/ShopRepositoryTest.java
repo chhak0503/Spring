@@ -121,10 +121,10 @@ public class ShopRepositoryTest {
         ProductAggDTO resultDTO = queryFactory.select(
                 Projections.fields(
                         ProductAggDTO.class,
-                        qProduct.price.sum().as("price_sum"),
-                        qProduct.price.avg().as("price_avg"),
-                        qProduct.price.max().as("price_max"),
-                        qProduct.price.min().as("price_min")
+                        qProduct.price.sum().as("priceSum"),
+                        qProduct.price.avg().as("priceAvg"),
+                        qProduct.price.max().as("priceMax"),
+                        qProduct.price.min().as("priceMin")
                 )
         ).from(qProduct).fetchOne();
 
