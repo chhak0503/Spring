@@ -24,11 +24,15 @@ public class UserController {
         return "user/register";
     }
 
+    @GetMapping("/user/info")
+    public String info(){
+        // 타임리프 시큐리티 속성으로 인증된 사용자 정보 출력
+        return "user/info";
+    }
+
     @PostMapping("/user/register")
     public String register(UserDTO  userDTO){
-
         userService.save(userDTO);
-
         return "redirect:/user/login";
     }
 
