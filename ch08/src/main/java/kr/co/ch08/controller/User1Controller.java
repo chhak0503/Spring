@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,7 +25,7 @@ public class User1Controller {
     public ResponseEntity<List<User1DTO>> list(){
         List<User1DTO> dtoList = user1Service.getUserAll();
 
-        // 다양한 결과 정보를 출력하기 위해 ResponseEntity로 데이터 전송
+        // 다양한 요청 결과 정보를 프론트에 제공하기 위해 ResponseEntity로 데이터 전송
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(dtoList);
