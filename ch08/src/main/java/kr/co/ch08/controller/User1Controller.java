@@ -24,8 +24,15 @@ public class User1Controller {
         return dtoList;
     }
 
+    @ResponseBody
     @GetMapping("/user1/{userid}")
-    public void user1(@PathVariable("userid") String userid){}
+    public User1DTO user1(@PathVariable("userid") String userid){
+
+        log.info("user1 ==> userid={}", userid);
+        User1DTO user1DTO = user1Service.getUser(userid);
+
+        return user1DTO;
+    }
 
     @ResponseBody
     @PostMapping("/user1")
@@ -37,11 +44,22 @@ public class User1Controller {
         return "success";
     }
 
+    @ResponseBody
     @PutMapping("/user1")
-    public void modify(User1DTO user1DTO){}
+    public String modify(@RequestBody User1DTO user1DTO){ // @RequestBody : 요청 객체 body로 전송되는 JSON 데이터 수신
+        log.info("user1DTO={}", user1DTO);
+        user1Service.modify(user1DTO);
+        return "modified";
+    }
 
+    @ResponseBody
     @DeleteMapping("/user1/{userid}")
-    public void delete(@PathVariable("userid") String userid){}
+    public String delete(@PathVariable("userid") String userid){
+        
+        log.info("user1 ==> userid={}", userid);
 
+        user1Service.remove(userid);
 
+        return "deleted";
+    }
 }
