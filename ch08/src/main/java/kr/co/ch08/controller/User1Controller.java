@@ -1,5 +1,6 @@
 package kr.co.ch08.controller;
 
+import jakarta.validation.Valid;
 import kr.co.ch08.dto.User1DTO;
 import kr.co.ch08.service.User1Service;
 import lombok.RequiredArgsConstructor;
@@ -29,7 +30,7 @@ public class User1Controller {
                 .body(dtoList);
     }
 
-    //@ResponseBody
+    //@ResponseBody --> @RestController로 대체
     @GetMapping("/user1/{userid}")
     public ResponseEntity<User1DTO> user1(@PathVariable("userid") String userid){
         log.info("user1 ==> userid={}", userid);
@@ -43,7 +44,7 @@ public class User1Controller {
 
     //@ResponseBody
     @PostMapping("/user1")
-    public ResponseEntity<User1DTO> register(@RequestBody User1DTO user1DTO){
+    public ResponseEntity<User1DTO> register(@Valid @RequestBody User1DTO user1DTO){
         log.info("user1DTO={}", user1DTO);
 
         User1DTO savedUser1 = user1Service.save(user1DTO);

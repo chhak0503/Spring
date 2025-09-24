@@ -29,6 +29,4 @@ public class User1 {
                 .age(age)
                 .build();
     }
-
-
 }
