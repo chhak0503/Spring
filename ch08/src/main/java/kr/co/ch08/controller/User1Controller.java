@@ -4,6 +4,7 @@ import kr.co.ch08.dto.User1DTO;
 import kr.co.ch08.service.User1Service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -12,54 +13,66 @@ import java.util.List;
 
 @Slf4j
 @RequiredArgsConstructor
-@Controller
+@RestController // 해당 컨트롤러 요청 메서드 반환값을 JSON 출력으로 처리
 public class User1Controller {
 
     private final User1Service user1Service;
 
     @ResponseBody // 컨트롤러의 요청 메서드의 반환값을 View로 출력하지 않고 응답객체 Response body로 출력, JSON 출력
     @GetMapping("/user1")
-    public List<User1DTO> list(){
+    public ResponseEntity<List<User1DTO>> list(){
         List<User1DTO> dtoList = user1Service.getUserAll();
-        return dtoList;
+
+        // 다양한 결과 정보를 출력하기 위해 ResponseEntity로 데이터 전송
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(dtoList);
     }
 
-    @ResponseBody
+    //@ResponseBody
     @GetMapping("/user1/{userid}")
-    public User1DTO user1(@PathVariable("userid") String userid){
-
+    public ResponseEntity<User1DTO> user1(@PathVariable("userid") String userid){
         log.info("user1 ==> userid={}", userid);
+
         User1DTO user1DTO = user1Service.getUser(userid);
 
-        return user1DTO;
+        return ResponseEntity
+                    .status(HttpStatus.FOUND)
+                    .body(user1DTO);
     }
 
-    @ResponseBody
+    //@ResponseBody
     @PostMapping("/user1")
-    public String register(User1DTO user1DTO){
-
+    public ResponseEntity<User1DTO> register(@RequestBody User1DTO user1DTO){
         log.info("user1DTO={}", user1DTO);
-        user1Service.save(user1DTO);
 
-        return "success";
+        User1DTO savedUser1 = user1Service.save(user1DTO);
+
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(savedUser1);
     }
 
-    @ResponseBody
+    //@ResponseBody
     @PutMapping("/user1")
-    public String modify(@RequestBody User1DTO user1DTO){ // @RequestBody : 요청 객체 body로 전송되는 JSON 데이터 수신
+    public ResponseEntity<User1DTO> modify(@RequestBody User1DTO user1DTO){ // @RequestBody : 요청 객체 body로 전송되는 JSON 데이터 수신
         log.info("user1DTO={}", user1DTO);
-        user1Service.modify(user1DTO);
-        return "modified";
+
+        User1DTO modifiedUser1 = user1Service.modify(user1DTO);
+
+        return ResponseEntity
+                .status(HttpStatus.ACCEPTED)
+                .body(modifiedUser1);
     }
 
-    @ResponseBody
+    //@ResponseBody
     @DeleteMapping("/user1/{userid}")
-    public String delete(@PathVariable("userid") String userid){
-        
+    public ResponseEntity<Boolean> delete(@PathVariable("userid") String userid){
         log.info("user1 ==> userid={}", userid);
+        boolean isSuccess = user1Service.remove(userid);
 
-        user1Service.remove(userid);
-
-        return "deleted";
+        return ResponseEntity
+                    .status(HttpStatus.OK)
+                    .body(isSuccess);
     }
 }
