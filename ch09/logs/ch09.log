@@ -7085,3 +7085,825 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for l
 2025-09-25T12:02:17.244+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
 2025-09-25T12:02:17.248+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 0.88 seconds (process running for 481.126)
 2025-09-25T12:02:17.249+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-25T12:04:11.195+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-25T12:04:11.195+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-25T12:04:11.197+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-25T12:04:11.197+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : BearereyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4NzY5MTE3LCJleHAiOjE3NTg4NTU1MTcsInVzZXJuYW1lIjoiY2hoYWswNTAzIiwicm9sZSI6IkFETUlOIn0.rrHO0Un0VQm_4-kEe8MPfodZhj83hmlKb5NEWUqoEkM
+2025-09-25T12:04:11.197+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : token : eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4NzY5MTE3LCJleHAiOjE3NTg4NTU1MTcsInVzZXJuYW1lIjoiY2hoYWswNTAzIiwicm9sZSI6IkFETUlOIn0.rrHO0Un0VQm_4-kEe8MPfodZhj83hmlKb5NEWUqoEkM
+2025-09-25T12:04:11.199+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : token validated
+2025-09-25T12:04:11.213+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : BearereyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4NzY5MTE3LCJleHAiOjE3NTg4NTU1MTcsInVzZXJuYW1lIjoiY2hoYWswNTAzIiwicm9sZSI6IkFETUlOIn0.rrHO0Un0VQm_4-kEe8MPfodZhj83hmlKb5NEWUqoEkM
+2025-09-25T12:04:11.214+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : token : eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4NzY5MTE3LCJleHAiOjE3NTg4NTU1MTcsInVzZXJuYW1lIjoiY2hoYWswNTAzIiwicm9sZSI6IkFETUlOIn0.rrHO0Un0VQm_4-kEe8MPfodZhj83hmlKb5NEWUqoEkM
+2025-09-25T12:04:11.217+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : token validated
+2025-09-25T12:05:25.567+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T12:05:25.567+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T12:05:25.567+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T12:05:25.567+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T12:05:25.663+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername username: a103
+2025-09-25T12:05:25.671+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername User: User(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882)
+2025-09-25T12:05:25.802+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.controller.UserController     : authentication : UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882)), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_MEMBER]]
+2025-09-25T12:05:25.803+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.controller.UserController     : Login User: MyUserDetails(user=User(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882))
+2025-09-25T12:05:25.805+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.controller.UserController     : accessToken Token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4NzY5NTI1LCJleHAiOjE3NTg4NTU5MjUsInVzZXJuYW1lIjoiYTEwMyIsInJvbGUiOiJNRU1CRVIifQ.89FXOdEdGCZ4WPT51fUnwR9VOujMsNjmhbaedYr0Vb8
+2025-09-25T12:05:56.439+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : BearereyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4NzY5NTI1LCJleHAiOjE3NTg4NTU5MjUsInVzZXJuYW1lIjoiYTEwMyIsInJvbGUiOiJNRU1CRVIifQ.89FXOdEdGCZ4WPT51fUnwR9VOujMsNjmhbaedYr0Vb8
+2025-09-25T12:05:56.439+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.jwt.JwtAuthenticationFilter   : token : eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4NzY5NTI1LCJleHAiOjE3NTg4NTU5MjUsInVzZXJuYW1lIjoiYTEwMyIsInJvbGUiOiJNRU1CRVIifQ.89FXOdEdGCZ4WPT51fUnwR9VOujMsNjmhbaedYr0Vb8
+2025-09-25T12:05:56.439+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.jwt.JwtAuthenticationFilter   : token validated
+2025-09-25T12:53:12.462+09:00  WARN 21368 --- [ch09] [HikariPool-6:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=2m55s179ms919µs400ns).
+2025-09-25T14:05:02.815+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:05:02.815+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:05:02.816+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:05:02.817+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:05:49.764+09:00  INFO 21368 --- [ch09] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-09-25T14:05:49.771+09:00  INFO 21368 --- [ch09] [Thread-24] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-25T14:05:49.898+09:00  INFO 21368 --- [ch09] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-25T14:05:49.902+09:00  INFO 21368 --- [ch09] [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:05:49.905+09:00  INFO 21368 --- [ch09] [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-09-25T14:05:49.912+09:00  INFO 21368 --- [ch09] [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-09-25T14:05:50.042+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Starting Ch09Application using Java 17.0.0.1 with PID 21368 (C:\Users\GGG\Desktop\Workspace\Spring\ch09\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch09)
+2025-09-25T14:05:50.042+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:05:50.229+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T14:05:50.237+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-09-25T14:05:50.279+09:00  WARN 21368 --- [ch09] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch09]' package. Please check your configuration.
+2025-09-25T14:05:50.387+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T14:05:50.388+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T14:05:50.388+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-25T14:05:50.404+09:00  INFO 21368 --- [ch09] [restartedMain] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring embedded WebApplicationContext
+2025-09-25T14:05:50.405+09:00  INFO 21368 --- [ch09] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 361 ms
+2025-09-25T14:05:50.432+09:00  INFO 21368 --- [ch09] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T14:05:50.436+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T14:05:50.443+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T14:05:50.444+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-09-25T14:05:50.445+09:00  WARN 21368 --- [ch09] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-25T14:05:50.486+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection oracle.jdbc.driver.T4CConnection@6c2ad994
+2025-09-25T14:05:50.486+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-09-25T14:05:50.490+09:00  INFO 21368 --- [ch09] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-25T14:05:50.521+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T14:05:50.655+09:00  INFO 21368 --- [ch09] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:05:50.702+09:00  INFO 21368 --- [ch09] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-25T14:05:50.708+09:00  WARN 21368 --- [ch09] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T14:05:50.839+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-25T14:05:50.849+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
+2025-09-25T14:05:50.853+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 0.84 seconds (process running for 7894.745)
+2025-09-25T14:05:50.853+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-25T14:06:45.722+09:00  INFO 21368 --- [ch09] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-25T14:06:45.724+09:00  INFO 21368 --- [ch09] [Thread-30] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-25T14:06:45.958+09:00  INFO 21368 --- [ch09] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-25T14:06:45.960+09:00  INFO 21368 --- [ch09] [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:06:45.961+09:00  INFO 21368 --- [ch09] [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2025-09-25T14:06:45.974+09:00  INFO 21368 --- [ch09] [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2025-09-25T14:06:46.083+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Starting Ch09Application using Java 17.0.0.1 with PID 21368 (C:\Users\GGG\Desktop\Workspace\Spring\ch09\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch09)
+2025-09-25T14:06:46.084+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:06:46.262+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T14:06:46.270+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-09-25T14:06:46.307+09:00  WARN 21368 --- [ch09] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch09]' package. Please check your configuration.
+2025-09-25T14:06:46.398+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T14:06:46.398+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T14:06:46.398+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-25T14:06:46.415+09:00  INFO 21368 --- [ch09] [restartedMain] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring embedded WebApplicationContext
+2025-09-25T14:06:46.415+09:00  INFO 21368 --- [ch09] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 330 ms
+2025-09-25T14:06:46.446+09:00  INFO 21368 --- [ch09] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T14:06:46.450+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T14:06:46.460+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T14:06:46.461+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2025-09-25T14:06:46.462+09:00  WARN 21368 --- [ch09] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-25T14:06:46.501+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection oracle.jdbc.driver.T4CConnection@411ce835
+2025-09-25T14:06:46.501+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2025-09-25T14:06:46.505+09:00  INFO 21368 --- [ch09] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-25T14:06:46.536+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T14:06:46.627+09:00  INFO 21368 --- [ch09] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:06:46.666+09:00  INFO 21368 --- [ch09] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-25T14:06:46.672+09:00  WARN 21368 --- [ch09] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T14:06:46.796+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-25T14:06:46.809+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
+2025-09-25T14:06:46.813+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 0.764 seconds (process running for 7950.707)
+2025-09-25T14:06:46.814+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-25T14:07:03.337+09:00  INFO 21368 --- [ch09] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-09-25T14:07:03.338+09:00  INFO 21368 --- [ch09] [Thread-34] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-25T14:07:03.464+09:00  INFO 21368 --- [ch09] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-25T14:07:03.465+09:00  INFO 21368 --- [ch09] [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:07:03.466+09:00  INFO 21368 --- [ch09] [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2025-09-25T14:07:03.471+09:00  INFO 21368 --- [ch09] [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2025-09-25T14:07:03.536+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Starting Ch09Application using Java 17.0.0.1 with PID 21368 (C:\Users\GGG\Desktop\Workspace\Spring\ch09\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch09)
+2025-09-25T14:07:03.536+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:07:03.760+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T14:07:03.771+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-09-25T14:07:03.823+09:00  WARN 21368 --- [ch09] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch09]' package. Please check your configuration.
+2025-09-25T14:07:03.902+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T14:07:03.903+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T14:07:03.904+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-25T14:07:04.039+09:00  INFO 21368 --- [ch09] [restartedMain] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring embedded WebApplicationContext
+2025-09-25T14:07:04.039+09:00  INFO 21368 --- [ch09] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 502 ms
+2025-09-25T14:07:04.159+09:00  INFO 21368 --- [ch09] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T14:07:04.163+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T14:07:04.174+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T14:07:04.175+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2025-09-25T14:07:04.176+09:00  WARN 21368 --- [ch09] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-25T14:07:04.282+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection oracle.jdbc.driver.T4CConnection@521b7509
+2025-09-25T14:07:04.282+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2025-09-25T14:07:04.288+09:00  INFO 21368 --- [ch09] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-25T14:07:04.324+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T14:07:04.476+09:00  INFO 21368 --- [ch09] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:07:04.544+09:00  INFO 21368 --- [ch09] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-25T14:07:04.556+09:00  WARN 21368 --- [ch09] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T14:07:04.729+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-25T14:07:04.744+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
+2025-09-25T14:07:04.749+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 1.235 seconds (process running for 7968.642)
+2025-09-25T14:07:04.752+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-25T14:08:22.943+09:00  INFO 21368 --- [ch09] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-09-25T14:08:22.945+09:00  INFO 21368 --- [ch09] [Thread-38] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-25T14:08:23.081+09:00  INFO 21368 --- [ch09] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-25T14:08:23.084+09:00  INFO 21368 --- [ch09] [Thread-38] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:08:23.084+09:00  INFO 21368 --- [ch09] [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2025-09-25T14:08:23.094+09:00  INFO 21368 --- [ch09] [Thread-38] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2025-09-25T14:08:23.166+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Starting Ch09Application using Java 17.0.0.1 with PID 21368 (C:\Users\GGG\Desktop\Workspace\Spring\ch09\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch09)
+2025-09-25T14:08:23.167+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:08:23.344+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T14:08:23.360+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2025-09-25T14:08:23.442+09:00  WARN 21368 --- [ch09] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch09]' package. Please check your configuration.
+2025-09-25T14:08:23.544+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T14:08:23.545+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T14:08:23.545+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-25T14:08:23.567+09:00  INFO 21368 --- [ch09] [restartedMain] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring embedded WebApplicationContext
+2025-09-25T14:08:23.568+09:00  INFO 21368 --- [ch09] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 399 ms
+2025-09-25T14:08:23.607+09:00  INFO 21368 --- [ch09] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T14:08:23.611+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T14:08:23.619+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T14:08:23.620+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2025-09-25T14:08:23.620+09:00  WARN 21368 --- [ch09] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-25T14:08:23.664+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection oracle.jdbc.driver.T4CConnection@20b761f
+2025-09-25T14:08:23.664+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2025-09-25T14:08:23.670+09:00  INFO 21368 --- [ch09] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-10)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-25T14:08:23.698+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T14:08:23.783+09:00  INFO 21368 --- [ch09] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:08:23.822+09:00  INFO 21368 --- [ch09] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-25T14:08:23.826+09:00  WARN 21368 --- [ch09] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T14:08:23.965+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-25T14:08:23.976+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
+2025-09-25T14:08:23.981+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 0.84 seconds (process running for 8047.874)
+2025-09-25T14:08:23.985+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-25T14:08:56.367+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-25T14:08:56.367+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-25T14:08:56.369+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-09-25T14:08:56.371+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:08:56.372+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:08:56.373+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:08:56.373+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:09:44.228+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:09:44.229+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:09:44.229+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:09:44.229+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:09:45.534+09:00  INFO 21368 --- [ch09] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-25T14:09:45.535+09:00  INFO 21368 --- [ch09] [Thread-42] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-25T14:09:45.667+09:00  INFO 21368 --- [ch09] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-25T14:09:45.669+09:00  INFO 21368 --- [ch09] [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:09:45.670+09:00  INFO 21368 --- [ch09] [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2025-09-25T14:09:45.677+09:00  INFO 21368 --- [ch09] [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2025-09-25T14:09:45.752+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Starting Ch09Application using Java 17.0.0.1 with PID 21368 (C:\Users\GGG\Desktop\Workspace\Spring\ch09\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch09)
+2025-09-25T14:09:45.752+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:09:45.932+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T14:09:45.942+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-09-25T14:09:45.979+09:00  WARN 21368 --- [ch09] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch09]' package. Please check your configuration.
+2025-09-25T14:09:46.052+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T14:09:46.053+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T14:09:46.053+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-25T14:09:46.069+09:00  INFO 21368 --- [ch09] [restartedMain] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring embedded WebApplicationContext
+2025-09-25T14:09:46.069+09:00  INFO 21368 --- [ch09] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 315 ms
+2025-09-25T14:09:46.095+09:00  INFO 21368 --- [ch09] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T14:09:46.099+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T14:09:46.105+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T14:09:46.106+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2025-09-25T14:09:46.106+09:00  WARN 21368 --- [ch09] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-25T14:09:46.147+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection oracle.jdbc.driver.T4CConnection@c40c30a
+2025-09-25T14:09:46.148+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2025-09-25T14:09:46.151+09:00  INFO 21368 --- [ch09] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-11)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-25T14:09:46.182+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T14:09:46.274+09:00  INFO 21368 --- [ch09] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:09:46.315+09:00  INFO 21368 --- [ch09] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-25T14:09:46.321+09:00  WARN 21368 --- [ch09] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T14:09:46.432+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-25T14:09:46.441+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
+2025-09-25T14:09:46.445+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 0.721 seconds (process running for 8130.337)
+2025-09-25T14:09:46.445+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-25T14:09:48.731+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-25T14:09:48.731+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-25T14:09:48.732+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-25T14:09:48.733+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:09:48.733+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:09:48.733+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:09:48.733+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:09:48.736+09:00 ERROR 21368 --- [ch09] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/ch09] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "Object.toString()" because "dtoList" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because "dtoList" is null
+	at kr.co.ch09.controller.UserController.list(UserController.java:71) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at kr.co.ch09.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:34) ~[main/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at kr.co.ch09.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:34) ~[main/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.5.jar:6.5.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-09-25T14:11:16.093+09:00  INFO 21368 --- [ch09] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-09-25T14:11:16.094+09:00  INFO 21368 --- [ch09] [Thread-46] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-25T14:11:16.229+09:00  INFO 21368 --- [ch09] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-25T14:11:16.231+09:00  INFO 21368 --- [ch09] [Thread-46] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:11:16.231+09:00  INFO 21368 --- [ch09] [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2025-09-25T14:11:16.240+09:00  INFO 21368 --- [ch09] [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2025-09-25T14:11:16.337+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Starting Ch09Application using Java 17.0.0.1 with PID 21368 (C:\Users\GGG\Desktop\Workspace\Spring\ch09\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch09)
+2025-09-25T14:11:16.338+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:11:16.537+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T14:11:16.549+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-09-25T14:11:16.606+09:00  WARN 21368 --- [ch09] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch09]' package. Please check your configuration.
+2025-09-25T14:11:16.686+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T14:11:16.686+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T14:11:16.687+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-25T14:11:16.705+09:00  INFO 21368 --- [ch09] [restartedMain] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring embedded WebApplicationContext
+2025-09-25T14:11:16.705+09:00  INFO 21368 --- [ch09] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 366 ms
+2025-09-25T14:11:16.735+09:00  INFO 21368 --- [ch09] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T14:11:16.739+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T14:11:16.747+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T14:11:16.748+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2025-09-25T14:11:16.748+09:00  WARN 21368 --- [ch09] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-25T14:11:16.803+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection oracle.jdbc.driver.T4CConnection@7f9f570f
+2025-09-25T14:11:16.803+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2025-09-25T14:11:16.808+09:00  INFO 21368 --- [ch09] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-12)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-25T14:11:16.839+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T14:11:16.928+09:00  INFO 21368 --- [ch09] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:11:16.976+09:00  INFO 21368 --- [ch09] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-25T14:11:16.981+09:00  WARN 21368 --- [ch09] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T14:11:17.131+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-25T14:11:17.146+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
+2025-09-25T14:11:17.151+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 0.842 seconds (process running for 8221.044)
+2025-09-25T14:11:17.154+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-25T14:11:20.578+09:00  INFO 21368 --- [ch09] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2025-09-25T14:11:20.580+09:00  INFO 21368 --- [ch09] [Thread-50] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-25T14:11:20.756+09:00  INFO 21368 --- [ch09] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-25T14:11:20.758+09:00  INFO 21368 --- [ch09] [Thread-50] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:11:20.759+09:00  INFO 21368 --- [ch09] [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2025-09-25T14:11:20.769+09:00  INFO 21368 --- [ch09] [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2025-09-25T14:11:20.924+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Starting Ch09Application using Java 17.0.0.1 with PID 21368 (C:\Users\GGG\Desktop\Workspace\Spring\ch09\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch09)
+2025-09-25T14:11:20.926+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:11:21.299+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T14:11:21.316+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2025-09-25T14:11:21.457+09:00  WARN 21368 --- [ch09] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch09]' package. Please check your configuration.
+2025-09-25T14:11:21.605+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T14:11:21.606+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T14:11:21.606+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-25T14:11:21.625+09:00  INFO 21368 --- [ch09] [restartedMain] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring embedded WebApplicationContext
+2025-09-25T14:11:21.625+09:00  INFO 21368 --- [ch09] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 694 ms
+2025-09-25T14:11:21.656+09:00  INFO 21368 --- [ch09] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T14:11:21.661+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T14:11:21.669+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T14:11:21.670+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2025-09-25T14:11:21.670+09:00  WARN 21368 --- [ch09] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-25T14:11:21.712+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection oracle.jdbc.driver.T4CConnection@4c476365
+2025-09-25T14:11:21.712+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2025-09-25T14:11:21.715+09:00  INFO 21368 --- [ch09] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-13)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-25T14:11:21.755+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T14:11:21.882+09:00  INFO 21368 --- [ch09] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:11:21.937+09:00  INFO 21368 --- [ch09] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-25T14:11:21.943+09:00  WARN 21368 --- [ch09] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T14:11:22.046+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-25T14:11:22.057+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
+2025-09-25T14:11:22.061+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 1.206 seconds (process running for 8225.953)
+2025-09-25T14:11:22.062+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-25T14:11:22.196+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-25T14:11:22.197+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-25T14:11:22.200+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-09-25T14:11:22.202+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:11:22.202+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:11:22.203+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:11:22.203+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:11:22.449+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:11:25.877+09:00  INFO 21368 --- [ch09] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-09-25T14:11:25.878+09:00  INFO 21368 --- [ch09] [Thread-54] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-25T14:11:26.018+09:00  INFO 21368 --- [ch09] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-25T14:11:26.020+09:00  INFO 21368 --- [ch09] [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:11:26.021+09:00  INFO 21368 --- [ch09] [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2025-09-25T14:11:26.030+09:00  INFO 21368 --- [ch09] [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2025-09-25T14:11:26.110+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Starting Ch09Application using Java 17.0.0.1 with PID 21368 (C:\Users\GGG\Desktop\Workspace\Spring\ch09\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch09)
+2025-09-25T14:11:26.111+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:11:26.284+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T14:11:26.296+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-09-25T14:11:26.343+09:00  WARN 21368 --- [ch09] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch09]' package. Please check your configuration.
+2025-09-25T14:11:26.450+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T14:11:26.451+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T14:11:26.451+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-25T14:11:26.469+09:00  INFO 21368 --- [ch09] [restartedMain] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring embedded WebApplicationContext
+2025-09-25T14:11:26.470+09:00  INFO 21368 --- [ch09] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 357 ms
+2025-09-25T14:11:26.497+09:00  INFO 21368 --- [ch09] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T14:11:26.501+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T14:11:26.508+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T14:11:26.509+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2025-09-25T14:11:26.509+09:00  WARN 21368 --- [ch09] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-25T14:11:26.550+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection oracle.jdbc.driver.T4CConnection@1ce57149
+2025-09-25T14:11:26.550+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2025-09-25T14:11:26.553+09:00  INFO 21368 --- [ch09] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-14)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-25T14:11:26.579+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T14:11:26.703+09:00  INFO 21368 --- [ch09] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:11:26.747+09:00  INFO 21368 --- [ch09] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-25T14:11:26.752+09:00  WARN 21368 --- [ch09] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T14:11:26.870+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-25T14:11:26.878+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
+2025-09-25T14:11:26.882+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 0.798 seconds (process running for 8230.774)
+2025-09-25T14:11:26.882+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-25T14:11:48.459+09:00  INFO 21368 --- [ch09] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2025-09-25T14:11:48.461+09:00  INFO 21368 --- [ch09] [Thread-58] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-25T14:11:48.598+09:00  INFO 21368 --- [ch09] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-25T14:11:48.599+09:00  INFO 21368 --- [ch09] [Thread-58] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:11:48.599+09:00  INFO 21368 --- [ch09] [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2025-09-25T14:11:48.606+09:00  INFO 21368 --- [ch09] [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2025-09-25T14:11:48.680+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Starting Ch09Application using Java 17.0.0.1 with PID 21368 (C:\Users\GGG\Desktop\Workspace\Spring\ch09\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch09)
+2025-09-25T14:11:48.680+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:11:48.863+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T14:11:48.872+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-09-25T14:11:48.938+09:00  WARN 21368 --- [ch09] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch09]' package. Please check your configuration.
+2025-09-25T14:11:49.048+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T14:11:49.049+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T14:11:49.049+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-25T14:11:49.064+09:00  INFO 21368 --- [ch09] [restartedMain] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring embedded WebApplicationContext
+2025-09-25T14:11:49.064+09:00  INFO 21368 --- [ch09] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 382 ms
+2025-09-25T14:11:49.109+09:00  INFO 21368 --- [ch09] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T14:11:49.116+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T14:11:49.129+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T14:11:49.130+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2025-09-25T14:11:49.131+09:00  WARN 21368 --- [ch09] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-25T14:11:49.188+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection oracle.jdbc.driver.T4CConnection@79f2f954
+2025-09-25T14:11:49.188+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2025-09-25T14:11:49.192+09:00  INFO 21368 --- [ch09] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-15)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-25T14:11:49.222+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T14:11:49.335+09:00  INFO 21368 --- [ch09] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:11:49.379+09:00  INFO 21368 --- [ch09] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-25T14:11:49.390+09:00  WARN 21368 --- [ch09] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T14:11:49.511+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-25T14:11:49.521+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
+2025-09-25T14:11:49.524+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 0.869 seconds (process running for 8253.418)
+2025-09-25T14:11:49.525+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-25T14:11:54.164+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-25T14:11:54.164+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-25T14:11:54.165+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-25T14:11:54.166+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:11:54.166+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:11:54.166+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:11:54.166+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:11:54.178+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:11:55.200+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:11:55.201+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:11:55.201+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:11:55.201+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:11:55.206+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:11:55.413+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:11:55.413+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:11:55.413+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:11:55.413+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:11:55.419+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:12:08.031+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:08.031+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:08.032+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:08.032+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:08.036+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:12:10.264+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:10.264+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:10.264+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:10.264+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:10.271+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:12:13.182+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:13.182+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:13.182+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:13.182+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:13.186+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:12:14.266+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:14.267+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:14.267+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:14.267+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:14.272+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:12:17.193+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:17.194+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:17.194+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:17.194+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:17.200+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:12:35.725+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:35.725+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:35.725+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:35.725+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:35.731+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:12:35.897+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-10] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:35.897+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-10] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:35.898+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-10] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:35.898+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-10] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:35.905+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-10] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:12:40.836+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:40.837+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:40.837+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:40.837+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:40.845+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:12:43.991+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:43.991+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:43.991+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:12:43.991+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:12:43.997+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:13:21.578+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:21.579+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:21.579+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:21.579+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:21.585+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:13:36.073+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:36.074+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:36.074+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:36.074+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:36.081+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:13:39.888+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:39.888+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:39.888+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:39.888+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:39.896+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:13:41.898+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:41.898+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:41.898+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:41.898+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:41.903+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:13:43.950+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:43.950+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:43.950+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:43.950+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:43.955+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:13:45.923+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:45.923+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:45.923+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:45.923+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:45.928+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-4] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:13:50.076+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:50.076+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:50.076+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:50.076+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:50.082+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:13:51.222+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-10] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:51.222+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-10] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:51.223+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-10] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:13:51.223+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-10] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:13:51.232+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-10] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:22:28.604+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:22:28.604+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:22:28.605+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:22:28.605+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-2] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:22:28.612+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:22:28.612+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:22:28.612+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:22:28.613+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:22:28.694+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername username: a101
+2025-09-25T14:22:28.697+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername User: User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)
+2025-09-25T14:22:28.769+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.controller.UserController     : authentication : UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2025-09-25T14:22:28.769+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.controller.UserController     : Login User: MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285))
+2025-09-25T14:22:28.771+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.controller.UserController     : accessToken Token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4Nzc3NzQ4LCJleHAiOjE3NTg4NjQxNDgsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.08UmJughHv2qNYKoDBaTwaYGwOLku4KLoiESAxgLQHA
+2025-09-25T14:23:34.857+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:23:34.857+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:23:34.858+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:23:34.858+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:23:34.860+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername username: a101
+2025-09-25T14:23:34.865+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername User: User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)
+2025-09-25T14:23:34.940+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.controller.UserController     : authentication : UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2025-09-25T14:23:34.940+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.controller.UserController     : Login User: MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285))
+2025-09-25T14:23:34.940+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.controller.UserController     : accessToken Token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4Nzc3ODE0LCJleHAiOjE3NTg4NjQyMTQsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.zd9PADAzxd99g8kbN_x3aLTMzF1rDJ5R7TA8_EgAYv0
+2025-09-25T14:26:06.142+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:26:06.142+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:26:06.142+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:26:06.142+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:26:06.143+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername username: a101
+2025-09-25T14:26:06.145+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername User: User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)
+2025-09-25T14:26:06.216+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.controller.UserController     : authentication : UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2025-09-25T14:26:06.216+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.controller.UserController     : Login User: MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285))
+2025-09-25T14:26:06.216+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.controller.UserController     : accessToken Token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4Nzc3OTY2LCJleHAiOjE3NTg4NjQzNjYsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.RkEEqd4R8er6Wq7FPOJGIQWW-GOrKjQGruhcvFtziHs
+2025-09-25T14:37:25.083+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:37:25.083+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:37:25.083+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:37:25.083+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:37:25.084+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername username: a101
+2025-09-25T14:37:25.088+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername User: User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)
+2025-09-25T14:37:25.169+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.controller.UserController     : authentication : UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2025-09-25T14:37:25.169+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.controller.UserController     : Login User: MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285))
+2025-09-25T14:37:25.170+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.controller.UserController     : accessToken Token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4Nzc4NjQ1LCJleHAiOjE3NTg4NjUwNDUsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.UZ-x0BJdmxJbvJhtMtE8c3yT6Rb-p-B7GxHoCQL8eN4
+2025-09-25T14:41:52.475+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:41:52.475+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:41:52.476+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:41:52.476+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:41:52.477+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername username: a101
+2025-09-25T14:41:52.481+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername User: User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)
+2025-09-25T14:41:52.555+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.controller.UserController     : authentication : UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2025-09-25T14:41:52.555+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.controller.UserController     : Login User: MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285))
+2025-09-25T14:41:52.556+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-1] kr.co.ch09.controller.UserController     : accessToken Token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4Nzc4OTEyLCJleHAiOjE3NTg4NjUzMTIsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.ufboafnw5nQZ_SO1KJF_6wguaRIZvT5XgHR1RwVITYo
+2025-09-25T14:44:45.195+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:44:45.195+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:44:45.195+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:44:45.195+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:44:45.197+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername username: a101
+2025-09-25T14:44:45.199+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername User: User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)
+2025-09-25T14:44:45.282+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.controller.UserController     : authentication : UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2025-09-25T14:44:45.282+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.controller.UserController     : Login User: MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285))
+2025-09-25T14:44:45.283+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-3] kr.co.ch09.controller.UserController     : accessToken Token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4Nzc5MDg1LCJleHAiOjE3NTg4NjU0ODUsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.wqPhik04JRxYDDhD5e3FUmHY7nH36NZdayQmzVRQwBo
+2025-09-25T14:44:57.888+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:44:57.888+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:44:57.888+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:44:57.888+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:44:57.889+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername username: a101
+2025-09-25T14:44:57.892+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] k.co.ch09.security.MyUserDetailsService  : loadUserByUsername User: User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)
+2025-09-25T14:44:57.967+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.controller.UserController     : authentication : UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285)), Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2025-09-25T14:44:57.967+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.controller.UserController     : Login User: MyUserDetails(user=User(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285))
+2025-09-25T14:44:57.967+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-6] kr.co.ch09.controller.UserController     : accessToken Token: eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4Nzc5MDk3LCJleHAiOjE3NTg4NjU0OTcsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.C4v2PR4tZcFHY3IxeMu8a-ExuI_W55mZN7QVd5FaAew
+2025-09-25T14:45:01.503+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:45:01.503+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:45:01.504+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:45:01.504+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:45:01.509+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-5] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:45:12.982+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:45:12.982+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:45:12.982+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:45:12.982+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:45:12.987+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-8] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:45:14.401+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:45:14.401+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:45:14.402+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:45:14.402+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:45:14.408+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-7] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:46:27.458+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:46:27.458+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:46:27.458+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header : null
+2025-09-25T14:46:27.458+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.jwt.JwtAuthenticationFilter   : header is null
+2025-09-25T14:46:27.463+09:00  INFO 21368 --- [ch09] [http-nio-8080-exec-9] kr.co.ch09.controller.UserController     : [UserDTO(usid=a101, pass=$2a$10$amQC3ls1u4YKXnHwTw0tFuEEaEE5uUXyFtI3tPv.ohWTfBNOVwgOa, name=김유신, age=23, role=ADMIN, regDate=2025-09-23T15:40:58.660285), UserDTO(usid=a102, pass=$2a$10$7yAjAyLkrfRd7SUPeGWQJ.Wl/m7F3C0KyjwbR3UYC3HCeLeR383i6, name=김춘추, age=21, role=MANAGER, regDate=2025-09-23T15:41:09.079729), UserDTO(usid=a103, pass=$2a$10$/W3obWfh04cDSqZ6QhYJhuYwRqPRgvKzzd80XB8hHAinvbwdNM1Cm, name=장보고, age=33, role=MEMBER, regDate=2025-09-23T15:41:20.606882), UserDTO(usid=a104, pass=$2a$10$B59qG2D9ymdjpdNZ4U.lf.ildmh1by7yha4C0eDwC7//xb2SuSFuG, name=강감찬, age=44, role=GUEST, regDate=2025-09-23T15:41:44.245403), UserDTO(usid=chhak0503, pass=$2a$10$RTUnP5WaQq61On8JB32gPO0UxayrULUF/Jr5NhIGYXnWBHKCjDt1a, name=김철학, age=33, role=ADMIN, regDate=2025-09-25T11:34:50.878306)]
+2025-09-25T14:47:20.613+09:00  INFO 21368 --- [ch09] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-25T14:47:20.615+09:00  INFO 21368 --- [ch09] [Thread-62] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-25T14:47:20.793+09:00  INFO 21368 --- [ch09] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-25T14:47:20.795+09:00  INFO 21368 --- [ch09] [Thread-62] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:47:20.795+09:00  INFO 21368 --- [ch09] [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2025-09-25T14:47:20.805+09:00  INFO 21368 --- [ch09] [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2025-09-25T14:47:20.924+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Starting Ch09Application using Java 17.0.0.1 with PID 21368 (C:\Users\GGG\Desktop\Workspace\Spring\ch09\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch09)
+2025-09-25T14:47:20.924+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:47:21.143+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T14:47:21.153+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-09-25T14:47:21.225+09:00  WARN 21368 --- [ch09] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch09]' package. Please check your configuration.
+2025-09-25T14:47:21.373+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T14:47:21.373+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T14:47:21.374+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-25T14:47:21.390+09:00  INFO 21368 --- [ch09] [restartedMain] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring embedded WebApplicationContext
+2025-09-25T14:47:21.391+09:00  INFO 21368 --- [ch09] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 465 ms
+2025-09-25T14:47:21.450+09:00  INFO 21368 --- [ch09] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T14:47:21.455+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T14:47:21.464+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T14:47:21.466+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2025-09-25T14:47:21.466+09:00  WARN 21368 --- [ch09] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-25T14:47:21.623+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection oracle.jdbc.driver.T4CConnection@61cc88e2
+2025-09-25T14:47:21.624+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2025-09-25T14:47:21.627+09:00  INFO 21368 --- [ch09] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-16)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-25T14:47:21.663+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T14:47:21.783+09:00  INFO 21368 --- [ch09] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:47:21.828+09:00  INFO 21368 --- [ch09] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-25T14:47:21.833+09:00  WARN 21368 --- [ch09] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T14:47:22.007+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-25T14:47:22.016+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
+2025-09-25T14:47:22.026+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 1.144 seconds (process running for 10385.918)
+2025-09-25T14:47:22.027+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-25T14:47:40.603+09:00  INFO 21368 --- [ch09] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-09-25T14:47:40.604+09:00  INFO 21368 --- [ch09] [Thread-66] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-25T14:47:40.794+09:00  INFO 21368 --- [ch09] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-25T14:47:40.796+09:00  INFO 21368 --- [ch09] [Thread-66] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:47:40.797+09:00  INFO 21368 --- [ch09] [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2025-09-25T14:47:40.812+09:00  INFO 21368 --- [ch09] [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2025-09-25T14:47:40.941+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Starting Ch09Application using Java 17.0.0.1 with PID 21368 (C:\Users\GGG\Desktop\Workspace\Spring\ch09\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch09)
+2025-09-25T14:47:40.942+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:47:41.103+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T14:47:41.111+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-09-25T14:47:41.143+09:00  WARN 21368 --- [ch09] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch09]' package. Please check your configuration.
+2025-09-25T14:47:41.206+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T14:47:41.207+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T14:47:41.207+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-25T14:47:41.223+09:00  INFO 21368 --- [ch09] [restartedMain] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring embedded WebApplicationContext
+2025-09-25T14:47:41.223+09:00  INFO 21368 --- [ch09] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 280 ms
+2025-09-25T14:47:41.250+09:00  INFO 21368 --- [ch09] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T14:47:41.253+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T14:47:41.260+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T14:47:41.261+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2025-09-25T14:47:41.261+09:00  WARN 21368 --- [ch09] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-25T14:47:41.299+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection oracle.jdbc.driver.T4CConnection@4d17fc75
+2025-09-25T14:47:41.299+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2025-09-25T14:47:41.301+09:00  INFO 21368 --- [ch09] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-17)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-25T14:47:41.324+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T14:47:41.402+09:00  INFO 21368 --- [ch09] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:47:41.437+09:00  INFO 21368 --- [ch09] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-25T14:47:41.441+09:00  WARN 21368 --- [ch09] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T14:47:41.563+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-25T14:47:41.573+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
+2025-09-25T14:47:41.577+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 0.664 seconds (process running for 10405.47)
+2025-09-25T14:47:41.578+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-25T14:47:42.976+09:00  INFO 21368 --- [ch09] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-09-25T14:47:42.977+09:00  INFO 21368 --- [ch09] [Thread-70] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-25T14:47:43.097+09:00  INFO 21368 --- [ch09] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-25T14:47:43.099+09:00  INFO 21368 --- [ch09] [Thread-70] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:47:43.099+09:00  INFO 21368 --- [ch09] [Thread-70] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2025-09-25T14:47:43.105+09:00  INFO 21368 --- [ch09] [Thread-70] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2025-09-25T14:47:43.175+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Starting Ch09Application using Java 17.0.0.1 with PID 21368 (C:\Users\GGG\Desktop\Workspace\Spring\ch09\build\classes\java\main started by GGG in C:\Users\GGG\Desktop\Workspace\Spring\ch09)
+2025-09-25T14:47:43.175+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : No active profile set, falling back to 1 default profile: "default"
+2025-09-25T14:47:43.330+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-25T14:47:43.338+09:00  INFO 21368 --- [ch09] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-09-25T14:47:43.368+09:00  WARN 21368 --- [ch09] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.ch09]' package. Please check your configuration.
+2025-09-25T14:47:43.453+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-25T14:47:43.454+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-25T14:47:43.454+09:00  INFO 21368 --- [ch09] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-09-25T14:47:43.468+09:00  INFO 21368 --- [ch09] [restartedMain] o.a.c.c.C.[.[localhost].[/ch09]          : Initializing Spring embedded WebApplicationContext
+2025-09-25T14:47:43.468+09:00  INFO 21368 --- [ch09] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 292 ms
+2025-09-25T14:47:43.490+09:00  INFO 21368 --- [ch09] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-25T14:47:43.493+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-25T14:47:43.499+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-25T14:47:43.500+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2025-09-25T14:47:43.500+09:00  WARN 21368 --- [ch09] [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2025-09-25T14:47:43.535+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-18 - Added connection oracle.jdbc.driver.T4CConnection@67c7bbb7
+2025-09-25T14:47:43.535+09:00  INFO 21368 --- [ch09] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2025-09-25T14:47:43.538+09:00  INFO 21368 --- [ch09] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-18)']
+	Database driver: undefined/unknown
+	Database version: 21.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-25T14:47:43.565+09:00  INFO 21368 --- [ch09] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-25T14:47:43.715+09:00  INFO 21368 --- [ch09] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-25T14:47:43.794+09:00  INFO 21368 --- [ch09] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2025-09-25T14:47:43.798+09:00  WARN 21368 --- [ch09] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-25T14:47:43.929+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-25T14:47:43.940+09:00  INFO 21368 --- [ch09] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/ch09'
+2025-09-25T14:47:43.943+09:00  INFO 21368 --- [ch09] [restartedMain] kr.co.ch09.Ch09Application               : Started Ch09Application in 0.789 seconds (process running for 10407.836)
+2025-09-25T14:47:43.944+09:00  INFO 21368 --- [ch09] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

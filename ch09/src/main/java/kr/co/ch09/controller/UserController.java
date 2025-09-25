@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Slf4j
@@ -61,6 +62,15 @@ public class UserController {
     public ResponseEntity<UserDTO> register(@RequestBody UserDTO  userDTO){
         UserDTO savedUser = userService.save(userDTO);
         return ResponseEntity.ok(savedUser);
+    }
+
+    @GetMapping("/user")
+    public ResponseEntity<List<UserDTO>> list(){
+        List<UserDTO> dtoList = userService.getUsers();
+
+        log.info(dtoList.toString());
+
+        return ResponseEntity.ok(dtoList);
     }
 
 }
