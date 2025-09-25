@@ -26,7 +26,6 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
-        // 토큰 기반 인증 설정
         http.httpBasic(HttpBasicConfigurer::disable)        // 기본 HTTP 인증 비활성
                 .formLogin(FormLoginConfigurer::disable)    // 폼 로그인 비활성
                 .sessionManagement(config -> config.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // 세션 비활성
