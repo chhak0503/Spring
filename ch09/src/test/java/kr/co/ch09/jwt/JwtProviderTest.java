@@ -26,14 +26,14 @@ class JwtProviderTest {
                 .age(23)
                 .build();
 
-        String token = jwtProvider.createToken(user, -1);
+        String token = jwtProvider.createToken(user, 1);
         System.out.println(token);
     }
 
     @Test
     void getClaims() {
 
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4NzYyOTAxLCJleHAiOjE3NTg4NDkzMDEsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.O8nZ0s-7L8d2921hz8ZNNf_-J05yrIGykx__nfU0TS4";
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU5MTM0NTgzLCJleHAiOjE3NTkyMjA5ODMsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.nNBFbni0IK3GyeagTlO5xlxxrhxuFiL5hPuw90vf7-Y";
 
         Claims claims = jwtProvider.getClaims(token);
         System.out.println(claims);
@@ -42,7 +42,7 @@ class JwtProviderTest {
     @Test
     void getAuthentication() {
 
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU4NzYyOTAxLCJleHAiOjE3NTg4NDkzMDEsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.O8nZ0s-7L8d2921hz8ZNNf_-J05yrIGykx__nfU0TS4";
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaGhhazA1MDNAZ21haWwuY29tIiwiaWF0IjoxNzU5MTM0NTgzLCJleHAiOjE3NTkyMjA5ODMsInVzZXJuYW1lIjoiYTEwMSIsInJvbGUiOiJBRE1JTiJ9.nNBFbni0IK3GyeagTlO5xlxxrhxuFiL5hPuw90vf7-Y";
 
         Authentication authentication = jwtProvider.getAuthentication(token);
         User user = (User) authentication.getPrincipal();

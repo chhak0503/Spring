@@ -28,5 +28,4 @@ public class UserDTO {
                 .role(role)
                 .build();
     }
-
 }

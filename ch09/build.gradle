@@ -50,6 +50,8 @@ dependencies {
 
     // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-jackson
     runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.7'
+
+    //implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.2.0'
 }
 
 tasks.named('test') {
