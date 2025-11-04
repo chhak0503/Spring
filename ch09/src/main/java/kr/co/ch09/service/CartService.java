@@ -25,7 +25,6 @@ public class CartService {
     public List<CartDTO> findByUserid(String userid){
 
         //List<Cart> cartList = cartRepository.findByUserid(userid);
-
         List<Cart> cartList = cartRepository.findCartWithProductByUserid(userid);
 
         return cartList
@@ -33,4 +32,10 @@ public class CartService {
                 .map(Cart::toDTO)
                 .toList();
     }
+
+    public boolean delete(int cartId){
+        cartRepository.deleteById(cartId);
+        return !cartRepository.existsById(cartId);
+    }
+
 }

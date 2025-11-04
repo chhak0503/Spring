@@ -1,6 +1,7 @@
 package kr.co.ch09.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import kr.co.ch09.entity.Cart;
 import kr.co.ch09.entity.Product;
 import lombok.*;
@@ -16,7 +17,8 @@ public class CartDTO {
     private int cartId;
     private String userid;
 
-    @JsonIgnore
+    // JsonIgnore하면 데이터 수신 처리도 불가, JsonProperty로 수신 처리 허용
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private int pno;
 
     private int quantity;
