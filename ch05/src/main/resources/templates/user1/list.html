@@ -23,7 +23,7 @@
 				<td th:text="${dto.age}">나이</td>
 				<td>
 					<a th:href="@{/user1/modify(userid=${dto.userid})}">수정</a>
-					<a href="">삭제</a>
+					<a th:href="@{/user1/remove(userid=${dto.userid})}">삭제</a>
 				</td>
 			</tr>
 		</table>	

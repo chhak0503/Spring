@@ -70,4 +70,17 @@ public class User1Controller {
         // 수정 후 목록 이동
         return "redirect:/user1/list?modify=success";
     }
+
+    @GetMapping("/user1/remove")
+    public String remove(String userid){
+        System.out.println(userid);
+
+        // 삭제 서비스 요청
+        service.remove(userid);
+
+        // 삭제 후 목록 이동
+        return "redirect:/user1/list?remove=success";
+    }
+
+
 }
