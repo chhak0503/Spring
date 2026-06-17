@@ -44,11 +44,30 @@ public class User1Controller {
         service.register(dto);
 
 
-        return "redirect:/user1/list";
+        return "redirect:/user1/list?register=success";
     }
 
     @GetMapping("/user1/modify")
-    public String modify(){
+    public String modify(String userid, Model model){
+        System.out.println(userid);
+
+        // 수정 조회 서비스 호출
+        User1DTO dto = service.getById(userid);
+
+        // 모델참조
+        model.addAttribute(dto); // 키값 생략하면 해당 객체 소문자로 시작하는 타입명
+
         return "/user1/modify";
+    }
+
+    @PostMapping("/user1/modify")
+    public String modify(User1DTO dto){
+        System.out.println(dto);
+
+        // 수정 서비스 요청
+        service.modify(dto);
+
+        // 수정 후 목록 이동
+        return "redirect:/user1/list?modify=success";
     }
 }
