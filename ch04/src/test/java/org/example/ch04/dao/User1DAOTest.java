@@ -14,11 +14,8 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class) // 실행 순서를 보장
 class User1DAOTest {
-
     @Autowired
     private User1DAO dao;
-
-
     /*
         단위 테스트 케이스 작성
          - 애플리케이션 시나리오를 생각해서 테스트 케이스 로직 작성

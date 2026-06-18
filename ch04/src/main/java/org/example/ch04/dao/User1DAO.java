@@ -10,7 +10,6 @@ import java.util.List;
 @Mapper
 @Repository
 public interface User1DAO {
-
     // 기본 CRUD 메서드
     public void insert(User1DTO dto);
     public User1DTO select(String userid);
