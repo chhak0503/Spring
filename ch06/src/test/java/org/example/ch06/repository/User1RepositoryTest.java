@@ -163,8 +163,14 @@ class User1RepositoryTest {
 
     @Test
     void selectByUserid() {
-        User1DTO dto = repository.selectByUserid("a101");
-        log.info(dto);
+        List<Object[]> objList = repository.selectByUserid("a101");
+        log.info(objList);
+
+        for(Object[] obj : objList){
+            log.info(obj[0]);
+            log.info(obj[1]);
+            log.info(obj[2]);
+        }
     }
 
     @Test
