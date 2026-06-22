@@ -73,7 +73,8 @@ public class User1Service {
     }
 
     public void remove(String userid){
-
+        // JPA 삭제 메서드 호출, DELETE FROM User1 Where userid='아이디' 수행
+        repository.deleteById(userid);
     }
 
 
