@@ -49,7 +49,15 @@ public class User1Controller {
 
 
     @GetMapping("/user1/modify")
-    public String modify(){
+    public String modify(Model model, String userid){
+        log.info(userid);
+
+        // 서비스 호출
+        User1DTO dto = service.getUser(userid);
+
+        // 모델 참조
+        model.addAttribute(dto); // 키값을 생략하면 소문자로 시작하는 객체 타입이 이름이 됨
+
         return "/user1/modify";
     }
 }

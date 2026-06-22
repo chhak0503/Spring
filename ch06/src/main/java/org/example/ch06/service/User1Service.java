@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @RequiredArgsConstructor
 @Service
@@ -27,6 +28,18 @@ public class User1Service {
     }
 
     public User1DTO getUser(String userid){
+
+        // JPA 조회, Optional 타입은 엔티티를 안전하게 사용하기 위한 Wrapper 클래스
+        Optional<User1> optUser1 = repository.findById(userid);
+
+        // Entity 존재 여부 확인
+        if(optUser1.isPresent()){
+            // 존재하면 Optional 타입으로 포장된 Entity 꺼내기
+            User1 entity = optUser1.get();
+
+            // DTO 변환 후 반환
+            return entity.toDTO();
+        }
         return null;
     }
 
