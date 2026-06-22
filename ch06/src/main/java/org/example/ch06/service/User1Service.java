@@ -31,7 +31,16 @@ public class User1Service {
     }
 
     public List<User1DTO> getUserAll(){
-        return null;
+
+        // JPA 조회 메서드 호출, SELECT * FROM User1
+        List<User1> entityList = repository.findAll();
+
+        // DTO 리스트 변환
+        List<User1DTO> dtoList = entityList.stream()
+                                    .map(entity -> entity.toDTO())
+                                    .toList();
+
+        return dtoList;
     }
 
     public void modify(User1DTO dto){

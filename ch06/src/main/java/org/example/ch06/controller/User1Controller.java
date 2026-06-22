@@ -7,8 +7,11 @@ import org.example.ch06.dto.User1DTO;
 import org.example.ch06.service.User1Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import java.util.List;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -19,7 +22,14 @@ public class User1Controller {
     private final User1Service service;
 
     @GetMapping("/user1/list")
-    public String list(){
+    public String list(Model model){
+
+        // 서비스 호출
+        List<User1DTO> dtoList = service.getUserAll();
+
+        // 모델 참조
+        model.addAttribute("dtoList", dtoList);
+
         return "/user1/list";
     }
 
