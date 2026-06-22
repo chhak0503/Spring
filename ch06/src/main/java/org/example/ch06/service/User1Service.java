@@ -58,6 +58,18 @@ public class User1Service {
 
     public void modify(User1DTO dto){
 
+        // 엔티티 존재 여부 확인
+        boolean isExist = repository.existsById(dto.getUserid());
+
+        // 수정하려는 엔티티가 존재하면 수정
+        if(isExist){
+            // DTO를 Entity 변환
+            User1 entity = dto.toEntity();
+
+            // JPA 수정 메서드, save() 메서드는 INSERT or UPDATE 수행
+            repository.save(entity);
+        }
+
     }
 
     public void remove(String userid){
