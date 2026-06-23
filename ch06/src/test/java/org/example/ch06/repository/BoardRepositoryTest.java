@@ -1,5 +1,6 @@
 package org.example.ch06.repository;
 
+import org.example.ch06.entity.board.Article;
 import org.example.ch06.entity.board.User;
 import org.example.ch06.repository.board.ArticleRepository;
 import org.example.ch06.repository.board.CommentRepository;
@@ -35,8 +36,23 @@ public class BoardRepositoryTest {
     }
 
     @Test
-    @DisplayName("")
-    public void test2(){}
+    @DisplayName("글 등록")
+    public void test2(){
+
+        User user = User.builder()
+                .userid("a103")
+                .build();
+
+        Article article = Article.builder()
+                .title("제목3 입니다.")
+                .content("내용3 입니다.")
+                .user(user)
+                .build();
+
+        Article savedArticle = articleRepository.save(article);
+
+        System.out.println(savedArticle);
+    }
 
     @Test
     @DisplayName("")
