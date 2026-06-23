@@ -17,7 +17,9 @@ public class File {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int fno;
 
-    private int ano; // 해당파일이 첨부된 글번호
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "ano")
+    private Article article; // 해당파일이 첨부된 글번호
 
     private String ofName;
     private String sfName;

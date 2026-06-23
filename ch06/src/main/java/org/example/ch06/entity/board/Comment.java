@@ -20,15 +20,18 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // AUTO_INCREMENT 어노테이션
     private int cno;
 
-    private int parent; // 댓글의 부모 글 번호
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "parent")
+    private Article article; // 댓글의 부모 글 번호
 
     private String content;
 
-    private String writer;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "writer")
+    private User user;
 
     @CreationTimestamp  // 해당 엔티티가 INSERT 될때 현재 날짜시간 생성
     private LocalDateTime wdate;
-
 
 }
 
