@@ -1,6 +1,8 @@
 package org.example.ch06.repository;
 
 import org.example.ch06.entity.board.Article;
+import org.example.ch06.entity.board.Comment;
+import org.example.ch06.entity.board.File;
 import org.example.ch06.entity.board.User;
 import org.example.ch06.repository.board.ArticleRepository;
 import org.example.ch06.repository.board.CommentRepository;
@@ -55,12 +57,44 @@ public class BoardRepositoryTest {
     }
 
     @Test
-    @DisplayName("")
-    public void test3(){}
+    @DisplayName("댓글 등록")
+    public void test3(){
+
+        User user = User.builder()
+                .userid("a102")
+                .build();
+
+        Article article = Article.builder()
+                .ano(3)
+                .build();
+
+        Comment comment = Comment.builder()
+                .content("댓글3")
+                .article(article)
+                .user(user)
+                .build();
+
+        Comment savedComment = commentRepository.save(comment);
+        System.out.println(savedComment);
+    }
 
     @Test
-    @DisplayName("")
-    public void test4(){}
+    @DisplayName("파일 등록")
+    public void test4(){
+
+        Article article = Article.builder()
+                .ano(1)
+                .build();
+
+        File file = File.builder()
+                .ofName("테스트2.txt")
+                .sfName("akww12112-a22al23214.txt")
+                .article(article)
+                .build();
+
+        File savedFile = fileRepository.save(file);
+        System.out.println(savedFile);
+    }
 
     @Test
     @DisplayName("")
