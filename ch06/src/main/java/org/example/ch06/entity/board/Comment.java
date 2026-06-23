@@ -22,7 +22,7 @@ public class Comment {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "parent")
-    private Article article; // 댓글의 부모 글 번호
+    private Article article; // 댓글의 부모 글 번호, FK키
 
     private String content;
 
