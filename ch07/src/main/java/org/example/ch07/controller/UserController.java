@@ -46,7 +46,7 @@ public class UserController {
         MyUserDetails details = (MyUserDetails) authentication.getPrincipal();
         User user = details.getUser();
 
-        model.addAttribute(user);
+        model.addAttribute("apple", user);
 
         return "/user/info";
     }
