@@ -3,6 +3,7 @@ package org.example.ch07.security;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.CsrfConfigurer;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -14,6 +15,8 @@ import org.springframework.security.web.SecurityFilterChain;
      - 인증 및 인가 처리 설정
      - 기타 시큐리티 설정
 */
+
+@EnableMethodSecurity
 @Configuration
 public class SecurityConfig {
 
