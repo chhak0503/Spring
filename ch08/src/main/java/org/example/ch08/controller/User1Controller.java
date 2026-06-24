@@ -16,6 +16,7 @@ public class User1Controller {
 
     private final User1Service service;
 
+    @ResponseBody
     @PostMapping("/user1")
     public User1DTO register(@RequestBody User1DTO dto){
         log.info(dto);
@@ -34,9 +35,23 @@ public class User1Controller {
         return dtoList;
     }
 
+    @ResponseBody
     @PutMapping("/user1")
-    public void modify(){}
+    public User1DTO modify(@RequestBody User1DTO dto){
+        log.info(dto);
 
-    @DeleteMapping("/user1")
-    public void delete(){}
+        User1DTO modifiedUser1 = service.modify(dto);
+
+        return modifiedUser1;
+    }
+
+    @ResponseBody
+    @DeleteMapping("/user1/{userid}")
+    public boolean remove(@PathVariable("userid") String userid){
+        log.info(userid);
+
+        boolean result = service.remove(userid);
+
+        return result;
+    }
 }

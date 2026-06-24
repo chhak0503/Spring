@@ -43,14 +43,21 @@ public class User1Service {
         return savedEntity.toDTO();
     }
 
-    public void modify(User1DTO dto){
+    public User1DTO modify(User1DTO dto){
 
         if(repository.existsById(dto.getUserid())){
-            repository.save(dto.toEntity());
+            User1 modifiedUser1 = repository.save(dto.toEntity());
+            return modifiedUser1.toDTO();
         }
+        return null;
     }
 
-    public void remove(String userid){
-        repository.deleteById(userid);
+    public boolean remove(String userid){
+
+        if(repository.existsById(userid)) {
+            repository.deleteById(userid);
+            return true;
+        }
+        return false;
     }
 }
