@@ -8,7 +8,6 @@ public class MemberController {
 
     @GetMapping("/member/index")
     public String index(){
-
         return "/member/index";
     }
 

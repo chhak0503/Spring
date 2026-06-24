@@ -40,11 +40,13 @@ public class SecurityConfig {
         );
 
         // 인가 설정
-        /*
         httpSecurity.authorizeHttpRequests( authorize -> authorize
                 .requestMatchers("/").permitAll() // 루트(/) 경로는 인증없이 모든 요청 허용
+                .requestMatchers("/admin/**").hasRole("ADMIN")
+                .requestMatchers("/manager/**").hasAnyRole("ADMIN", "MANAGER")
+                .requestMatchers("/member/**").hasAnyRole("ADMIN", "MANAGER", "MEMBER")
+                .anyRequest().permitAll()
         );
-        */
 
         // 기타 보안 설정
         httpSecurity.csrf(CsrfConfigurer::disable);
