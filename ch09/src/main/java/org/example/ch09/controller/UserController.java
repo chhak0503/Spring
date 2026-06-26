@@ -3,53 +3,38 @@ package org.example.ch09.controller;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.example.ch09.dto.UserDTO;
-import org.example.ch09.entity.User;
-import org.example.ch09.security.MyUserDetails;
 import org.example.ch09.service.UserService;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
 
 @Log4j2
 @RequiredArgsConstructor
-@Controller
+@RestController
 public class UserController {
 
-    private final UserService userService;
+    private final UserService service;
 
-    @GetMapping("/user/login")
-    public String login(){
-        return "/user/login";
+    //@ResponseBody
+    @PostMapping("/user")
+    public ResponseEntity<UserDTO> register(@RequestBody UserDTO dto){
+        log.info(dto);
+
+        UserDTO savedUser1 = service.register(dto);
+
+        // 응답 객체 생성
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(savedUser1);
     }
 
-    @GetMapping("/user/register")
-    public String register(){
-        return "/user/register";
+    @GetMapping("/user")
+    public List<UserDTO> list(){
+        List<UserDTO> dtoList = service.getUserAll();
+        return dtoList;
     }
-
-    @PostMapping("/user/register")
-    public String register(UserDTO dto){
-        UserDTO savedUser = userService.register(dto);
-        return "redirect:/user/login?register=success";
-    }
-
-    @GetMapping("/user/info")
-    public String info(Model model){
-
-        // 시큐리티 사용자 인증객체
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        log.info(authentication);
-
-        MyUserDetails details = (MyUserDetails) authentication.getPrincipal();
-        User user = details.getUser();
-
-        model.addAttribute("apple", user);
-
-        return "/user/info";
-    }
-
 
 }
