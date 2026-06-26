@@ -27,25 +27,30 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        log.info("JwtAuthenticationFilter...1");
-
         // 토큰 추출
         Cookie[] cookies = request.getCookies();
         String token = null;
 
         if(cookies != null){
             for(Cookie cookie : cookies){
-                if(COOKIE_NAME.equals(cookie.getName())){
+
+                log.info("JwtAuthenticationFilter...1 : "+ cookie.getName());
+
+                if(cookie.getName().equals(COOKIE_NAME)){
+                    log.info("JwtAuthenticationFilter...2");
                     token = cookie.getValue(); // 쿠키에서 토큰 추출
                     break;
                 }
             }
         }
+
         log.info("token : " + token);
 
         // 토큰 검증
         try {
-            if(token != null) {
+
+            if(token != null && !token.isBlank()) {
+                log.info("JwtAuthenticationFilter...3 : " + token);
 
                 jwtProvider.validateToken(token);
 
@@ -53,6 +58,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 Authentication authentication = jwtProvider.getAuthentication(token);
                 SecurityContextHolder.getContext().setAuthentication(authentication);
             }
+
+            log.info("JwtAuthenticationFilter...4");
 
             // 다음 필터(컨트롤러) 이동
             filterChain.doFilter(request, response);

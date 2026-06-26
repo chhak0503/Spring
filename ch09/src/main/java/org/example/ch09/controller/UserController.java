@@ -9,21 +9,25 @@ import org.example.ch09.entity.User;
 import org.example.ch09.jwt.JwtProvider;
 import org.example.ch09.security.MyUserDetails;
 import org.example.ch09.service.UserService;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseCookie;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.Duration;
 import java.util.List;
+import java.util.Map;
 
 
 @Log4j2
 @RequiredArgsConstructor
 @RestController
 public class UserController {
-
     private final UserService service;
     private final AuthenticationManager authenticationManager;
     private final JwtProvider jwtProvider;
@@ -78,22 +82,31 @@ public class UserController {
         response.addCookie(cookie2);
 
         return ResponseEntity.ok(user.toDTO());
-    }
 
+    }
 
     @GetMapping("/logout")
     public ResponseEntity logout(HttpServletResponse response){
-
         // DB에 저장된 refreshToken 삭제
+
+        // 시큐리티 인증 객체 제거
+        SecurityContextHolder.clearContext();
 
         // 쿠키 삭제
         Cookie cookie1 = new Cookie("AUTH-TOKEN", null);
+        cookie1.setPath("/");
+        cookie1.setMaxAge(0);
+
         Cookie cookie2 = new Cookie("REFRESH-TOKEN", null);
+        cookie2.setPath("/");
+        cookie2.setMaxAge(0);
 
         response.addCookie(cookie1);
         response.addCookie(cookie2);
 
-        return ResponseEntity.ok("logout success");
+        return ResponseEntity.ok(
+                Map.of("result", true)
+        );
     }
 
 
