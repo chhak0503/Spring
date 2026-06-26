@@ -29,23 +29,3 @@ spring:
 jwt:
     issuer: chhak0503@gmail.com
     secret: 981a02dbb7256ed1be4eafd006d5c990
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
