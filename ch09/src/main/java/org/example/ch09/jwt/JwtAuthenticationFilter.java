@@ -36,9 +36,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
                 log.info("JwtAuthenticationFilter...1 : "+ cookie.getName());
 
-                if(cookie.getName().equals(COOKIE_NAME)){
-                    log.info("JwtAuthenticationFilter...2");
+                if(COOKIE_NAME.equals(cookie.getName())){
                     token = cookie.getValue(); // 쿠키에서 토큰 추출
+                    log.info("JwtAuthenticationFilter...2 : " + cookie.getValue());
                     break;
                 }
             }
