@@ -111,9 +111,15 @@ public class UserController {
 
 
     @GetMapping("/user")
-    public List<UserDTO> list(){
-        List<UserDTO> dtoList = service.getUserAll();
-        return dtoList;
+    public ResponseEntity<UserDTO> user(Authentication authentication){
+
+        MyUserDetails details = (MyUserDetails) authentication.getPrincipal();
+        User user = details.getUser();
+        log.info(user);
+
+        UserDTO userDTO = service.getUser("a102");
+
+        return ResponseEntity.ok(userDTO);
     }
 
 }
