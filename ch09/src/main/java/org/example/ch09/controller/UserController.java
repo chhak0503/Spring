@@ -61,16 +61,39 @@ public class UserController {
         // Refresh 토큰 DB 저장
 
         // 쿠키 생성
-        Cookie cookie = new Cookie("AUTH-TOKEN", accessToken);
-        cookie.setHttpOnly(true);   // 자바스크립트로 쿠키 접근 차단(XSS 방어)
-        cookie.setSecure(false);     // HTTPS 통신에서만 쿠키 전송, 테스트 -> false, 운영배포 -> true
-        cookie.setPath("/");
-        cookie.setMaxAge(60 * 60 * 24); // 24시간(1일)
+        Cookie cookie1 = new Cookie("AUTH-TOKEN", accessToken);
+        cookie1.setHttpOnly(true);   // 자바스크립트로 쿠키 접근 차단(XSS 방어)
+        cookie1.setSecure(false);     // HTTPS 통신에서만 쿠키 전송, 테스트 -> false, 운영배포 -> true
+        cookie1.setPath("/");
+        cookie1.setMaxAge(60 * 60 * 24); // 24시간(1일)
 
-        // 응답 객체 쿠키 추가
-        response.addCookie(cookie);
+        Cookie cookie2 = new Cookie("REFRESH-TOKEN", refreshToken);
+        cookie2.setHttpOnly(true);   // 자바스크립트로 쿠키 접근 차단(XSS 방어)
+        cookie2.setSecure(false);     // HTTPS 통신에서만 쿠키 전송, 테스트 -> false, 운영배포 -> true
+        cookie2.setPath("/");
+        cookie2.setMaxAge(60 * 60 * 24 * 5); // 5일
+
+        // 응답 객체로 쿠키 전송
+        response.addCookie(cookie1);
+        response.addCookie(cookie2);
 
         return ResponseEntity.ok(user.toDTO());
+    }
+
+
+    @GetMapping("/logout")
+    public ResponseEntity logout(HttpServletResponse response){
+
+        // DB에 저장된 refreshToken 삭제
+
+        // 쿠키 삭제
+        Cookie cookie1 = new Cookie("AUTH-TOKEN", null);
+        Cookie cookie2 = new Cookie("REFRESH-TOKEN", null);
+
+        response.addCookie(cookie1);
+        response.addCookie(cookie2);
+
+        return ResponseEntity.ok("logout success");
     }
 
 
