@@ -5,6 +5,7 @@ import lombok.extern.log4j.Log4j2;
 import org.example.ch09.dto.UserDTO;
 import org.example.ch09.entity.User;
 import org.example.ch09.repository.UserRepository;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +17,8 @@ import java.util.Optional;
 public class UserService {
 
     private final UserRepository repository;
+    private final PasswordEncoder passwordEncoder;
+
 
     public UserDTO getUser(String userid){
 
@@ -39,7 +42,12 @@ public class UserService {
     }
 
     public UserDTO register(UserDTO dto){
+
+        String encoded = passwordEncoder.encode(dto.getPass());
+        dto.setPass(encoded);
+
         User savedEntity = repository.save(dto.toEntity());
+
         return savedEntity.toDTO();
     }
 

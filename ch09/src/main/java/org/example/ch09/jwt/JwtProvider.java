@@ -34,11 +34,11 @@ public class JwtProvider {
 
 
 
-    public String createToken(User user, int hour){
+    public String createToken(User user, int day){
 
         // 발급일, 만료일 생성
         Date issuedDate = new Date();
-        Date expireDate = new Date(issuedDate.getTime() + Duration.ofHours(hour).toMillis());
+        Date expireDate = new Date(issuedDate.getTime() + Duration.ofDays(day).toMillis());
 
         // 토큰 생성
         String jwt = Jwts.builder()

@@ -1,11 +1,19 @@
 package org.example.ch09.controller;
 
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.example.ch09.dto.UserDTO;
+import org.example.ch09.entity.User;
+import org.example.ch09.jwt.JwtProvider;
+import org.example.ch09.security.MyUserDetails;
 import org.example.ch09.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +25,8 @@ import java.util.List;
 public class UserController {
 
     private final UserService service;
+    private final AuthenticationManager authenticationManager;
+    private final JwtProvider jwtProvider;
 
     //@ResponseBody
     @PostMapping("/user")
@@ -30,6 +40,39 @@ public class UserController {
                 .status(HttpStatus.CREATED)
                 .body(savedUser1);
     }
+
+    @PostMapping("/login")
+    public ResponseEntity<UserDTO> login(@RequestBody UserDTO dto, HttpServletResponse response){
+
+        // 시큐리티 인증 처리
+        UsernamePasswordAuthenticationToken authToken =
+                new UsernamePasswordAuthenticationToken(dto.getUserid(), dto.getPass());
+
+        Authentication authentication = authenticationManager.authenticate(authToken);
+        MyUserDetails details = (MyUserDetails) authentication.getPrincipal();
+        User user = details.getUser();
+        log.info(user);
+
+        // 토큰 생성
+        String accessToken = jwtProvider.createToken(user, 1);
+        String refreshToken = jwtProvider.createToken(user, 5);
+        log.info(accessToken);
+
+        // Refresh 토큰 DB 저장
+
+        // 쿠키 생성
+        Cookie cookie = new Cookie("AUTH-TOKEN", accessToken);
+        cookie.setHttpOnly(true);   // 자바스크립트로 쿠키 접근 차단(XSS 방어)
+        cookie.setSecure(false);     // HTTPS 통신에서만 쿠키 전송, 테스트 -> false, 운영배포 -> true
+        cookie.setPath("/");
+        cookie.setMaxAge(60 * 60 * 24); // 24시간(1일)
+
+        // 응답 객체 쿠키 추가
+        response.addCookie(cookie);
+
+        return ResponseEntity.ok(user.toDTO());
+    }
+
 
     @GetMapping("/user")
     public List<UserDTO> list(){
